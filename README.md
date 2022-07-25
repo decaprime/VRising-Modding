@@ -8,6 +8,10 @@ This wiki is currently more intended for developers, but here is some FAQ:
 - Support: Check out support channels in the discord or in the mod's readme
 
 # For developers of mods
+## Resources
+- [Wetstone](https://molenzwiebel.github.io/Wetstone/) - library with some common functions that allows for reloading of mods.
+- [Project Template](https://github.com/adainrivers/VRising.ProjectTemplate/) by [@adainrivers](github.com/adainrivers/)
+
 ## How to make a VRising Mod
 1. Install BepInEx IL2CPP x64 version from this page (either into VRising or VRising_Server, depending on what you wanna mod):
 https://builds.bepinex.dev/projects/bepinex_be
@@ -34,4 +38,4 @@ Download the Cpp2IL-2022.0.5-Windows.exe from https://github.com/SamboyCoding/Cp
    3. Launch the game (or server) with the plugin.
    4. In Visual Studio goto Debug / Attach Unity Debugger, click to Input IP, enter 127.0.0.1:10000 
 
-Credit @adainrivers for [original](https://discord.com/channels/978094827830915092/978159368312881192/980453110906511410) instructions.
+Credit [@adainrivers](github.com/adainrivers/) for [original](https://discord.com/channels/978094827830915092/978159368312881192/980453110906511410) instructions.
