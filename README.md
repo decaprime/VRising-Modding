@@ -11,6 +11,7 @@ This wiki is currently more intended for developers, but here is some FAQ:
 ## Resources
 - [Wetstone](https://molenzwiebel.github.io/Wetstone/) - library with some common functions that allows for reloading of mods.
 - [Project Template](https://github.com/adainrivers/VRising.ProjectTemplate/) by [@adainrivers](github.com/adainrivers/)
+- [VRising Database](gaming.tools/vrising)
 
 ## How to make a VRising Mod
 1. Install BepInEx IL2CPP x64 version from this page (either into VRising or VRising_Server, depending on what you wanna mod):
