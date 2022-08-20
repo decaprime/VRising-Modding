@@ -1,4 +1,24 @@
-remote_theme: just-the-docs/just-the-docs
+repository: decaprime/vrising-modding
+
+plugins:
+- jekyll-github-metadata
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-sitemap
+- jekyll-remote-theme
+- jemoji
+- jekyll-coffeescript
+- jekyll-default-layout
+- jekyll-gist
+- jekyll-optional-front-matter
+- jekyll-paginate
+- sass
+- jekyll-readme-index
+- jekyll-titles-from-headings
+- jekyll-relative-links
+
+
+remote_theme: just-the-docs/just-the-docs@v0.4.0.rc1
 color_scheme: vampire
 
 
