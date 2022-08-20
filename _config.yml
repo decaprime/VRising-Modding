@@ -34,7 +34,7 @@ gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into t
 back_to_top: true
 back_to_top_text: "Back to top"
 
-title: V Rising Modding
+title: V Rising Mod Wiki
 description: Information about V Rising Mods
 
 heading_anchors: true

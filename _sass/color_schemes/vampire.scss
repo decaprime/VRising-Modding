@@ -1,11 +1,16 @@
+// $grey-dk-000: #716d6d;
+// $grey-dk-200: darken($grey-dk-000, 15%);
+// $grey-dk-250: darken($grey-dk-000, 20%);
+// $grey-dk-300: darken($grey-dk-000, 25%);
+
 $body-background-color: $grey-dk-300;
-$sidebar-color: darken($grey-dk-300, 3%);
+$sidebar-color: darken($grey-dk-300, 1.5%);
 $border-color: $grey-dk-200;
 $body-text-color: $grey-lt-300;
 $body-heading-color: $grey-lt-000;
 $nav-child-link-color: $grey-dk-000;
 $search-result-preview-color: $grey-dk-000;
-$link-color: #dd1e1e;
+$link-color: #f74049;
 $btn-primary-color: $red-200;
 $base-button-color: $grey-dk-250;
 $search-background-color: $grey-dk-250;
@@ -26,3 +31,24 @@ $code-background-color: #31343f;
 
 // @import "./vendor/OneDarkJekyll/syntax-firewatch-green";
 // $code-background-color: #282c34;
+
+.logo {
+    display: flex;
+    img {
+        width: 64px;
+        height: 64px;
+        padding: 5px;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-left: 5px;
+        .top{
+            @extend .fs-5;
+        }
+        .bottom{
+            @extend .fs-6;
+        }
+    }
+}
