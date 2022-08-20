@@ -21,6 +21,6 @@ aux_links:
   "Join our Discord":
     - "https://discord.gg/vrisingmods"
 
-nav-exteral_links:
+nav_exteral_links:
   - title: "Join our Discord"
-    urL: "https://discord.gg/vrisingmods"
+    url: "https://discord.gg/vrisingmods"
