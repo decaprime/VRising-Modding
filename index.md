@@ -1,3 +1,8 @@
+---
+title: V Rising Mods Wiki
+nav_order: 1
+---
+
 # VRising-Modding
 🧛‍♂️ A Wiki or something
 
