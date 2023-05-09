@@ -45,7 +45,7 @@ aux_links:
 
 nav_external_links:
   - title: Join our Discord
-    url: https://discord.gg/vrisingmods
+    url: https://vrisingmods.com/discord
     hide_icon: true
   - title: ➕ Add new page
     url: https://github.com/decaprime/vrising-modding/new/main/dev?filename=FILE_NAME.md&value=---%0Atitle%3A%20YOUR%20TITLE%20HERE%20%28i.e.%20page%20title%29%0Aparent%3A%20PARENT%20DOC%20TITLE%20%28e.g.%20For%20Developers%29%0A---%0A%0A1.%20Update%20the%20FILE_NAME%20and%20path%20above%20the%20editor%0A2.%20Set%20the%20title%20and%20parent%20at%20top%20of%20this%20doc%20%0A3.%20You%20can%20find%20more%20info%3A%20https%3A%2F%2Fjust-the-docs.github.io%2Fjust-the-docs%2Fdocs%2Fnavigation-structure%2F%20%0A4.%20After%20you%27re%20done%2C%20scroll%20down%20and%20please%20start%20a%20pull%20request%20%F0%9F%98%8A%0A5.%20Replace%20these%20instructions%20with%20your%20wiki%20content%20in%20markdown
