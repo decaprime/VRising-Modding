@@ -7,8 +7,10 @@ parent: For Developers
 Please don't distribute this, it's not final nor the way we want to distribute BepInEx
 
 
-### Game Libs: TBD ASAP after release
-Initial version will likely not be the *correct* way, just unblocking builds
+### Game Libs: [nuget](https://www.nuget.org/packages/VRising.Unhollowed.Client/0.6.0.571080001)
+Initial version is not the *correct* way, just unblocking builds. Notice this privately packages the interop changes from above with the already interop'd client assemblies. This avoids the need for the MSBuild task creating the interop and is intended to get developers rolling on release date. 
+
+Versioning on nuget is now game version+zero padded 4 digit version to clarify updates between game versions.
 
 
 ## `.csproj` changes
@@ -19,6 +21,7 @@ Initial version will likely not be the *correct* way, just unblocking builds
 
 <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be*" IncludeAssets="compile" />
 <PackageReference Include="BepInEx.Core" Version="6.0.0-be*" IncludeAssets="compile" />
+<PackageReference Include="VRising.Unhollowed.Client" Version="0.6.0.57108*" />
 
 ```
 
