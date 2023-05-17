@@ -36,3 +36,7 @@ Versioning on nuget is now game version+zero padded 4 digit version to clarify u
   </packageSources>
 </configuration>
 ```
+
+## Namespace Changes (can find replace)
+`using StunLocalization;` -> `using Stunlock.Localization;`
+
