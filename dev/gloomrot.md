@@ -3,13 +3,33 @@ title: Gloomrot Migration Guide
 parent: For Developers
 ---
 
-WIP and limited by NDA. 
+### BepInEx **EXPERIMENTAL** [0.668.001](https://github.com/decaprime/VRising-Modding/releases/tag/0.668.001) 
+Please don't distribute this, it's not final nor the way we want to distribute BepInEx
 
-For now ping deca on discord if you're looking for more help with your mod's migration during beta.
+
+### Game Libs: TBD ASAP after release
+Initial version will likely not be the *correct* way, just unblocking builds
 
 
-TODO:
-- New BepInEx
-- New 'unhollowed' dll (which for equivalence would be `/interop/IL2CPP*.dll` and `/dummy/*.dll` )
-- `net6.0`
-- Namespace changes..
+## `.csproj` changes
+```xml
+<TargetFramework>net6.0</TargetFramework>
+
+...
+
+<PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be*" IncludeAssets="compile" />
+<PackageReference Include="BepInEx.Core" Version="6.0.0-be*" IncludeAssets="compile" />
+
+```
+
+## `nuget.config`
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <packageSources>
+    <add key="BepInEx" value="https://nuget.bepinex.dev/v3/index.json" />
+    <add key="Samboy Feed" value="https://nuget.samboy.dev/v3/index.json" />
+  </packageSources>
+</configuration>
+```
