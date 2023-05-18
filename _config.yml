@@ -41,7 +41,7 @@ heading_anchors: true
 
 aux_links:
   "Join our Discord":
-    - "https://discord.gg/vrisingmods"
+    - "https://vrisingmods.com/discord"
 
 nav_external_links:
   - title: Join our Discord
@@ -55,3 +55,6 @@ callouts:
   warning:
     title: Warning
     color: red
+  note:
+    title: Note
+    color: purple
