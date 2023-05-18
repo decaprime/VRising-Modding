@@ -4,6 +4,11 @@ title: For Developers
 ---
 
 # For developers of mods
+
+
+{: .warning }
+> These instructions are from pre-Gloomrot and are being revamped for the new patch
+
 ## Resources
 - [Wetstone](https://molenzwiebel.github.io/Wetstone/) - library with some common functions that allows for reloading of mods.
 - [Project Template](https://github.com/adainrivers/VRising.ProjectTemplate/) by [@adainrivers](github.com/adainrivers/)
