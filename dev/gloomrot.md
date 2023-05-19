@@ -4,7 +4,8 @@ parent: For Developers
 ---
 
 ### BepInEx **EXPERIMENTAL** [0.668.001](https://github.com/decaprime/VRising-Modding/releases/tag/0.668.001) 
-Please don't distribute this, it's not final nor the way we want to distribute BepInEx
+Please don't distribute this, it's not final nor the way we want to distribute BepInEx.
+This does NOT have the VCRedist in it, so if you dont already have it, get it from microsoft here https://aka.ms/vs/17/release/vc_redist.x64.exe
 
 
 ### Game Libs: [nuget](https://www.nuget.org/packages/VRising.Unhollowed.Client/0.6.0.571080001)
