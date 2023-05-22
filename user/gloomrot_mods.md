@@ -1,6 +1,6 @@
 ---
 title: Gloomrot Mod Status
-parent: user
+parent: For users
 ---
 
 ## Released
