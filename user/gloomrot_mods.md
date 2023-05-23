@@ -19,11 +19,11 @@ parent: For Users
 - [VampireCommandFramework v0.5.3](https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.5.3) - Needs multiplayer testing to confirm chat commands are seen only by player.
 - [CommunityCommands v0.1.2](https://github.com/decaprime/CommunityCommands/releases/tag/v0.1.2) - This one is probably does the one thing it does ok right now. Send me PRs
 - Wetstone (no CI, in [review](https://github.com/molenzwiebel/Wetstone/pull/12)  )
+- [Modern_Camera_PR#14](https://github.com/decaprime/VRising-Modding/files/11539252/Modern_Camera_1.4.2_PR14.zip) **Not final! Do not upload elsewhere please, just uploading from [this build](https://github.com/v-rising/ModernCamera/actions/runs/5052017201/jobs/9064446905)** to disuade others from building and distributing from less trusted sources
 
 ---
 
 ## Work in Progress
-- ModernCamera - Should be ready but iZastic to link RC
 - RPGMods - Parts of it
 
 ---
