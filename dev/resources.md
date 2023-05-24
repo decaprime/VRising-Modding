@@ -1,3 +1,8 @@
+---
+title: Resources
+parent: For Developers
+---
+
 ## Resources for Mod Developers
 
 ### Unity Explorer
