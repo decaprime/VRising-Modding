@@ -6,11 +6,13 @@ parent: For Developers
 ## Resources for Mod Developers
 
 ### Unity Explorer
-
-[Unity Explorer](https://github.com/kremnev8/UnityExplorer) is a tool that allows you to dig into the internal structure of the game while it's running.
+{: .d-inline-block }
 
 Gloomrot
 {: .label .label-green }
+
+[Unity Explorer](https://github.com/kremnev8/UnityExplorer) is a tool that allows you to dig into the internal structure of the game while it's running.
+
 
 Unity Explorer can be built from source and installed manually:
 
