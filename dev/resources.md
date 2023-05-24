@@ -9,7 +9,9 @@ parent: For Developers
 
 [Unity Explorer](https://github.com/kremnev8/UnityExplorer) is a tool that allows you to dig into the internal structure of the game while it's running.
 
-Gloomrot {: .label .label-green } Unity Explorer can be built from source and installed manually:
+Gloomrot
+{: .label .label-green }
+Unity Explorer can be built from source and installed manually:
 
 #### Prerequisites
 1. Install BepInEx in VRising
