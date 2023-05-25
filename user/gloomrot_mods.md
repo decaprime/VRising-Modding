@@ -19,6 +19,9 @@ parent: For Users
 
 #### Client
 - [ModernCamera 1.5.0-pre](https://github.com/v-rising/ModernCamera/releases/tag/ModernCamera-v1.5.0-pre) - latest as of 5/23, previous link on 5/22 was confirmed not-funciontal
+- [AutoReady 1.1.0-pre](https://github.com/iZastic/vrising-autoready/releases/tag/AutoReady-v1.1.0-pre) - latest as of 5/25
+- [RemoveVignette 1.1.0-pre](https://github.com/iZastic/vrising-removevignette/releases/tag/RemoveVignette-v1.1.0-pre) - latest as of 5/25
+- [IntroSkip 1.0.0-pre](https://github.com/iZastic/vrising-introskip/releases/tag/IntroSkip-v1.0.0-pre) - latest as of 5/25
 
 ### Server
 - [VampireCommandFramework v0.5.3](https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.5.3) - Needs multiplayer testing to confirm chat commands are seen only by player.
@@ -28,7 +31,6 @@ parent: For Users
 
 ## Work in Progress
 - Wetstone (no CI, in [review](https://github.com/molenzwiebel/Wetstone/pull/12))
-- ModernCamera - very close, waiting on offical/CI build
 - RPGMods - Parts of it
 
 ---
