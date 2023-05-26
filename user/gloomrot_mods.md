@@ -24,7 +24,7 @@ parent: For Users
 - [IntroSkip 1.0.0-pre](https://github.com/iZastic/vrising-introskip/releases/tag/IntroSkip-v1.0.0-pre) - latest as of 5/25
 
 ### Server
-- [VampireCommandFramework v0.5.3](https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.5.3) - Needs multiplayer testing to confirm chat commands are seen only by player.
+- [VampireCommandFramework v0.5.3](https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.5.3)
 - [CommunityCommands v0.1.2](https://github.com/decaprime/CommunityCommands/releases/tag/v0.1.2) - Currently only offers `.bloodpotion` server command.
 
 ---
