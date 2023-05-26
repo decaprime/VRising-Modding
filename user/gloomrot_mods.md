@@ -30,7 +30,8 @@ parent: For Users
 ---
 
 ## Work in Progress
-- Wetstone (no CI, in [review](https://github.com/molenzwiebel/Wetstone/pull/12))
+- Wetstone (no CI) - Use the release [here](https://github.com/iZastic/Wetstone/releases/tag/Wetstone-v1.3.0-pre) until CI is setup.
+- QuickStash - Use the release [here](https://github.com/iZastic/QuickStash/releases/tag/QuickStash-v1.3.0-pre) until the original mod is updated.
 - RPGMods - Parts of it
 
 ---
