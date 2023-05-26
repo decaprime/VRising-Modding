@@ -22,7 +22,7 @@ parent: For Users
 
 ### Server
 - [VampireCommandFramework v0.5.3](https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.5.3) - Needs multiplayer testing to confirm chat commands are seen only by player.
-- [CommunityCommands v0.1.2](https://github.com/decaprime/CommunityCommands/releases/tag/v0.1.2) - Currently, this is likely the only one that adequately performs its intended function. Send me PRs.
+- [CommunityCommands v0.1.2](https://github.com/decaprime/CommunityCommands/releases/tag/v0.1.2) - Currently only offers `.bloodpotion` server command.
 
 ---
 
