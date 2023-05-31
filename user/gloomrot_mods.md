@@ -15,7 +15,7 @@ parent: For Users
 >
 > These are still considered in testing, **use at your own risk**
 
-- [BepInEx Experimental 0.668.001](https://github.com/decaprime/VRising-Modding/releases/tag/0.668.001) - **Needs vcredist, probably not gonna work on shared host provider**, also needs more testing around linux
+- [BepInEx Experimental 1.668.2](https://github.com/decaprime/VRising-Modding/releases/tag/1.668.2) - 5/31 - now should work without vcredist, tested on linux, requires .net 6.0. ~~**Needs vcredist, probably not gonna work on shared host provider**~~
 
 #### Client
 - [ModernCamera 1.5.3-pre](https://github.com/v-rising/ModernCamera/releases/tag/ModernCamera-v1.5.3-pre) - latest as of 5/27
@@ -37,4 +37,10 @@ parent: For Users
 ---
 
 ## Not Started
+
+{: . warning-title }
+> ATTN: Modders
+>
+> Please adopt mod you want that don't have active maintainers and list above that you're working on it, try to ping them on our discord first if possible.
+
 Everything not listed or edit this page please
