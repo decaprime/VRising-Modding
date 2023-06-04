@@ -23,6 +23,7 @@ parent: For Users
 - [RemoveVignette 1.1.0-pre](https://github.com/iZastic/vrising-removevignette/releases/tag/RemoveVignette-v1.1.0-pre) - latest as of 5/25
 - [IntroSkip 1.0.0-pre](https://github.com/iZastic/vrising-introskip/releases/tag/IntroSkip-v1.0.0-pre) - latest as of 5/25
 - [RemoveVersionWatermark-v1.0.0](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/RemoveVersionWatermark-v1.0.0) - latest as of 5/28
+- [TrackCrafts-v0.0.6](https://github.com/p1xel8ted/TrackCrafts/releases/tag/0.0.6) - latest as of 4th June 2023
 
 ### Server
 - [CommunityCommands v0.1.2](https://github.com/decaprime/CommunityCommands/releases/tag/v0.1.2) - Currently only offers `.bloodpotion` server command.
