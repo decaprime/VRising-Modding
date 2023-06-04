@@ -22,6 +22,7 @@ parent: For Users
 - [AutoReady 1.1.0-pre](https://github.com/iZastic/vrising-autoready/releases/tag/AutoReady-v1.1.0-pre) - latest as of 5/25
 - [RemoveVignette 1.1.0-pre](https://github.com/iZastic/vrising-removevignette/releases/tag/RemoveVignette-v1.1.0-pre) - latest as of 5/25
 - [IntroSkip 1.0.0-pre](https://github.com/iZastic/vrising-introskip/releases/tag/IntroSkip-v1.0.0-pre) - latest as of 5/25
+- [RemoveVersionWatermark-v1.0.0](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/RemoveVersionWatermark-v1.0.0) - latest as of 5/28
 
 ### Server
 - [CommunityCommands v0.1.2](https://github.com/decaprime/CommunityCommands/releases/tag/v0.1.2) - Currently only offers `.bloodpotion` server command.
