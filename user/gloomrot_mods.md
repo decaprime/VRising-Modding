@@ -10,21 +10,10 @@ This page contains release candidates only, when ready final verisons will be po
 >
 > These are still considered in testing, **use at your own risk**
 
-# RC4
-- [BepInEx Experimental 1.668.4](https://github.com/decaprime/VRising-Modding/releases/tag/1.668.4) - 6/5
-- [Bloodstone 0.1.3](https://github.com/decaprime/Bloodstone/releases/tag/v0.1.2) - 6/5
+## BepInEx
+- [BepInEx Experimental 1.668.4](https://github.com/decaprime/VRising-Modding/releases/tag/1.668.4) - 6/5 should work without vcredist, tested on linux, requires .net 6.0.
 
 ---
-
-# RC3
-- [BepInEx Experimental 1.668.3](https://github.com/decaprime/VRising-Modding/releases/tag/1.668.3) - 6/5
-- [Bloodstone 0.1.2](https://github.com/decaprime/Bloodstone/releases/tag/v0.1.2) - 6/5
-
----
-
-# RC2
-
-- [BepInEx Experimental 1.668.2](https://github.com/decaprime/VRising-Modding/releases/tag/1.668.2) - 5/31 - now should work without vcredist, tested on linux, requires .net 6.0. ~~**Needs vcredist, probably not gonna work on shared host provider**~~
 
 ### Client
 - [ModernCamera 1.5.3-pre](https://github.com/v-rising/ModernCamera/releases/tag/ModernCamera-v1.5.3-pre) - latest as of 5/27
@@ -37,11 +26,14 @@ This page contains release candidates only, when ready final verisons will be po
 ### Server
 - [CommunityCommands v0.1.2](https://github.com/decaprime/CommunityCommands/releases/tag/v0.1.2) - Currently only offers `.bloodpotion` server command.
 
+### Client and Server
+- [QuickStash v1.3.2-pre](https://github.com/iZastic/QuickStash/releases/tag/QuickStash-v1.3.2-pre)) 6/5
+- [Bloodstone 0.1.3](https://github.com/decaprime/Bloodstone/releases/tag/v0.1.2) - 6/5 replacement for Wetstone _(mod developers need to update namespace from Wetstone to Bloodstone_
+
 ---
 
 ## Work in Progress
-- Wetstone (no CI) - Use the [1.3.1 pre-release](https://github.com/iZastic/Wetstone/releases/tag/Wetstone-v1.3.1-pre) until CI is setup.
-- QuickStash - Use the release [here](https://github.com/iZastic/QuickStash/releases/tag/QuickStash-v1.3.1-pre) until the original mod is updated.
+- [Wetstone 1.3.1 pre-release](https://github.com/iZastic/Wetstone/releases/tag/Wetstone-v1.3.1-pre) may not be compatible with Bloodstone, only provided until mod developers update to Bloodstone.
 - RPGMods - Parts of it
 
 ---
