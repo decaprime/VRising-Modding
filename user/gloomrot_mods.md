@@ -28,7 +28,7 @@ This page contains release candidates only, when ready final verisons will be po
 
 ### Client and Server
 - [QuickStash v1.3.2-pre](https://github.com/iZastic/QuickStash/releases/tag/QuickStash-v1.3.2-pre) 6/5
-- [Bloodstone 0.1.3](https://github.com/decaprime/Bloodstone/releases/tag/v0.1.2) - 6/5 replacement for Wetstone _(mod developers need to update namespace from Wetstone to Bloodstone_
+- [Bloodstone 0.1.3](https://github.com/decaprime/Bloodstone/releases/tag/v0.1.3) - 6/5 replacement for Wetstone _(mod developers need to update namespace from Wetstone to Bloodstone_
 
 ---
 
