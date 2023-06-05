@@ -10,12 +10,15 @@ This page contains release candidates only, when ready final verisons will be po
 >
 > These are still considered in testing, **use at your own risk**
 
+# RC4
+- [BepInEx Experimental 1.668.4](https://github.com/decaprime/VRising-Modding/releases/tag/1.668.4) - 6/5
+- [Bloodstone 0.1.3](https://github.com/decaprime/Bloodstone/releases/tag/v0.1.2) - 6/5
+
+---
+
 # RC3
 - [BepInEx Experimental 1.668.3](https://github.com/decaprime/VRising-Modding/releases/tag/1.668.3) - 6/5
 - [Bloodstone 0.1.2](https://github.com/decaprime/Bloodstone/releases/tag/v0.1.2) - 6/5
-
-### Client
-### Server
 
 ---
 
