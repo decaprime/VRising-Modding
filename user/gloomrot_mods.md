@@ -3,10 +3,7 @@ title: Gloomrot Mod Status
 parent: For Users
 ---
 
-## Released
-**None**
-
----
+This page contains release candidates only, when ready final verisons will be posted by their authors to Thunderstore.
 
 {: .warning }
 > You won't read this, you're here for links, but if you do:
@@ -36,6 +33,7 @@ parent: For Users
 
 ### Server
 - [CommunityCommands v0.1.2](https://github.com/decaprime/CommunityCommands/releases/tag/v0.1.2) - Currently only offers `.bloodpotion` server command.
+
 ---
 
 ## Work in Progress
