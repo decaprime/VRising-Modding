@@ -11,7 +11,7 @@ This page contains release candidates only, when ready final verisons will be po
 > These are still considered in testing, **use at your own risk**
 
 ## BepInEx
-- [BepInEx Experimental 1.668.4](https://github.com/decaprime/VRising-Modding/releases/tag/1.668.4) - 6/5 should work without vcredist, tested on linux, requires .net 6.0.
+- [BepInEx Experimental 1.668.5](https://github.com/decaprime/VRising-Modding/releases/tag/1.668.5) **RC5** - 6/9 should work without vcredist, tested on linux, requires .net 6.0.
 
 ---
 
@@ -30,13 +30,7 @@ This page contains release candidates only, when ready final verisons will be po
 
 ### Client and Server
 - [QuickStash v1.3.2-pre](https://github.com/iZastic/QuickStash/releases/tag/QuickStash-v1.3.2-pre) 6/5
-- [Bloodstone 0.1.4](https://github.com/decaprime/Bloodstone/releases/tag/v0.1.4) - 6/6 replacement for Wetstone _(mod developers need to update namespace from Wetstone to Bloodstone_
-
----
-
-## Work in Progress
-- [Wetstone 1.3.1 pre-release](https://github.com/iZastic/Wetstone/releases/tag/Wetstone-v1.3.1-pre) may not be compatible with Bloodstone, only provided until mod developers update to Bloodstone.
-- RPGMods - Parts of it
+- [Bloodstone 0.1.4](https://github.com/decaprime/Bloodstone/releases/tag/v0.1.4) - 6/6 replacement for Wetstone (mod devs see: [Bloodstone Guide](../dev/bloodstone.md)
 
 ---
 
