@@ -3,7 +3,7 @@ title: Gloomrot Migration Guide
 parent: For Developers
 ---
 
-### BepInEx **EXPERIMENTAL** [1.668.2](https://github.com/decaprime/VRising-Modding/releases/tag/1.668.2) 
+### BepInEx **EXPERIMENTAL** [1.668.5](https://github.com/decaprime/VRising-Modding/releases/tag/1.668.5) 
 Please don't distribute this, it's not final nor the way we want to distribute BepInEx.
 
 
