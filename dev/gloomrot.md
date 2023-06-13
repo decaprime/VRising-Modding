@@ -3,15 +3,17 @@ title: Gloomrot Migration Guide
 parent: For Developers
 ---
 
-### BepInEx **EXPERIMENTAL** [1.668.5](https://github.com/decaprime/VRising-Modding/releases/tag/1.668.5) 
-Please don't distribute this, it's not final nor the way we want to distribute BepInEx.
+# Migrating plugins for glooomrot
 
+- BepInEx: [Thunderstore 1.668.5](https://v-rising.thunderstore.io/package/BepInEx/BepInExPack_V_Rising/)
+- Game Libs: [nuget](https://www.nuget.org/packages/VRising.Unhollowed.Client/)
 
-### Game Libs: [nuget](https://www.nuget.org/packages/VRising.Unhollowed.Client/)
-Initial version is not the *correct* way, just unblocking builds. Notice this privately packages the interop changes from above with the already interop'd client assemblies. This avoids the need for the MSBuild task creating the interop and is intended to get developers rolling on release date. 
+This version of game libs privately packages the interop changes from above with the already interop'd client assemblies. This avoids the need for the MSBuild task creating the interop and is intended to get developers rolling on release date. 
 
 Versioning on nuget is now game version+zero padded 4 digit version to clarify updates between game versions.
 
+
+### Plugins that used Wetstone: [Migration to Bloodstone](./bloodstone.md#migration-from-wetstone)
 
 ## `.csproj` changes
 ```xml
