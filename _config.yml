@@ -18,7 +18,7 @@ plugins:
 - jekyll-relative-links
 
 
-remote_theme: just-the-docs/just-the-docs@v0.4.0.rc1
+remote_theme: just-the-docs/just-the-docs@v0.5.0
 color_scheme: vampire
 
 
@@ -57,6 +57,12 @@ callouts:
   warning:
     title: Warning
     color: red
-  note:
+  grey-lt:
     title: Note
-    color: purple
+    color: grey-lt
+  yellow:
+    title: Note
+    color: yellow
+  green:
+    title: Note
+    color: green
