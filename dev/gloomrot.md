@@ -21,8 +21,8 @@ Versioning on nuget is now game version+zero padded 4 digit version to clarify u
 
 ...
 
-<PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be*" IncludeAssets="compile" />
-<PackageReference Include="BepInEx.Core" Version="6.0.0-be*" IncludeAssets="compile" />
+<PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.668" IncludeAssets="compile" />
+<PackageReference Include="BepInEx.Core" Version="6.0.0-be.668" IncludeAssets="compile" />
 <PackageReference Include="VRising.Unhollowed.Client" Version="0.6.5.*" />
 
 ```
