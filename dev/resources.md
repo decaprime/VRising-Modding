@@ -11,7 +11,7 @@ parent: For Developers
 [Unity Explorer](https://github.com/kremnev8/UnityExplorer) is a tool that allows you to dig into the internal structure of the game while it's running.
 
 #### Thunderstore Version
-[UnityExplorer IL2CPP at CoreKeeper Thunderstore](https://core-keeper.thunderstore.io/package/CoreMods/UnityExplorer_IL2CPP/)
+[UnityExplorer IL2CPP at Thunderstore](https://v-rising.thunderstore.io/package/CoreMods/UnityExplorer_IL2CPP/)
 
 ### Building from source
 Unity Explorer can be built from source and installed manually:
@@ -37,4 +37,6 @@ Unity Explorer can be built from source and installed manually:
 ---
 
 ## Cpp2IL Decompiled Method Dumps
-Download the Cpp2IL-2022.0.5-Windows.exe from https://github.com/SamboyCoding/Cpp2IL/releases/tag/2022.0.5 into an empty folder, then open a command prompt / powershell / etc. in that folder and run this command Cpp2IL-2022.0.5-Windows.exe --analysis-level=4 --game-path="{PATH\TO\YOUR\GAME\FOLDER}" --exe-name="Vrising" --analyze-all --parallel don't folder to change {PATH\TO\YOUR\GAME\FOLDER} with full path of your game folder. 
+Download [Cpp2IL-2022.0.5-Windows.exe](https://github.com/SamboyCoding/Cpp2IL/releases/tag/2022.0.5) into an empty folder, then open a command prompt / powershell / etc. in that folder and run this command:
+
+`Cpp2IL-2022.0.5-Windows.exe --analysis-level=4 --game-path="{PATH\TO\YOUR\GAME\FOLDER}" --exe-name="Vrising" --analyze-all --parallel` (change {PATH\TO\YOUR\GAME\FOLDER} to the full path of your game folder). 
