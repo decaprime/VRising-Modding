@@ -11,7 +11,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 
 #### Current Work In Progress
 - [BepInEx 1.688.1](<https://github.com/Odjit/BepInEx/releases/tag/vrising-release>)
-- [Bloodstone 0.1.6](<https://github.com/decaprime/Bloodstone/releases/tag/v0.1.6>)
+- [Bloodstone 0.2.0](<https://github.com/decaprime/Bloodstone/releases/tag/v0.2.0>)
 - [VampireCommandFramework 0.8.4](<https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.8.4>)
 
 #### Developer Resources
