@@ -14,6 +14,9 @@ The remainder of this page is provided for developers and anyone willing to acce
 - [Bloodstone 0.1.6](<https://github.com/decaprime/Bloodstone/releases/tag/v0.1.6>)
 - [VampireCommandFramework 0.8.4](<https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.8.4>)
 
+#### Developer Resources
+- Published nuget [VRising.Unhollowed.Client 1.0.0.792660001](<https://www.nuget.org/packages/VRising.Unhollowed.Client/1.0.0.792660001>)
+- Published template [VRising.ModTemplate 0.1.7](<https://www.nuget.org/packages/VRising.ModTemplate/0.1.7>) tested `dotnet new vrisingmod --use-vcf --use-bloodstone` works with versions from above
 
 #### Known Issues
 - Bloodstone Keybindings do not work (are disabled)
