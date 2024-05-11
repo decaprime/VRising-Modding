@@ -11,12 +11,15 @@ The remainder of this page is provided for developers and anyone willing to acce
 
 #### Current Work In Progress
 - [BepInEx 1.688.1](<https://github.com/Odjit/BepInEx/releases/tag/vrising-release>)
-- [Bloodstone 0.2.0](<https://github.com/decaprime/Bloodstone/releases/tag/v0.2.0>)
+- [Bloodstone 0.2.0](<https://github.com/decaprime/Bloodstone/releases/tag/v0.2.0>) (known: will break client load!)
 - [VampireCommandFramework 0.8.4](<https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.8.4>)
-
+- [Killfeed 0.1.1](https://github.com/decaprime/Killfeed/releases/tag/v0.1.1) (not tested, @deca in discord with feedback from multiplayer testing please)
+  
 #### Developer Resources
 - Published nuget [VRising.Unhollowed.Client 1.0.0.792660001](<https://www.nuget.org/packages/VRising.Unhollowed.Client/1.0.0.792660001>)
 - Published template [VRising.ModTemplate 0.1.7](<https://www.nuget.org/packages/VRising.ModTemplate/0.1.7>) tested `dotnet new vrisingmod --use-vcf --use-bloodstone` works with versions from above
 
 #### Known Issues
+- Bloodstone will crash on client launch
 - Bloodstone Keybindings do not work (are disabled)
+- CustomNetworkEvents Broken (@deca:wip)
