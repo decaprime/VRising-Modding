@@ -11,7 +11,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 
 #### Current Work In Progress
 - [BepInEx 1.688.1](<https://github.com/Odjit/BepInEx/releases/tag/vrising-release>)
-- [Bloodstone 0.2.0](<https://github.com/decaprime/Bloodstone/releases/tag/v0.2.0>) (known: will break client load!)
+- [Bloodstone 0.2.1](<https://github.com/decaprime/Bloodstone/releases/tag/v0.2.1>) (known: disabled client features)
 - [VampireCommandFramework 0.8.4](<https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.8.4>)
 - [Killfeed 0.1.1](https://github.com/decaprime/Killfeed/releases/tag/v0.1.1) (not tested, ping deca in discord with feedback from multiplayer testing please)
 - [KillSpiders 1.5.1](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.1) (tested, all features should work except for critter deletion, ping realskye/Skye in discord with any issues or feedback)
