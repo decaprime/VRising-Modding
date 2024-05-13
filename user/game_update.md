@@ -15,6 +15,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 - [VampireCommandFramework 0.8.4](<https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.8.4>)
 - [Killfeed 0.1.1](https://github.com/decaprime/Killfeed/releases/tag/v0.1.1) (not tested, ping deca in discord with feedback from multiplayer testing please)
 - [KillSpiders 1.5.2](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.2) (tested, all features should work except for critter deletion, ping realskye/Skye in discord with any issues or feedback)
+- [RemoveVignette 1.2.0](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.0) (tested, works, temporary fork until iZastic updates)
   
 #### Developer Resources
 - Published nuget [VRising.Unhollowed.Client 1.0.0.792660001](<https://www.nuget.org/packages/VRising.Unhollowed.Client/1.0.0.792660001>)
