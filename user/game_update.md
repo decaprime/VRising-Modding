@@ -17,6 +17,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 - [KillSpiders 1.5.2](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.2) (tested, all features should work except for critter deletion, ping realskye/Skye in discord with any issues or feedback)
 - [RemoveVignette 1.2.0](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.0) (tested, works, temporary fork until iZastic updates)
 - [RemoveVersionWatermark 1.0.2](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/v1.0.2) (tested, works)
+- [BloodRefill 2.0.0](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) (not intensively tested so if there are any issues please ping Skye in discord or open an issue)
 - [KindredCommands 1.9.0](https://github.com/Odjit/KindredCommands/releases/tag/v1.9.0)
   
 #### Developer Resources
