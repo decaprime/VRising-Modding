@@ -19,6 +19,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 - [RemoveVersionWatermark 1.0.2](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/v1.0.2) (tested, works)
 - [BloodRefill 2.0.0](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) (not intensively tested so if there are any issues please ping Skye in discord or open an issue)
 - [KindredCommands 1.9.1](https://github.com/Odjit/KindredCommands/releases/tag/v1.9.1)
+- [PotionsHaveContainers 1.3.0](https://github.com/skythebro/PotionsHaveContainers/releases/tag/1.3.0) (tested, spawned all different types of potions and all worked, if I somehow did miss any ping Skye on discord)
   
 #### Developer Resources
 - Published nuget [VRising.Unhollowed.Client 1.0.0.792660001](<https://www.nuget.org/packages/VRising.Unhollowed.Client/1.0.0.792660001>)
