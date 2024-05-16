@@ -19,7 +19,11 @@ The remainder of this page is provided for developers and anyone willing to acce
 - [RemoveVersionWatermark 1.0.2](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/v1.0.2) (tested, works)
 - [BloodRefill 2.0.0](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) (not intensively tested so if there are any issues please ping Skye in discord or open an issue)
 - [KindredCommands 1.9.1](https://github.com/Odjit/KindredCommands/releases/tag/v1.9.1)
+- [SkanksAIO 1.5.0](https://github.com/skythebro/SkanksAIO/releases/tag/1.5.0) (Discord to game chat works, haven't tested anything else so feel free to open an issue on github or ping skye in discord)
+- [GroundItemPickup 1.1.0](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) (not tested, open issue or ping Skye in discord)
+- [XPRising 0.1.0](https://github.com/aontas/XPRising/releases/tag/v0.1.0) (RPGMods updated for VRising 1.0)
 - [PotionsHaveContainers 1.3.1](https://github.com/skythebro/PotionsHaveContainers/releases/tag/1.3.1) (tested, spawned all different types of potions and all worked, if I somehow did miss any ping Skye on discord)
+
   
 #### Developer Resources
 - Published nuget [VRising.Unhollowed.Client 1.0.0.792660001](<https://www.nuget.org/packages/VRising.Unhollowed.Client/1.0.0.792660001>)
