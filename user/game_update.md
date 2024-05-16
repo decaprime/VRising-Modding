@@ -21,6 +21,8 @@ The remainder of this page is provided for developers and anyone willing to acce
 - [KindredCommands 1.9.1](https://github.com/Odjit/KindredCommands/releases/tag/v1.9.1)
 - [SkanksAIO 1.5.0](https://github.com/skythebro/SkanksAIO/releases/tag/1.5.0) (Discord to game chat works, haven't tested anything else so feel free to open an issue on github or ping skye in discord)
 - [GroundItemPickup 1.1.0](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) (not tested, open issue or ping Skye in discord)
+- [XPRising 0.1.0](https://github.com/aontas/XPRising/releases/tag/v0.1.0) (RPGMods updated for VRising 1.0)
+
   
 #### Developer Resources
 - Published nuget [VRising.Unhollowed.Client 1.0.0.792660001](<https://www.nuget.org/packages/VRising.Unhollowed.Client/1.0.0.792660001>)
