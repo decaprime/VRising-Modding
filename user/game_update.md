@@ -23,6 +23,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 - [GroundItemPickup 1.1.0](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) (not tested, open issue or ping Skye in discord)
 - [XPRising 0.1.0](https://github.com/aontas/XPRising/releases/tag/v0.1.0) (RPGMods updated for VRising 1.0)
 - [PotionsHaveContainers 1.3.1](https://github.com/skythebro/PotionsHaveContainers/releases/tag/1.3.1) (tested, spawned all different types of potions and all worked, if I somehow did miss any ping Skye on discord)
+- [LetHorsesJump 0.1.0](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) (tested, all features stated in readme should work, for issues ping Skye on discord or open an issue)
 
   
 #### Developer Resources
