@@ -21,8 +21,8 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [KindredCommands](https://github.com/Odjit/KindredCommands/releases/tag/v1.9.1) | 1.9.1 | Odjit | SERVER  | |
 | [XPRising](https://github.com/aontas/XPRising/releases/tag/v0.1.0) | 0.1.0 | chino | SERVER | |
 | [KillSpiders](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.2) | 1.5.2 | Skye | SERVER | |
-| [RemoveVignette](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) | 1.2.1 | Skye | CLIENT | |
-| [RemoveVersionWatermark](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3) | 1.0.3 | Skye | CLIENT | |
+| [RemoveVignette](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) | 1.2.1 | Nodus Cursorius | CLIENT | |
+| [RemoveVersionWatermark](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3) | 1.0.3 | Nodus Cursorius | CLIENT | |
 | [BloodRefill](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) | 2.0.0 | Skye | SERVER | |
 | [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.5.0) | 1.5.0 | Skye | SERVER | |
 | [GroundItemPickup](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) | 1.1.0 | Skye | SERVER | |
