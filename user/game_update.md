@@ -12,7 +12,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 #### Current Work In Progress
 - **RC2** [BepInEx 1.690.2](https://github.com/decaprime/VRising-Modding/releases/tag/1.690.2)
 - [Bloodstone 0.2.1](<https://github.com/decaprime/Bloodstone/releases/tag/v0.2.1>) (known: disabled client features)
-- [VampireCommandFramework 0.8.4](<https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.8.4>)
+- [VampireCommandFramework 0.9.0](<https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.9.0>)
 - [Killfeed 0.1.1](https://github.com/decaprime/Killfeed/releases/tag/v0.1.1)
 - [KillSpiders 1.5.2](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.2) (tested, all features should work except for critter deletion, ping realskye/Skye in discord with any issues or feedback)
 - [RemoveVignette 1.2.1](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) (tested, works, temporary fork until iZastic updates)
@@ -28,7 +28,7 @@ The remainder of this page is provided for developers and anyone willing to acce
   
 #### Developer Resources
 - Published nuget [VRising.Unhollowed.Client 1.0.2.794360001](https://www.nuget.org/packages/VRising.Unhollowed.Client/1.0.2.794360001) (for RC2)
-- Published template [VRising.ModTemplate 0.1.7](<https://www.nuget.org/packages/VRising.ModTemplate/0.1.7>) tested `dotnet new vrisingmod --use-vcf --use-bloodstone` works with versions from above
+- Published template [VRising.ModTemplate 0.1.8](<https://www.nuget.org/packages/VRising.ModTemplate/0.1.8>) tested `dotnet new vrisingmod --use-vcf --use-bloodstone` works with versions from above
 - [KindredExtract](https://github.com/Odjit/KindredExtract/releases/tag/KindredExtract) 
 
 #### Known Issues
