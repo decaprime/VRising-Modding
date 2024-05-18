@@ -3,27 +3,29 @@ title: 1.0 Game Update
 parent: For Users
 ---
 
-# RE: 1.0 - Updated 5/17
+# RE: 1.0 - Updated 5/18
 Previous versions of mods and BepInEx do not work with the 1.0 game update. There will be an announcement in discord and versions published to Thunderstore when they are ready. We have a BepInEx release candidate that we need developers to update and test their mods with.
 
 ### Mod Development Community
 The remainder of this page is provided for developers and anyone willing to accept any risks in testing pre-released mods, don't expect support or full functionality. The purpose of this page is to help gather feedback, please report issues and bugs.
 
-#### Current Work In Progress
-- **RC2** [BepInEx 1.690.2](https://github.com/decaprime/VRising-Modding/releases/tag/1.690.2)
-- [Bloodstone 0.2.1](<https://github.com/decaprime/Bloodstone/releases/tag/v0.2.1>) (known: disabled client features)
-- [VampireCommandFramework 0.9.0](<https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.9.0>)
-- [Killfeed 0.1.1](https://github.com/decaprime/Killfeed/releases/tag/v0.1.1)
-- [KillSpiders 1.5.2](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.2) (tested, all features should work except for critter deletion, ping realskye/Skye in discord with any issues or feedback)
-- [RemoveVignette 1.2.1](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) (tested, works, temporary fork until iZastic updates)
-- [RemoveVersionWatermark 1.0.3](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3) (tested, works)
-- [BloodRefill 2.0.0](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) (not intensively tested so if there are any issues please ping Skye in discord or open an issue)
-- [KindredCommands 1.9.1](https://github.com/Odjit/KindredCommands/releases/tag/v1.9.1)
-- [SkanksAIO 1.5.0](https://github.com/skythebro/SkanksAIO/releases/tag/1.5.0) (Discord to game chat works, haven't tested anything else so feel free to open an issue on github or ping skye in discord)
-- [GroundItemPickup 1.1.0](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) (not tested, open issue or ping Skye in discord)
-- [XPRising 0.1.0](https://github.com/aontas/XPRising/releases/tag/v0.1.0) (RPGMods updated for VRising 1.0)
-- [PotionsHaveContainers 1.3.1](https://github.com/skythebro/PotionsHaveContainers/releases/tag/1.3.1) (tested, spawned all different types of potions and all worked, if I somehow did miss any ping Skye on discord)
-- [LetHorsesJump 0.1.0](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) (tested, all features stated in readme should work, for issues ping Skye on discord or open an issue)
+### Public Test Builds:
+
+## **RC2** [BepInEx 1.690.2](https://github.com/decaprime/VRising-Modding/releases/tag/1.690.2)
+| Mod | Version | Discord | Client | Known Issues |
+| --- | --- | --- | --- | --- |
+| [Bloodstone](https://github.com/decaprime/Bloodstone/releases/tag/v0.2.1) | 0.2.1 | deca | BOTH | [⚠️](#known-issues) |
+| [VampireCommandFramework](https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.9.0) | 0.9.0 | deca | SERVER | |
+| [Killfeed](https://github.com/decaprime/Killfeed/releases/tag/v0.1.1) | 0.1.1 | deca | SERVER | |
+| [KindredCommands](https://github.com/Odjit/KindredCommands/releases/tag/v1.9.1) | 1.9.1 | Odjit | SERVER  | |
+| [XPRising](https://github.com/aontas/XPRising/releases/tag/v0.1.0) | 0.1.0 | chino | SERVER | |
+| [KillSpiders](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.2) | 1.5.2 | Skye | SERVER | |
+| [RemoveVignette](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) | 1.2.1 | Skye | CLIENT | |
+| [RemoveVersionWatermark](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3) | 1.0.3 | Skye | CLIENT | |
+| [BloodRefill](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) | 2.0.0 | Skye | SERVER | |
+| [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.5.0) | 1.5.0 | Skye | SERVER | |
+| [GroundItemPickup](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) | 1.1.0 | Skye | SERVER | |
+| [LetHorsesJump](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) | 0.1.0 | Skye | SERVER | |
 
   
 #### Developer Resources
