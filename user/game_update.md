@@ -27,7 +27,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.5.0) | 1.5.0 | Skye | SERVER | |
 | [GroundItemPickup](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) | 1.1.0 | Skye | SERVER | |
 | [LetHorsesJump](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) | 0.1.0 | Skye | SERVER | |
-| [Notify](https://github.com/oscarpedrero/Notify/releases/tag/v3.0) | 3.0.0 | Skye | SERVER | [⚠️](#known-issues) |
+| [Notify](https://github.com/oscarpedrero/Notify/releases/tag/v3.0) | 3.0.0 | Trodi | SERVER | [⚠️](#known-issues) |
 | [BloodyBoss](https://github.com/oscarpedrero/BloodyBoss/releases/tag/v1.0.1) | 1.0.1 | Trodi | SERVER | |
 | [BloodyEncounters](https://github.com/oscarpedrero/BloodyEncounters/releases/tag/v1.0.1) | 1.0.1 | Trodi | SERVER | |
 | [BloodyMerchant](https://github.com/oscarpedrero/BloodyMerchant/releases/tag/v1.0.2) | 1.0.2| Trodi | SERVER | |
