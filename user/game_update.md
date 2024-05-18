@@ -12,6 +12,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 ### Public Test Builds:
 
 ## **RC2** [BepInEx 1.690.2](https://github.com/decaprime/VRising-Modding/releases/tag/1.690.2)
+
 | Mod | Version | Discord | Client | Known Issues |
 | --- | --- | --- | --- | --- |
 | [Bloodstone](https://github.com/decaprime/Bloodstone/releases/tag/v0.2.1) | 0.2.1 | deca | BOTH | [⚠️](#known-issues) |
@@ -26,8 +27,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.5.0) | 1.5.0 | Skye | SERVER | |
 | [GroundItemPickup](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) | 1.1.0 | Skye | SERVER | |
 | [LetHorsesJump](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) | 0.1.0 | Skye | SERVER | |
-
-  
+ 
 #### Developer Resources
 - Published nuget [VRising.Unhollowed.Client 1.0.2.794360001](https://www.nuget.org/packages/VRising.Unhollowed.Client/1.0.2.794360001) (for RC2)
 - Published template [VRising.ModTemplate 0.1.8](<https://www.nuget.org/packages/VRising.ModTemplate/0.1.8>) tested `dotnet new vrisingmod --use-vcf --use-bloodstone` works with versions from above
