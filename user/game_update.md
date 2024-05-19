@@ -18,7 +18,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [Bloodstone](https://github.com/decaprime/Bloodstone/releases/tag/v0.2.1) | 0.2.1 | deca | BOTH | [⚠️](#known-issues) |
 | [VampireCommandFramework](https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.9.0) | 0.9.0 | deca | SERVER | |
 | [Killfeed](https://github.com/decaprime/Killfeed/releases/tag/v0.1.1) | 0.1.1 | deca | SERVER | |
-| [KindredCommands](https://github.com/Odjit/KindredCommands/releases/tag/v1.9.1) | 1.9.1 | Odjit | SERVER  | |
+| [KindredCommands](https://github.com/Odjit/KindredCommands/releases/tag/v1.10.0) | 1.10.0 | Odjit | SERVER  | |
 | [XPRising](https://github.com/aontas/XPRising/releases/tag/v0.1.4) | 0.1.4 | chino | SERVER | |
 | [KillSpiders](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.2) | 1.5.2 | Skye | SERVER | |
 | [RemoveVignette](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) | 1.2.1 | Nodus Cursorius | CLIENT | |
