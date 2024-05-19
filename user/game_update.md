@@ -28,7 +28,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [GroundItemPickup](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) | 1.1.0 | Skye | SERVER | |
 | [LetHorsesJump](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) | 0.1.0 | Skye | SERVER | |
 | [BloodyNotify](https://github.com/oscarpedrero/BloodyNotify/releases/tag/v3.0.2) | 3.0.2 | Trodi | SERVER | |
-| [BloodyBoss](https://github.com/oscarpedrero/BloodyBoss/releases/tag/v1.0.4) | 1.0.4 | Trodi | SERVER | |
+| [BloodyBoss](https://github.com/oscarpedrero/BloodyBoss/releases/tag/v1.0.5) | 1.0.5 | Trodi | SERVER | |
 | [BloodyEncounters](https://github.com/oscarpedrero/BloodyEncounters/releases/tag/v2.0.3) | 2.0.3 | Trodi | SERVER | |
 | [BloodyMerchant](https://github.com/oscarpedrero/BloodyMerchant/releases/tag/v1.0.3) | 1.0.3 | Trodi | SERVER | |
 | [BloodyRewards](https://github.com/oscarpedrero/BloodyRewards/releases/tag/v1.0.2) | 1.0.2 | Trodi | SERVER | |
