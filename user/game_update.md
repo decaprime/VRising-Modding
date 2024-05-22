@@ -3,7 +3,7 @@ title: 1.0 Game Update
 parent: For Users
 ---
 
-# RE: 1.0 - Updated 5/18
+# RE: 1.0 - Updated 5/21
 Previous versions of mods and BepInEx do not work with the 1.0 game update. There will be an announcement in discord and versions published to Thunderstore when they are ready. We have a BepInEx release candidate that we need developers to update and test their mods with.
 
 {: .warning-title }
@@ -13,11 +13,11 @@ Previous versions of mods and BepInEx do not work with the 1.0 game update. Ther
 >
 
 ### Mod Development Community
-The remainder of this page is provided for developers and anyone willing to accept any risks in testing pre-released mods, don't expect support or full functionality. The purpose of this page is to help gather feedback, please report issues and bugs.
+The remainder of this page is provided for developers and anyone willing to accept any risks in testing pre-released mods, don't expect tech support or full functionality. The purpose of this page is to help gather feedback, please report issues and bugs.
 
 ### Public Test Builds:
 
-## **RC2** [BepInEx 1.690.2](https://github.com/decaprime/VRising-Modding/releases/tag/1.690.2)
+## [BepInEx 1.691.3](https://github.com/decaprime/VRising-Modding/releases/tag/1.691.3) (**RC3**)
 
 | Mod | Version | Discord | Client | Known Issues |
 | --- | --- | --- | --- | --- |
