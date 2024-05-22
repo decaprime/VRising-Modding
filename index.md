@@ -3,17 +3,16 @@ title: V Rising Mod Wiki
 nav_order: 1
 ---
 
-{: .warning-title }
-> 1.0 Compatability - May 8th
+{: .note-title }
+> 1.0 Compatability - May 21st
 >
-> Please note existing mods are not compatible with the 1.0 update and will need to be updated first by mod developers.
+> BepInEx and mods needed to be updated after 1.0 release. We have experimental builds for developers/testers [here](/user/game_update.html).
 >
-> This note will be updated with resources as available.
+> Check [discord](https://vrisingmods.com/discord) for latest information.
 
 # 🧛‍♂️ V Rising Mod Wiki
 This is a wiki for V Rising mod developers and users. You can add or edit any of these pages on github. You might want to get started by learning how to [build a V Rising mod](/dev/#how-to-make-a-vrising-mod)
 
 [Join Discord](https://vrisingmods.com/discord){: .btn .btn-purple .fs-6 .mt-2 .px-6 }
-[Gloomrot Mods](https://v-rising.thunderstore.io/?section=gloomrot-update){: .btn  .mt-2 .fs-6 }
 
 {:toc}
