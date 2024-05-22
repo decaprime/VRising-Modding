@@ -3,7 +3,7 @@ title: V Rising Mod Wiki
 nav_order: 1
 ---
 
-{: .note-title }
+{: .grey-lt-title }
 > 1.0 Compatability - May 21st
 >
 > BepInEx and mods needed to be updated after 1.0 release. We have experimental builds for developers/testers [here](/user/game_update.html).
