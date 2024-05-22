@@ -40,7 +40,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [LetHorsesJump](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) | 0.1.0 | Skye | SERVER | |
 | [RemoveVersionWatermark](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3) | 1.0.3 | Nodus Cursorius | CLIENT | |
 | [RemoveVignette](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) | 1.2.1 | Nodus Cursorius | CLIENT | |
-| [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.5.0) | 1.5.0 | Skye | SERVER | |
+| [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.6.0) | 1.6.0 | Skye | SERVER | |
 | [VampireCommandFramework](https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.9.0) | 0.9.0 | deca | SERVER | |
 | [XPRising](https://github.com/aontas/XPRising/releases/tag/v0.1.4) | 0.1.4 | chino | SERVER | |
 
