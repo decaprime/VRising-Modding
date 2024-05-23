@@ -22,6 +22,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | Mod | Version | Discord | Client | Last Update | Known Issues |
 | --- | --- | --- | --- | --- | --- |
 | [AutoBrazier](https://github.com/SkyTech6/AutoBrazier/releases/tag/v0.1.0) | 0.1.0 | SkyTech6 | SERVER | May 18 | |
+| [Bloodcraft](https://github.com/mfoltz/Bloodcraft/releases/tag/V0.1.0) | 0.1.0 | zfolmt | SERVER | May 23 | |
 | [BloodRefill](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) | 2.0.0 | Skye | SERVER | May 14 | |
 | [Bloodstone](https://github.com/decaprime/Bloodstone/releases/tag/v0.2.1) | 0.2.1 | deca | BOTH | May 12 | [⚠️](#known-issues) |
 | [BloodyBoss](https://github.com/oscarpedrero/BloodyBoss/releases/tag/v1.0.5) | 1.0.5 | Trodi | SERVER | May 20 | |
@@ -35,12 +36,14 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [GroundItemPickup](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) | 1.1.0 | Skye | SERVER | May 15 | |
 | [KillSpiders](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.2) | 1.5.2 | Skye | SERVER | May 12 | |
 | [Killfeed](https://github.com/decaprime/Killfeed/releases/tag/v0.1.1) | 0.1.1 | deca | SERVER | May 11 | |
-| [KindredCommands](https://github.com/Odjit/KindredCommands/releases/tag/v1.10.1) | 1.10.1 | Odjit | SERVER  | May 20 | |
+| [KindredArenas](https://github.com/Odjit/KindredArenas/releases/tag/v1.2.0) | 1.2.0 | Odjit | SERVER  | May 23 | |
+| [KindredCommands](https://github.com/Odjit/KindredCommands/releases/tag/v1.11.0) | 1.11.0 | Odjit | SERVER  | May 23 | |
 | [KindredLogistics](https://github.com/Odjit/KindredLogistics/releases/tag/V1.0.0) | 1.0.0 | Odjit/Zfolmt | SERVER  | May 19 | |
 | [LetHorsesJump](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) | 0.1.0 | Skye | SERVER | May 16 | |
+| [OfflineRaidGuard](https://github.com/SkyTech6/OfflineRaidGuard/releases/tag/0.1.0) | 0.1.0 | SkyTech6 | SERVER | May 22 | |
 | [RemoveVersionWatermark](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3) | 1.0.3 | Nodus Cursorius | CLIENT | May 17 | |
 | [RemoveVignette](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) | 1.2.1 | Nodus Cursorius | CLIENT | May 17 | |
-| [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.6.0) | 1.6.0 | Skye | SERVER | May 22 | |
+| [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.6.1) | 1.6.1 | Skye | SERVER | May 23 | |
 | [VampireCommandFramework](https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.9.0) | 0.9.0 | deca | SERVER | May 18 | |
 | [XPRising](https://github.com/aontas/XPRising/releases/tag/v0.1.6) | 0.1.6 | chino | SERVER | May 21 | |
 
