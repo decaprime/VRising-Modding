@@ -36,7 +36,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [KillSpiders](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.2) | 1.5.2 | Skye | SERVER | |
 | [Killfeed](https://github.com/decaprime/Killfeed/releases/tag/v0.1.1) | 0.1.1 | deca | SERVER | |
 | [KindredArenas](https://github.com/Odjit/KindredArenas/releases/tag/v1.2.0) | 1.2.0 | Odjit | SERVER  | |
-| [KindredCommands](https://github.com/Odjit/KindredCommands/releases/tag/v1.10.1) | 1.10.1 | Odjit | SERVER  | |
+| [KindredCommands](https://github.com/Odjit/KindredCommands/releases/tag/v1.11.0) | 1.11.0 | Odjit | SERVER  | |
 | [KindredLogistics](https://github.com/Odjit/KindredLogistics/releases/tag/V1.0.0) | 1.0.0 | Odjit/Zfolmt | SERVER  | |
 | [LetHorsesJump](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) | 0.1.0 | Skye | SERVER | |
 | [RemoveVersionWatermark](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3) | 1.0.3 | Nodus Cursorius | CLIENT | |
