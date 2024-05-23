@@ -26,6 +26,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [BloodRefill](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) | 2.0.0 | Skye | SERVER | |
 | [Bloodstone](https://github.com/decaprime/Bloodstone/releases/tag/v0.2.1) | 0.2.1 | deca | BOTH | [⚠️](#known-issues) |
 | [BloodyBoss](https://github.com/oscarpedrero/BloodyBoss/releases/tag/v1.0.6) | 1.0.6 | Trodi | SERVER | |
+| [Bloody.Core](https://github.com/oscarpedrero/BloodyCore/releases/tag/v1.2) | 1.0.6 | Trodi | BOTH | |
 | [BloodyEncounters](https://github.com/oscarpedrero/BloodyEncounters/releases/tag/v2.0.4) | 2.0.4 | Trodi | SERVER | |
 | [BloodyMailBox](https://github.com/oscarpedrero/BloodyMailBox/releases/tag/v1.0.1) | 1.0.1 | Trodi | SERVER | |
 | [BloodyMerchant](https://github.com/oscarpedrero/BloodyMerchant/releases/tag/v1.0.4) | 1.0.4 | Trodi | SERVER | |
