@@ -22,15 +22,17 @@ The remainder of this page is provided for developers and anyone willing to acce
 | Mod | Version | Discord | Client | Known Issues |
 | --- | --- | --- | --- | --- |
 | [AutoBrazier](https://github.com/SkyTech6/AutoBrazier/releases/tag/v0.1.0) | 0.1.0 | SkyTech6 | SERVER | |
+| [Bloodcraft](https://github.com/mfoltz/Bloodcraft/releases/tag/V0.1.0) | 0.1.0 | zfolmt | SERVER | |
 | [BloodRefill](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) | 2.0.0 | Skye | SERVER | |
 | [Bloodstone](https://github.com/decaprime/Bloodstone/releases/tag/v0.2.1) | 0.2.1 | deca | BOTH | [⚠️](#known-issues) |
-| [BloodyBoss](https://github.com/oscarpedrero/BloodyBoss/releases/tag/v1.0.5) | 1.0.5 | Trodi | SERVER | |
-| [BloodyEncounters](https://github.com/oscarpedrero/BloodyEncounters/releases/tag/v2.0.3) | 2.0.3 | Trodi | SERVER | |
-| [BloodyMailBox](https://github.com/oscarpedrero/BloodyMailBox/releases/tag/v1.0.0) | 1.0.0 | Trodi | SERVER | |
-| [BloodyMerchant](https://github.com/oscarpedrero/BloodyMerchant/releases/tag/v1.0.3) | 1.0.3 | Trodi | SERVER | |
-| [BloodyNotify](https://github.com/oscarpedrero/BloodyNotify/releases/tag/v3.0.3) | 3.0.3 | Trodi | SERVER | |
-| [BloodyPoints](https://github.com/oscarpedrero/BloodyPoints/releases/tag/v2.0.1) | 2.0.1 | Trodi | SERVER | |
-| [BloodyRewards](https://github.com/oscarpedrero/BloodyRewards/releases/tag/v1.0.2) | 1.0.2 | Trodi | SERVER | |
+| [BloodyBoss](https://github.com/oscarpedrero/BloodyBoss/releases/tag/v1.0.6) | 1.0.6 | Trodi | SERVER | |
+| [Bloody.Core](https://github.com/oscarpedrero/BloodyCore/releases/tag/v1.2) | 1.0.6 | Trodi | BOTH | |
+| [BloodyEncounters](https://github.com/oscarpedrero/BloodyEncounters/releases/tag/v2.0.4) | 2.0.4 | Trodi | SERVER | |
+| [BloodyMailBox](https://github.com/oscarpedrero/BloodyMailBox/releases/tag/v1.0.1) | 1.0.1 | Trodi | SERVER | |
+| [BloodyMerchant](https://github.com/oscarpedrero/BloodyMerchant/releases/tag/v1.0.4) | 1.0.4 | Trodi | SERVER | |
+| [BloodyNotify](https://github.com/oscarpedrero/BloodyNotify/releases/tag/v3.0.4) | 3.0.4 | Trodi | SERVER | |
+| [BloodyPoints](https://github.com/oscarpedrero/BloodyPoints/releases/tag/v2.0.2) | 2.0.2 | Trodi | SERVER | |
+| [BloodyRewards](https://github.com/oscarpedrero/BloodyRewards/releases/tag/v1.0.3) | 1.0.3 | Trodi | SERVER | |
 | [CoffinSleep](https://github.com/skythebro/CoffinSleep/releases/tag/2.1.0) | 2.1.0 | Skye | SERVER | |
 | [GroundItemPickup](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) | 1.1.0 | Skye | SERVER | |
 | [KillSpiders](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.2) | 1.5.2 | Skye | SERVER | |
@@ -40,6 +42,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [KindredLogistics](https://github.com/Odjit/KindredLogistics/releases/tag/V1.0.0) | 1.0.0 | Odjit/Zfolmt | SERVER  | |
 | [LetHorsesJump](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) | 0.1.0 | Skye | SERVER | |
 | [ModernCamera](https://thunderstore.io/c/v-rising/p/vrising/ModernCamera/) | 1.5.7 | iZastic/Dimentox | CLIENT | | 
+| [OfflineRaidGuard](https://github.com/SkyTech6/OfflineRaidGuard/releases/tag/0.1.0) | 0.1.0 | SkyTech6 | SERVER | |
 | [RemoveVersionWatermark](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3) | 1.0.3 | Nodus Cursorius | CLIENT | |
 | [RemoveVignette](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) | 1.2.1 | Nodus Cursorius | CLIENT | |
 | [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.6.0) | 1.6.0 | Skye | SERVER | |
