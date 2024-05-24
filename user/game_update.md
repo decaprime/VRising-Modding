@@ -41,7 +41,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [KindredCommands](https://github.com/Odjit/KindredCommands/releases/tag/v1.11.0) | 1.11.0 | Odjit | SERVER  | |
 | [KindredLogistics](https://github.com/Odjit/KindredLogistics/releases/tag/V1.0.0) | 1.0.0 | Odjit/Zfolmt | SERVER  | |
 | [LetHorsesJump](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) | 0.1.0 | Skye | SERVER | |
-| [ModernCamera](https://thunderstore.io/c/v-rising/p/vrising/ModernCamera/) | 1.5.7 | iZastic/Dimentox | CLIENT | | 
+| [ModernCamera](https://github.com/v-rising/ModernCamera/releases/tag/v2.0.0) | 2.0.0 | iZastic/Dimentox | CLIENT | | 
 | [OfflineRaidGuard](https://github.com/SkyTech6/OfflineRaidGuard/releases/tag/0.1.0) | 0.1.0 | SkyTech6 | SERVER | |
 | [RemoveVersionWatermark](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3) | 1.0.3 | Nodus Cursorius | CLIENT | |
 | [RemoveVignette](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) | 1.2.1 | Nodus Cursorius | CLIENT | |
