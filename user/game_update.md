@@ -30,7 +30,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [BloodyEncounters](https://github.com/oscarpedrero/BloodyEncounters/releases/tag/v2.0.4) | 2.0.4 | Trodi | SERVER | |
 | [BloodyMailBox](https://github.com/oscarpedrero/BloodyMailBox/releases/tag/v1.0.1) | 1.0.1 | Trodi | SERVER | |
 | [BloodyMerchant](https://github.com/oscarpedrero/BloodyMerchant/releases/tag/v1.0.4) | 1.0.4 | Trodi | SERVER | |
-| [BloodyNotify](https://github.com/oscarpedrero/BloodyNotify/releases/tag/v3.0.4) | 3.0.5 | Trodi | SERVER | |
+| [BloodyNotify](https://github.com/oscarpedrero/BloodyNotify/releases/tag/v3.0.5) | 3.0.5 | Trodi | SERVER | |
 | [BloodyPoints](https://github.com/oscarpedrero/BloodyPoints/releases/tag/v2.0.2) | 2.0.2 | Trodi | SERVER | |
 | [BloodyRewards](https://github.com/oscarpedrero/BloodyRewards/releases/tag/v1.0.3) | 1.0.3 | Trodi | SERVER | |
 | [CoffinSleep](https://github.com/skythebro/CoffinSleep/releases/tag/2.1.0) | 2.1.0 | Skye | SERVER | |
