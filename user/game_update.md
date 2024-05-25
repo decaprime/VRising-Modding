@@ -44,8 +44,8 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [LetHorsesJump](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) | 0.1.0 | Skye | SERVER | May 16 |
 | [ModernCamera](https://github.com/v-rising/ModernCamera/releases/tag/v2.0.0) | 2.0.0 | iZastic/Dimentox | CLIENT | May 23 |
 | [OfflineRaidGuard](https://github.com/SkyTech6/OfflineRaidGuard/releases/tag/0.1.1) | 0.1.1 | SkyTech6 | SERVER | May 23 |
-| [RemoveVersionWatermark](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3) | 1.0.3 | Nodus Cursorius | CLIENT | May 17 |
-| [RemoveVignette](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) | 1.2.1 | Nodus Cursorius | CLIENT | May 17 |
+| [RemoveVersionWatermark](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3rc3) | 1.0.3 | Nodus Cursorius | CLIENT | May 25 |
+| [RemoveVignette](https://github.com/iZastic/vrising-removevignette/releases/tag/RemoveVignette-v1.2.0-pre) | 1.2.0-pre | iZastic  | CLIENT | May 24 |
 | [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.6.1) | 1.6.1 | Skye | SERVER | May 23 |
 | [VampireCommandFramework](https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.9.0) | 0.9.0 | deca | SERVER | May 18 |
 | [XPRising](https://github.com/aontas/XPRising/releases/tag/v0.1.8) | 0.1.8 | chino | SERVER | May 25 |
