@@ -33,7 +33,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [BloodyNotify](https://github.com/oscarpedrero/BloodyNotify/releases/tag/v3.0.3) | 3.0.3 | Trodi | SERVER | May 20 |
 | [BloodyPoints](https://github.com/oscarpedrero/BloodyPoints/releases/tag/v2.0.1) | 2.0.1 | Trodi | SERVER | May 20 |
 | [BloodyRewards](https://github.com/oscarpedrero/BloodyRewards/releases/tag/v1.0.4) | 1.0.4 | Trodi | SERVER | May 25 |
-| [BloodyShop](https://github.com/oscarpedrero/BloodyShop/releases/tag/v1.0.0)  [⚠️](#known-issues) | 1.0.0 | Trodi | BOTH | May 25 |
+| [BloodyShop](https://github.com/oscarpedrero/BloodyShop/releases/tag/v1.0.1)  [⚠️](#known-issues) | 1.0.1 | Trodi | BOTH | May 25 |
 | [CoffinSleep](https://github.com/skythebro/CoffinSleep/releases/tag/2.1.0) | 2.1.0 | Skye | SERVER | May 19 |
 | [GroundItemPickup](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) | 1.1.0 | Skye | SERVER | May 15 |
 | [KillSpiders](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.2) | 1.5.2 | Skye | SERVER | May 12 |
