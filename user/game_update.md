@@ -44,7 +44,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [OfflineRaidGuard](https://github.com/SkyTech6/OfflineRaidGuard/releases/tag/0.1.1) | 0.1.1 | SkyTech6 | SERVER | May 23 |
 | [RemoveVersionWatermark](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3) | 1.0.3 | Nodus Cursorius | CLIENT | May 17 |
 | [RemoveVignette](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) | 1.2.1 | Nodus Cursorius | CLIENT | May 17 |
-| [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.6.1) | 1.6.1 | Skye | SERVER | May 23 | |
+| [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.6.1) | 1.6.1 | Skye | SERVER | May 23 |
 | [VampireCommandFramework](https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.9.0) | 0.9.0 | deca | SERVER | May 18 |
 | [XPRising](https://github.com/aontas/XPRising/releases/tag/v0.1.6) | 0.1.6 | chino | SERVER | May 21 |
 
