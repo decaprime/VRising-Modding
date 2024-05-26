@@ -25,7 +25,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [Bloodcraft](https://github.com/mfoltz/Bloodcraft/releases/tag/V0.1.1) | 0.1.1 | zfolmt | SERVER | May 25 |
 | [BloodRefill](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) | 2.0.0 | Skye | SERVER | May 14 |
 | [Bloodstone](https://github.com/decaprime/Bloodstone/releases/tag/v0.2.1) [⚠️](#known-issues) | 0.2.1 | deca | BOTH | May 12 |
-| [BloodyBoss](https://github.com/oscarpedrero/BloodyBoss/releases/tag/1.0.7) | 1.0.7 | Trodi | SERVER | May 25 | 
+| [BloodyBoss](https://github.com/oscarpedrero/BloodyBoss/releases/tag/v1.0.8) | 1.0.8 | Trodi | SERVER | May 26 | 
 | [BloodyCore](https://github.com/oscarpedrero/BloodyCore/releases/tag/v1.2) | 1.2.2 | Trodi | BOTH | May 25 | 
 | [BloodyEncounters](https://github.com/oscarpedrero/BloodyEncounters/releases/tag/v2.0.4) | 2.0.4 | Trodi | SERVER | May 25 |
 | [BloodyMailBox](https://github.com/oscarpedrero/BloodyMailBox/releases/tag/v1.0.1) | 1.0.1 | Trodi | SERVER | May 19 |
