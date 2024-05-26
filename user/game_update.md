@@ -3,28 +3,22 @@ title: 1.0 Game Update
 parent: For Users
 ---
 
-# RE: 1.0 - Updated 5/21
-Previous versions of mods and BepInEx do not work with the 1.0 game update. There will be an announcement in discord and versions published to Thunderstore when they are ready. We have a BepInEx release candidate that we need developers to update and test their mods with.
+# RE: 1.0 - Updated 5/26
+Previous versions of mods and BepInEx do not work with the 1.0 game update. Updates have started to go to the Thunderstore, this page still will list latest release candidates.
 
-{: .warning-title }
-> A Note
-> 
-> Please note Mods that are not yet updated may take some unknown amount of time to be updated to 1.0. We would like to remind all users who enjoy playing with mods to be patient and understand that modders are working on getting the mods updated and stable.
->
-
-### Mod Development Community
+### Intended for testing
 The remainder of this page is provided for developers and anyone willing to accept any risks in testing pre-released mods, don't expect tech support or full functionality. The purpose of this page is to help gather feedback, please report issues and bugs.
 
 ### Public Test Builds:
 
-## [BepInEx 1.691.3](https://github.com/decaprime/VRising-Modding/releases/tag/1.691.3) (**RC3**)
+## [BepInEx 1.691.3 (RC3)](https://github.com/decaprime/VRising-Modding/releases/tag/1.691.3) == Thunderstore 1.691.3
 
 | Mod | Version | Discord | Client | Last Update |
 | --- | --- | --- | --- | --- |
 | [AutoBrazier](https://github.com/SkyTech6/AutoBrazier/releases/tag/v0.1.0) | 0.1.0 | SkyTech6 | SERVER | May 18 |
 | [Bloodcraft](https://github.com/mfoltz/Bloodcraft/releases/tag/V0.1.1) | 0.1.1 | zfolmt | SERVER | May 25 |
 | [BloodRefill](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) | 2.0.0 | Skye | SERVER | May 14 |
-| [Bloodstone](https://github.com/decaprime/Bloodstone/releases/tag/v0.2.1) [⚠️](#known-issues) | 0.2.1 | deca | BOTH | May 12 |
+| [Bloodstone](https://github.com/decaprime/Bloodstone/releases/tag/v0.2.2) [⚠️](#known-issues) | 0.2.2 | deca | BOTH | May 26 |
 | [BloodyBoss](https://github.com/oscarpedrero/BloodyBoss/releases/tag/v1.0.8) | 1.0.8 | Trodi | SERVER | May 26 | 
 | [BloodyCore](https://github.com/oscarpedrero/BloodyCore/releases/tag/v1.2) | 1.2.2 | Trodi | BOTH | May 25 | 
 | [BloodyEncounters](https://github.com/oscarpedrero/BloodyEncounters/releases/tag/v2.0.4) | 2.0.4 | Trodi | SERVER | May 25 |
@@ -58,7 +52,5 @@ The remainder of this page is provided for developers and anyone willing to acce
 - [KindredExtract](https://github.com/Odjit/KindredExtract/releases/tag/KindredExtract) 
 
 #### Known Issues
-- Bloodstone will crash on client launch
-- Bloodstone Keybindings do not work (are disabled)
-- CustomNetworkEvents Broken (deca:wip)
+- Bloodstone Keybindings and CustomNetworkEvents are disabled as they do not work yet
 - BloodyShop It only works on the server, the client version does not work.
