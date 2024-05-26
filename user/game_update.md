@@ -29,7 +29,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [BloodyCore](https://github.com/oscarpedrero/BloodyCore/releases/tag/v1.2) | 1.2.2 | Trodi | BOTH | May 25 | 
 | [BloodyEncounters](https://github.com/oscarpedrero/BloodyEncounters/releases/tag/v2.0.4) | 2.0.4 | Trodi | SERVER | May 25 |
 | [BloodyMailBox](https://github.com/oscarpedrero/BloodyMailBox/releases/tag/v1.0.2) | 1.0.2 | Trodi | SERVER | May 26 |
-| [BloodyMerchant](https://github.com/oscarpedrero/BloodyMerchant/releases/tag/v1.0.3) | 1.0.3 | Trodi | SERVER | May 19 |
+| [BloodyMerchant](https://github.com/oscarpedrero/BloodyMerchant/releases/tag/v1.0.4) | 1.0.4 | Trodi | SERVER | May 26 |
 | [BloodyNotify](https://github.com/oscarpedrero/BloodyNotify/releases/tag/v3.0.6) | 3.0.6 | Trodi | SERVER | May 26 |
 | [BloodyPoints](https://github.com/oscarpedrero/BloodyPoints/releases/tag/v2.0.2) | 2.0.2 | Trodi | SERVER | May 20 |
 | [BloodyRewards](https://github.com/oscarpedrero/BloodyRewards/releases/tag/v1.0.4) | 1.0.4 | Trodi | SERVER | May 25 |
