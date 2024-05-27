@@ -16,7 +16,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | Mod | Version | Discord | Client | Last Update |
 | --- | --- | --- | --- | --- |
 | [AutoBrazier](https://github.com/SkyTech6/AutoBrazier/releases/tag/v0.1.0) | 0.1.5 | SkyTech6 | SERVER | May 18 |
-| [Bloodcraft](https://github.com/mfoltz/Bloodcraft/releases/tag/V0.1.1) | 0.1.1 | zfolmt | SERVER | May 25 |
+| [Bloodcraft](https://github.com/mfoltz/Bloodcraft/releases/tag/v0.1.2) | 0.1.2 | zfolmt | SERVER | May 27 |
 | [BloodRefill](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) | 2.0.0 | Skye | SERVER | May 14 |
 | [Bloodstone](https://github.com/decaprime/Bloodstone/releases/tag/v0.2.2) [⚠️](#known-issues) | 0.2.2 | deca | BOTH | May 26 |
 | [BloodyBoss](https://github.com/oscarpedrero/BloodyBoss/releases/tag/v1.0.8) | 1.0.8 | Trodi | SERVER | May 26 | 
