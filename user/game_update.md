@@ -15,7 +15,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 
 | Mod | Version | Discord | Client | Last Update |
 | --- | --- | --- | --- | --- |
-| [AutoBrazier](https://github.com/SkyTech6/AutoBrazier/releases/tag/v0.1.0) | 0.1.0 | SkyTech6 | SERVER | May 18 |
+| [AutoBrazier](https://github.com/SkyTech6/AutoBrazier/releases/tag/v0.1.0) | 0.1.5 | SkyTech6 | SERVER | May 18 |
 | [Bloodcraft](https://github.com/mfoltz/Bloodcraft/releases/tag/V0.1.1) | 0.1.1 | zfolmt | SERVER | May 25 |
 | [BloodRefill](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) | 2.0.0 | Skye | SERVER | May 14 |
 | [Bloodstone](https://github.com/decaprime/Bloodstone/releases/tag/v0.2.2) [⚠️](#known-issues) | 0.2.2 | deca | BOTH | May 26 |
@@ -29,6 +29,8 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [BloodyRewards](https://github.com/oscarpedrero/BloodyRewards/releases/tag/v1.0.4) | 1.0.4 | Trodi | SERVER | May 25 |
 | [BloodyShop](https://github.com/oscarpedrero/BloodyShop/releases/tag/v1.0.1)  [⚠️](#known-issues) | 1.0.1 | Trodi | BOTH | May 25 |
 | [CoffinSleep](https://github.com/skythebro/CoffinSleep/releases/tag/2.1.0) | 2.1.0 | Skye | SERVER | May 19 |
+| [CrimsonChatFilter](https://github.com/SkyTech6/CrimsonChatFilter/releases/tag/v0.1.0) | 0.1.0 | SkyTech6 | Server | May 26 |
+| [CrimsonDropRate](https://github.com/SkyTech6/CrimsonDropRate/releases/tag/v0.1.1) | 0.1.1 | SkyTech6 | Server | May 26 |
 | [GroundItemPickup](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) | 1.1.0 | Skye | SERVER | May 15 |
 | [KillSpiders](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.2) | 1.5.2 | Skye | SERVER | May 12 |
 | [Killfeed](https://github.com/decaprime/Killfeed/releases/tag/v0.1.1) | 0.1.1 | deca | SERVER | May 11 |
@@ -37,7 +39,7 @@ The remainder of this page is provided for developers and anyone willing to acce
 | [KindredLogistics](https://github.com/Odjit/KindredLogistics/releases/tag/V1.0.0) | 1.0.0 | Odjit/Zfolmt | SERVER  | May 19 |
 | [LetHorsesJump](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) | 0.1.0 | Skye | SERVER | May 16 |
 | [ModernCamera](https://github.com/v-rising/ModernCamera/releases/tag/v2.0.0) | 2.0.0 | iZastic/Dimentox | CLIENT | May 23 |
-| [OfflineRaidGuard](https://github.com/SkyTech6/OfflineRaidGuard/releases/tag/0.1.1) | 0.1.1 | SkyTech6 | SERVER | May 23 |
+| [OfflineRaidGuard](https://github.com/SkyTech6/OfflineRaidGuard/releases/tag/0.1.5) | 0.1.5 | SkyTech6 | SERVER | May 23 |
 | [RemoveVersionWatermark](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3) | 1.0.3 | Nodus Cursorius | CLIENT | May 17 |
 | [RemoveVignette](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) | 1.2.1 | Nodus Cursorius | CLIENT | May 17 |
 | [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.6.1) | 1.6.1 | Skye | SERVER | May 23 |
