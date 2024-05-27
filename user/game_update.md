@@ -16,35 +16,35 @@ The remainder of this page is provided for developers and anyone willing to acce
 | Mod | Version | Discord | Client | Last Update |
 | --- | --- | --- | --- | --- |
 | [AutoBrazier](https://github.com/SkyTech6/AutoBrazier/releases/tag/v0.1.0) | 0.1.5 | SkyTech6 | SERVER | May 18 |
-| [Bloodcraft](https://github.com/mfoltz/Bloodcraft/releases/tag/v0.1.2) | 0.1.2 | zfolmt | SERVER | May 27 |
+| [Bloodcraft](https://thunderstore.io/c/v-rising/p/zfolmt/Bloodcraft/) | 0.1.2 | zfolmt | SERVER | May 27 |
 | [BloodRefill](https://github.com/skythebro/VMods/releases/tag/BR2.0.0) | 2.0.0 | Skye | SERVER | May 14 |
-| [Bloodstone](https://github.com/decaprime/Bloodstone/releases/tag/v0.2.2) [⚠️](#known-issues) | 0.2.2 | deca | BOTH | May 26 |
-| [BloodyBoss](https://github.com/oscarpedrero/BloodyBoss/releases/tag/v1.0.8) | 1.0.8 | Trodi | SERVER | May 26 | 
-| [BloodyCore](https://github.com/oscarpedrero/BloodyCore/releases/tag/v1.2) | 1.2.2 | Trodi | BOTH | May 25 | 
-| [BloodyEncounters](https://github.com/oscarpedrero/BloodyEncounters/releases/tag/v2.0.4) | 2.0.4 | Trodi | SERVER | May 25 |
-| [BloodyMailBox](https://github.com/oscarpedrero/BloodyMailBox/releases/tag/v1.0.2) | 1.0.2 | Trodi | SERVER | May 26 |
-| [BloodyMerchant](https://github.com/oscarpedrero/BloodyMerchant/releases/tag/v1.0.4) | 1.0.4 | Trodi | SERVER | May 26 |
-| [BloodyNotify](https://github.com/oscarpedrero/BloodyNotify/releases/tag/v3.0.6) | 3.0.6 | Trodi | SERVER | May 26 |
-| [BloodyPoints](https://github.com/oscarpedrero/BloodyPoints/releases/tag/v2.0.2) | 2.0.2 | Trodi | SERVER | May 20 |
-| [BloodyRewards](https://github.com/oscarpedrero/BloodyRewards/releases/tag/v1.0.4) | 1.0.4 | Trodi | SERVER | May 25 |
-| [BloodyShop](https://github.com/oscarpedrero/BloodyShop/releases/tag/v1.0.1)  [⚠️](#known-issues) | 1.0.1 | Trodi | BOTH | May 25 |
+| [Bloodstone](https://thunderstore.io/c/v-rising/p/deca/Bloodstone/) [⚠️](#known-issues) | 0.2.2 | deca | BOTH | May 26 |
+| [BloodyBoss](https://thunderstore.io/c/v-rising/p/Trodi/BloodyBoss/) | 1.0.9 | Trodi | SERVER | May 27 | 
+| [BloodyCore](https://thunderstore.io/c/v-rising/p/Trodi/BloodyCore/) | 1.2.2 | Trodi | BOTH | May 27 | 
+| [BloodyEncounters](https://thunderstore.io/c/v-rising/p/Trodi/BloodyEncounters/) | 2.0.4 | Trodi | SERVER | May 27 |
+| [BloodyMailBox](https://thunderstore.io/c/v-rising/p/Trodi/BloodyMailBox/) | 1.0.2 | Trodi | SERVER | May 27 |
+| [BloodyMerchant](https://thunderstore.io/c/v-rising/p/Trodi/BloodyMerchant/) | 1.0.5 | Trodi | SERVER | May 27 |
+| [BloodyNotify](https://thunderstore.io/c/v-rising/p/Trodi/Notify/) | 3.0.6 | Trodi | SERVER | May 27 |
+| [BloodyPoints](https://thunderstore.io/c/v-rising/p/Trodi/BloodyPoint/) | 2.0.2 | Trodi | SERVER | May 27 |
+| [BloodyRewards](https://thunderstore.io/c/v-rising/p/Trodi/BloodyRewards/) | 1.0.4 | Trodi | SERVER | May 27 |
+| [BloodyShop](https://thunderstore.io/c/v-rising/p/Trodi/BloodyShop/)  [⚠️](#known-issues) | 1.0.1 | Trodi | BOTH | May 27 |
 | [CoffinSleep](https://github.com/skythebro/CoffinSleep/releases/tag/2.1.0) | 2.1.0 | Skye | SERVER | May 19 |
-| [CrimsonChatFilter](https://github.com/SkyTech6/CrimsonChatFilter/releases/tag/v0.1.0) | 0.1.0 | SkyTech6 | Server | May 26 |
-| [CrimsonDropRate](https://github.com/SkyTech6/CrimsonDropRate/releases/tag/v0.1.1) | 0.1.1 | SkyTech6 | Server | May 26 |
+| [CrimsonChatFilter](https://thunderstore.io/c/v-rising/p/skytech6/CrimsonChatFilter/) | 0.1.0 | SkyTech6 | Server | May 26 |
+| [CrimsonDropRate](https://thunderstore.io/c/v-rising/p/skytech6/CrimsonDropRate/) | 0.1.1 | SkyTech6 | Server | May 26 |
 | [GroundItemPickup](https://github.com/skythebro/GroundItemPickup/releases/tag/1.1.0) | 1.1.0 | Skye | SERVER | May 15 |
 | [KillSpiders](https://github.com/skythebro/VRisingKillSpiders/releases/tag/1.5.2) | 1.5.2 | Skye | SERVER | May 12 |
 | [Killfeed](https://github.com/decaprime/Killfeed/releases/tag/v0.1.1) | 0.1.1 | deca | SERVER | May 11 |
 | [KindredArenas](https://github.com/Odjit/KindredArenas/releases/tag/v1.2.0) | 1.2.0 | Odjit | SERVER  | May 23 |
-| [KindredCommands](https://github.com/Odjit/KindredCommands/releases/tag/v1.11.0) | 1.11.0 | Odjit | SERVER  | May 23 |
+| [KindredCommands](https://thunderstore.io/c/v-rising/p/odjit/KindredCommands/) | 1.11.0 | Odjit | SERVER  | May 23 |
 | [KindredLogistics](https://github.com/Odjit/KindredLogistics/releases/tag/V1.0.0) | 1.0.0 | Odjit/Zfolmt | SERVER  | May 19 |
 | [LetHorsesJump](https://github.com/skythebro/LetHorsesJump/releases/tag/0.1.0) | 0.1.0 | Skye | SERVER | May 16 |
-| [ModernCamera](https://github.com/v-rising/ModernCamera/releases/tag/v2.0.0) | 2.0.0 | iZastic/Dimentox | CLIENT | May 23 |
+| [ModernCamera](https://thunderstore.io/c/v-rising/p/vrising/ModernCamera/) | 2.0.0 | iZastic/Dimentox | CLIENT | May 23 |
 | [OfflineRaidGuard](https://github.com/SkyTech6/OfflineRaidGuard/releases/tag/0.1.5) | 0.1.5 | SkyTech6 | SERVER | May 23 |
-| [RemoveVersionWatermark](https://github.com/NodusCursorius/VRising-RemoveVersionWatermark/releases/tag/1.0.3) | 1.0.3 | Nodus Cursorius | CLIENT | May 17 |
+| [RemoveVersionWatermark](https://thunderstore.io/c/v-rising/p/NodusCursorius/RemoveVersionWatermark/) | 1.0.3 | Nodus Cursorius | CLIENT | May 17 |
 | [RemoveVignette](https://github.com/NodusCursorius/vrising-removevignette/releases/tag/1.2.1) | 1.2.1 | Nodus Cursorius | CLIENT | May 17 |
 | [SkanksAIO](https://github.com/skythebro/SkanksAIO/releases/tag/1.6.1) | 1.6.1 | Skye | SERVER | May 23 |
-| [VampireCommandFramework](https://github.com/decaprime/VampireCommandFramework/releases/tag/v0.9.0) | 0.9.0 | deca | SERVER | May 18 |
-| [XPRising](https://github.com/aontas/XPRising/releases/tag/v0.1.9) | 0.1.9 | chino | SERVER | May 26 |
+| [VampireCommandFramework](https://thunderstore.io/c/v-rising/p/deca/VampireCommandFramework/) | 0.9.0 | deca | SERVER | May 18 |
+| [XPRising](https://thunderstore.io/c/v-rising/p/XPRising/XPRising/) | 0.1.9 | chino | SERVER | May 26 |
 
 
 
