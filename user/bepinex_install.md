@@ -7,7 +7,7 @@ parent: For Users
 
 If you're manually installing mods, you need to install BepInEx, you can find it on [thunderstore](https://v-rising.thunderstore.io/package/BepInEx/BepInExPack_V_Rising/). This page guides you through how to unzip the contents and put them in the correct location.
 
-### Inside `BepInExPack_V_Rising_1.668.5.zip`
+### Inside `BepInExPack_V_Rising_1.691.3.zip`
 You will see a folder called `BepInExPack__Rising`, we will be moving the **contents** from folder, not this folder itself:
 
 ![image](https://github.com/decaprime/VRising-Modding/assets/62450933/c9b4c268-41ee-4ef9-86df-861e9b4acbbe)
