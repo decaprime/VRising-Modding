@@ -14,7 +14,6 @@ This version of game libs privately packages the interop changes from above with
 
 ## `.csproj` changes
 ```xml
-...
 
     <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.691" IncludeAssets="compile" />
     <PackageReference Include="BepInEx.Core" Version="6.0.0-be.691" IncludeAssets="compile" />
