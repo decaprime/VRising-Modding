@@ -27,5 +27,4 @@ This version of game libs privately packages the interop changes from above with
 ## Namespace Changes (can find replace)
 `FixedString64` -> `FixedString64Bytes`
 `GetExistingSystem` -> `GetExistingSystemManaged`
-`vworld` -> `core`
 
