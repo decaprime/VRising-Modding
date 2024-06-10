@@ -1,5 +1,5 @@
 ---
-title: Gloomrot Migration Guide
+title: Migration Guide for Gloomrot
 parent: For Developers
 ---
 
