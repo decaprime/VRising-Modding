@@ -1,5 +1,5 @@
 ---
-title: Migration Guide: 1.0 Update 
+title: Migration Guide for 1.0 Update 
 parent: For Developers
 ---
 
