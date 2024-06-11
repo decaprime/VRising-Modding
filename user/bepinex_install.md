@@ -1,6 +1,7 @@
 ---
 title: Manual BepInEx Installation
 parent: For Users
+nav_order: 1
 ---
 
 # Manually installing BepInEx
