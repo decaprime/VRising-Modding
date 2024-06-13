@@ -1,6 +1,7 @@
 ---
 title: Migration Guide for Gloomrot
 parent: For Developers
+nav_exclude: true
 ---
 
 # Migrating plugins for glooomrot
