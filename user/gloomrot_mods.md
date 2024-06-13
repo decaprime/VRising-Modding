@@ -1,6 +1,7 @@
 ---
 title: Gloomrot Mod Status
 parent: For Users
+nav_exclude: true
 ---
 
 ## 🥳 We've released on Thunderstore
