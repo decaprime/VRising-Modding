@@ -1,0 +1,17 @@
+{
+  "Curve_Harvesting_Base_Default": 1865742548,
+  "Curve_Late_Exponential": -2105699851,
+  "Curve_MaterialParameter_Bell": 1834241972,
+  "Curve_MaterialParameter_Upward_QuickEnd": -1955063252,
+  "Curve_MaterialParameter_Upward_QuickStart": 1070677914,
+  "Curve_MaterialParameter_Upward_QuickStartNEnd": -595330675,
+  "Curve_MaterialParameter_Upward_QuickStartNEnd_Dracula": -187583068,
+  "Curve_Stats_Base_Default": -1087456774,
+  "Curve_Stats_Durability_Default": 347547260,
+  "Curve_Stats_PlayerHealth_NPCDamage_Default": -979488854,
+  "Curve_Stats_Trash_Health": 1757681304,
+  "Curve_Stats_Units_Base_LightCurve_Default": -1133129862,
+  "Curve_Stats_Units_Base_Linear_Default": 613328891,
+  "Curve_Stats_Units_Health_Exponential_Default": -595060822,
+  "Curve_Stats_Units_Health_VBlood": 902260803
+}

@@ -1,0 +1,23 @@
+{
+  "FakeItem_AnyFish": 300582272,
+  "FakeItem_AnyFlower": -2101941878,
+  "FakeItem_AnyGem": 1128027535,
+  "FakeItem_AnyGem_T01": -2039337521,
+  "FakeItem_AnyGem_T02": -2099422426,
+  "FakeItem_BloodTracking": -170922187,
+  "FakeItem_FeedPrisoner_BloodSnapper": 526090146,
+  "FakeItem_FeedPrisoner_FatGoby": -811840389,
+  "FakeItem_FeedPrisoner_FierceStinger": -114411609,
+  "FakeItem_FeedPrisoner_GoldenRiverBass": -684874624,
+  "FakeItem_FeedPrisoner_IrradiantGruel": -1798608844,
+  "FakeItem_FeedPrisoner_RainbowTrout": 1814558673,
+  "FakeItem_FeedPrisoner_Rat": 1110550218,
+  "FakeItem_FeedPrisoner_SageFish": 172410251,
+  "FakeItem_FeedPrisoner_SwampDweller": -314251399,
+  "FakeItem_FeedPrisoner_TwilightSnapper": -1205777419,
+  "FakeItem_FlawlessGem_T03": 1613130430,
+  "FakeItem_Prisoner_ExtractedBloodPotion": -1871776321,
+  "FakeItem_Prisoner_ExtractedBloodwine": -1624770558,
+  "FakeItem_Prisoner_ExtractEssence": -911541799,
+  "FakeItem_RegularGem_T02": -36717533
+}

@@ -34,21 +34,52 @@ $code-background-color: #31343f;
 
 .logo {
     display: flex;
+
     img {
         width: 64px;
         height: 64px;
         padding: 5px;
     }
-    .title{
+
+    .title {
         display: flex;
         flex-direction: column;
         align-self: center;
         margin-left: 5px;
-        .top{
+
+        .top {
             @extend .fs-5;
         }
-        .bottom{
+
+        .bottom {
             @extend .fs-6;
         }
+    }
+}
+
+.prefab-list {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .prefab-item {
+        padding: 1em 2em;
+        margin: 0.1em;
+        width: 32%;
+        @media (max-width: 900px) {
+            width: 48%;
+        }
+        @media (max-width: 500px) {
+            width: 100%;
+        }
+        min-width: 100px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        background: $grey-dk-250;
+    }
+    :hover {
+        background: $grey-dk-200;
+    }
+    :active{
+        background: $grey-dk-300;
     }
 }
