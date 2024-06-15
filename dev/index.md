@@ -3,15 +3,16 @@ has_children: true
 title: For Developers
 ---
 
+## Template
+We have a mod template to make getting started easy
 
-# Under Construction
+### Installation
+dotnet new --install VRising.ModTemplate
 
-## Get started with the template
+### Example usage
+dotnet new vrisingmod -n NameOfYourMod --use-vcf --use-bloodstone --description "Description of your mod"
 
-```bash
-dotnet new vrisingmod -n YourMod --use-bloodstone --use-vcf
-```
+This will get you started with a mod named _NameOfYourMod_, using [Bloodstone](./bloodstone.md) and [VCF](https://github.com/decaprime/VampireCommandFramework/) that has a sample server command to uncomment.
 
-This will get you started with a mod named YourMod, using [Bloodstone](./bloodstone.md) and VCF that has a sample server command.
 
 You can reference [open source](./open source.md) and [resources](./resources.md) for more information for now.
