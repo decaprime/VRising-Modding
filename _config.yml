@@ -66,3 +66,8 @@ callouts:
   green:
     title: Note
     color: green
+
+search_enabled: true
+search.heading_level: 4
+search.tokenizer: /[\s/_-]+/
+focus_shortcut_key: 'k'
