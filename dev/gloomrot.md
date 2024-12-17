@@ -2,6 +2,7 @@
 title: Migration Guide for Gloomrot
 parent: For Developers
 nav_exclude: true
+has_toc: false
 ---
 
 # Migrating plugins for glooomrot
