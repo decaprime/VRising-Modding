@@ -1,6 +1,8 @@
 ---
 title: Wetstone -> Bloodstone
 parent: For Developers
+nav_exclude: true
+has_toc: false
 ---
 
 ![bloodstone-banner](https://i.imgur.com/Py0MwUL.png)
