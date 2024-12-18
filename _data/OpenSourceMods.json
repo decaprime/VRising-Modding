@@ -1,0 +1,2348 @@
+[
+    {
+        "name": "KindredCommands",
+        "full_name": "odjit-KindredCommands",
+        "owner": "odjit",
+        "package_url": "https://thunderstore.io/c/v-rising/p/odjit/KindredCommands/",
+        "date_created": "2024-02-15T15:20:57.413979Z",
+        "date_updated": "2024-12-15T01:55:30.938652Z",
+        "uuid4": "985be98a-6228-4327-aa33-975cd19ecdc7",
+        "rating_score": 9,
+        "is_pinned": true,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "KindredCommands",
+                "full_name": "odjit-KindredCommands-2.3.0",
+                "description": "Commands to expand Administration efforts and provide information",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/odjit-KindredCommands-2.3.0.png",
+                "version_number": "2.3.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/odjit/KindredCommands/2.3.0/",
+                "downloads": 122,
+                "date_created": "2024-12-15T01:55:30.610670Z",
+                "website_url": "https://github.com/odjit/KindredCommands",
+                "is_active": true,
+                "uuid4": "9f308f60-2e87-40a7-963e-07cbb132c455",
+                "file_size": 955864
+            }
+        ]
+    },
+    {
+        "name": "r2modman",
+        "full_name": "ebkr-r2modman",
+        "owner": "ebkr",
+        "package_url": "https://thunderstore.io/c/v-rising/p/ebkr/r2modman/",
+        "donation_link": "https://www.mcsuk.org/make-a-donation/",
+        "date_created": "2019-06-05T15:09:31.571563Z",
+        "date_updated": "2024-12-10T22:40:01.991362Z",
+        "uuid4": "f21c391c-0bc5-431d-a233-95323b95e01b",
+        "rating_score": 1016,
+        "is_pinned": true,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "1.0 Update",
+            "Gloomrot Update"
+        ],
+        "versions": [
+            {
+                "name": "r2modman",
+                "full_name": "ebkr-r2modman-3.1.9",
+                "description": "A simple and easy to use mod manager for Risk of Rain 2, Dyson Sphere Program, Valheim and GTFO",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/ebkr-r2modman-3.1.9.png",
+                "version_number": "3.1.9",
+                "dependencies": [],
+                "download_url": "https://thunderstore.io/package/download/ebkr/r2modman/3.1.9/",
+                "downloads": 96221,
+                "date_created": "2021-03-06T01:47:51.126103Z",
+                "website_url": "https://github.com/ebkr/r2modmanPlus",
+                "is_active": true,
+                "uuid4": "9661b257-a500-48a4-8674-99b27b3b8a75",
+                "file_size": 138769707
+            }
+        ]
+    },
+    {
+        "name": "Bloodstone",
+        "full_name": "deca-Bloodstone",
+        "owner": "deca",
+        "package_url": "https://thunderstore.io/c/v-rising/p/deca/Bloodstone/",
+        "date_created": "2023-06-10T23:41:22.636536Z",
+        "date_updated": "2024-05-27T19:33:35.708399Z",
+        "uuid4": "ce4c15c2-14b4-4d6b-a198-c95c499c445d",
+        "rating_score": 13,
+        "is_pinned": true,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Client",
+            "1.0 Update",
+            "Server",
+            "Gloomrot Update",
+            "Mods"
+        ],
+        "versions": [
+            {
+                "name": "Bloodstone",
+                "full_name": "deca-Bloodstone-0.2.2",
+                "description": "Plugin framework and general utilities for V Rising mods.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/deca-Bloodstone-0.2.2.png",
+                "version_number": "0.2.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3"
+                ],
+                "download_url": "https://thunderstore.io/package/download/deca/Bloodstone/0.2.2/",
+                "downloads": 17661,
+                "date_created": "2024-05-27T19:33:35.001812Z",
+                "website_url": "https://github.com/decaprime/Bloodstone",
+                "is_active": true,
+                "uuid4": "4930a07e-fee5-4c11-ac06-2fc7317f48f2",
+                "file_size": 134298
+            }
+        ]
+    },
+    {
+        "name": "VampireCommandFramework",
+        "full_name": "deca-VampireCommandFramework",
+        "owner": "deca",
+        "package_url": "https://thunderstore.io/c/v-rising/p/deca/VampireCommandFramework/",
+        "date_created": "2022-09-17T03:18:28.924732Z",
+        "date_updated": "2024-05-26T17:40:30.597935Z",
+        "uuid4": "aada3765-f2f2-43d1-8ad8-41bb71994674",
+        "rating_score": 12,
+        "is_pinned": true,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update",
+            "Gloomrot Update"
+        ],
+        "versions": [
+            {
+                "name": "VampireCommandFramework",
+                "full_name": "deca-VampireCommandFramework-0.9.0",
+                "description": "Command framework for developers to easily create universal commands for their plugins.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/deca-VampireCommandFramework-0.9.0.png",
+                "version_number": "0.9.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3"
+                ],
+                "download_url": "https://thunderstore.io/package/download/deca/VampireCommandFramework/0.9.0/",
+                "downloads": 18414,
+                "date_created": "2024-05-26T17:40:30.086551Z",
+                "website_url": "https://github.com/decaprime/VampireCommandFramework",
+                "is_active": true,
+                "uuid4": "8cf3fa7f-61db-4ea4-b2f8-0cdc9f11679e",
+                "file_size": 35862
+            }
+        ]
+    },
+    {
+        "name": "BepInExPack_V_Rising",
+        "full_name": "BepInEx-BepInExPack_V_Rising",
+        "owner": "BepInEx",
+        "package_url": "https://thunderstore.io/c/v-rising/p/BepInEx/BepInExPack_V_Rising/",
+        "date_created": "2022-05-25T22:20:22.682148Z",
+        "date_updated": "2024-05-26T13:29:47.271457Z",
+        "uuid4": "b86fcaaf-297a-45c8-82a0-fcbd7806fdc4",
+        "rating_score": 33,
+        "is_pinned": true,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Client",
+            "1.0 Update",
+            "Gloomrot Update"
+        ],
+        "versions": [
+            {
+                "name": "BepInExPack_V_Rising",
+                "full_name": "BepInEx-BepInExPack_V_Rising-1.691.3",
+                "description": "BepInEx pack for V Rising. Preconfigured and includes Unity Base DLLs.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/BepInEx-BepInExPack_V_Rising-1.691.3.png",
+                "version_number": "1.691.3",
+                "dependencies": [],
+                "download_url": "https://thunderstore.io/package/download/BepInEx/BepInExPack_V_Rising/1.691.3/",
+                "downloads": 36418,
+                "date_created": "2024-05-26T13:29:45.862622Z",
+                "website_url": "https://github.com/BepInEx/BepInEx",
+                "is_active": true,
+                "uuid4": "bc6391c3-0d22-41cf-90e7-11b967eb95ad",
+                "file_size": 33378766
+            }
+        ]
+    },
+    {
+        "name": "ServerLaunchFix",
+        "full_name": "Mythic-ServerLaunchFix",
+        "owner": "Mythic",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Mythic/ServerLaunchFix/",
+        "date_created": "2022-06-05T04:06:39.924154Z",
+        "date_updated": "2023-06-13T23:19:59.839004Z",
+        "uuid4": "862ccc11-9625-4b2a-91c8-c6a285b95ef7",
+        "rating_score": 12,
+        "is_pinned": true,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Client",
+            "1.0 Update",
+            "Gloomrot Update"
+        ],
+        "versions": [
+            {
+                "name": "ServerLaunchFix",
+                "full_name": "Mythic-ServerLaunchFix-0.2.0",
+                "description": "Enable mods for single player and host & play",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Mythic-ServerLaunchFix-0.2.0.png",
+                "version_number": "0.2.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.0.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Mythic/ServerLaunchFix/0.2.0/",
+                "downloads": 22951,
+                "date_created": "2023-06-13T23:19:59.510009Z",
+                "website_url": "https://github.com/MythicManiac/VRising",
+                "is_active": true,
+                "uuid4": "85f60f11-29dc-42d1-a726-35a1daf65425",
+                "file_size": 200830
+            }
+        ]
+    },
+    {
+        "name": "CrimsonDice",
+        "full_name": "skytech6-CrimsonDice",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/CrimsonDice/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-12-18T02:09:44.579529Z",
+        "date_updated": "2024-12-18T02:09:47.515543Z",
+        "uuid4": "caa57e5b-adde-4da7-b0ad-f012620d15ce",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "CrimsonDice",
+                "full_name": "skytech6-CrimsonDice-1.0.0",
+                "description": "Dice Chat Roller & Minigames",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-CrimsonDice-1.0.0.png",
+                "version_number": "1.0.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/CrimsonDice/1.0.0/",
+                "downloads": 1,
+                "date_created": "2024-12-18T02:09:47.036161Z",
+                "website_url": "https://github.com/CrimsonMods/CrimsonFAQ/",
+                "is_active": true,
+                "uuid4": "0751c922-82cd-46ce-b68f-524e3fe9a3e7",
+                "file_size": 135953
+            }
+        ]
+    },
+    {
+        "name": "CrimsonClans",
+        "full_name": "skytech6-CrimsonClans",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/CrimsonClans/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-12-09T03:12:30.858274Z",
+        "date_updated": "2024-12-15T23:03:00.993877Z",
+        "uuid4": "75195393-896b-4722-ac9b-0e7937492432",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "CrimsonClans",
+                "full_name": "skytech6-CrimsonClans-1.1.1",
+                "description": "Extension to Clans: Hearts per Clan and more!",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-CrimsonClans-1.1.1.png",
+                "version_number": "1.1.1",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/CrimsonClans/1.1.1/",
+                "downloads": 5,
+                "date_created": "2024-12-15T23:03:00.603321Z",
+                "website_url": "https://github.com/CrimsonMods/CrimsonClans/",
+                "is_active": true,
+                "uuid4": "6fafb88d-0229-4bf2-b6db-20fc96447a70",
+                "file_size": 110172
+            }
+        ]
+    },
+    {
+        "name": "CrimsonChatFilter",
+        "full_name": "skytech6-CrimsonChatFilter",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/CrimsonChatFilter/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-05-27T19:42:20.689246Z",
+        "date_updated": "2024-12-14T00:08:49.551768Z",
+        "uuid4": "adb01917-46e2-43cb-9ebd-7262859869f8",
+        "rating_score": 2,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "CrimsonChatFilter",
+                "full_name": "skytech6-CrimsonChatFilter-1.0.5",
+                "description": "Automated Moderation for Server Chat",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-CrimsonChatFilter-1.0.5.png",
+                "version_number": "1.0.5",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/CrimsonChatFilter/1.0.5/",
+                "downloads": 5,
+                "date_created": "2024-12-14T00:08:49.135538Z",
+                "website_url": "https://github.com/SkyTech6/CrimsonChatFilter",
+                "is_active": true,
+                "uuid4": "3cbcf50f-f533-476e-bb58-e7a8efb152d3",
+                "file_size": 144248
+            }
+        ]
+    },
+    {
+        "name": "CrimsonBanned",
+        "full_name": "skytech6-CrimsonBanned",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/CrimsonBanned/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-12-13T03:02:36.858652Z",
+        "date_updated": "2024-12-13T03:02:39.930114Z",
+        "uuid4": "e71d63a4-4f00-4a35-bb84-adf5809b735e",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "CrimsonBanned",
+                "full_name": "skytech6-CrimsonBanned-1.2.0",
+                "description": "Ban Moderation Tool: Chat, Voice, Server",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-CrimsonBanned-1.2.0.png",
+                "version_number": "1.2.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/CrimsonBanned/1.2.0/",
+                "downloads": 11,
+                "date_created": "2024-12-13T03:02:39.373293Z",
+                "website_url": "https://github.com/CrimsonMods/CrimsonFAQ/",
+                "is_active": true,
+                "uuid4": "555e82f2-4594-428b-8c30-ff92eef02198",
+                "file_size": 152790
+            }
+        ]
+    },
+    {
+        "name": "CrimsonFAQ",
+        "full_name": "skytech6-CrimsonFAQ",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/CrimsonFAQ/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-09-19T17:33:23.346087Z",
+        "date_updated": "2024-12-12T16:21:54.985828Z",
+        "uuid4": "3f599929-4e7f-49a3-9a9b-ebe5f3d21c56",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "CrimsonFAQ",
+                "full_name": "skytech6-CrimsonFAQ-1.1.2",
+                "description": "AutoResponse System",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-CrimsonFAQ-1.1.2.png",
+                "version_number": "1.1.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/CrimsonFAQ/1.1.2/",
+                "downloads": 10,
+                "date_created": "2024-12-12T16:21:54.465381Z",
+                "website_url": "https://github.com/CrimsonMods/CrimsonFAQ/",
+                "is_active": true,
+                "uuid4": "7c8ee1b6-b45f-420a-a9c9-9879f3f1e86c",
+                "file_size": 132391
+            }
+        ]
+    },
+    {
+        "name": "CrimsonDropRate",
+        "full_name": "skytech6-CrimsonDropRate",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/CrimsonDropRate/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-05-27T18:45:55.355384Z",
+        "date_updated": "2024-12-12T12:01:04.501138Z",
+        "uuid4": "9c3b3dc5-7138-4083-bf39-550e8cb7f11e",
+        "rating_score": 4,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "CrimsonDropRate",
+                "full_name": "skytech6-CrimsonDropRate-1.0.2",
+                "description": "Modifies the item group drop rate, not the item quantity drop",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-CrimsonDropRate-1.0.2.png",
+                "version_number": "1.0.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/CrimsonDropRate/1.0.2/",
+                "downloads": 20,
+                "date_created": "2024-12-12T12:01:04.061296Z",
+                "website_url": "https://github.com/CrimsonMods/CrimsonDropRate/",
+                "is_active": true,
+                "uuid4": "6ddc15fd-463c-4bf0-9f57-fd43f0adca8a",
+                "file_size": 149458
+            }
+        ]
+    },
+    {
+        "name": "CrimsonSQL",
+        "full_name": "skytech6-CrimsonSQL",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/CrimsonSQL/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-11-26T17:54:46.691387Z",
+        "date_updated": "2024-12-12T01:15:49.459856Z",
+        "uuid4": "731ce07c-81ca-4338-8b56-625b395dc0ba",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "CrimsonSQL",
+                "full_name": "skytech6-CrimsonSQL-1.3.2",
+                "description": "Framework for Interfacing MySQL",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-CrimsonSQL-1.3.2.png",
+                "version_number": "1.3.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/CrimsonSQL/1.3.2/",
+                "downloads": 8,
+                "date_created": "2024-12-12T01:15:48.868382Z",
+                "website_url": "https://github.com/CrimsonMods/CrimsonSQL/",
+                "is_active": true,
+                "uuid4": "00fc2dfb-71d4-434f-a8a8-7722b0489aa4",
+                "file_size": 1259497
+            }
+        ]
+    },
+    {
+        "name": "JSONRising",
+        "full_name": "skytech6-JSONRising",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/JSONRising/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-12-09T03:23:59.423751Z",
+        "date_updated": "2024-12-09T07:37:05.560334Z",
+        "uuid4": "c7e2d964-4ce6-48c1-9ae7-31d657212f4d",
+        "rating_score": 2,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Tools",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "JSONRising",
+                "full_name": "skytech6-JSONRising-0.1.18",
+                "description": "GUI JSON Editor for V Rising Mods",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-JSONRising-0.1.18.png",
+                "version_number": "0.1.18",
+                "dependencies": [],
+                "download_url": "https://thunderstore.io/package/download/skytech6/JSONRising/0.1.18/",
+                "downloads": 20,
+                "date_created": "2024-12-09T07:37:04.423477Z",
+                "website_url": "https://github.com/CrimsonMods/JSONRising/",
+                "is_active": true,
+                "uuid4": "7cad9bf0-d533-4ede-b1ff-fd544bb0e738",
+                "file_size": 14166021
+            }
+        ]
+    },
+    {
+        "name": "AutoBrazier",
+        "full_name": "skytech6-AutoBrazier",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/AutoBrazier/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-05-28T01:51:24.087295Z",
+        "date_updated": "2024-12-05T16:09:34.836928Z",
+        "uuid4": "5ec51bfa-3999-4a3c-8494-c59b830bc4c6",
+        "rating_score": 8,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "AutoBrazier",
+                "full_name": "skytech6-AutoBrazier-1.0.3",
+                "description": "Automatically turn braziers on/off with day/night cycle",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-AutoBrazier-1.0.3.png",
+                "version_number": "1.0.3",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/AutoBrazier/1.0.3/",
+                "downloads": 357,
+                "date_created": "2024-12-05T16:09:34.231848Z",
+                "website_url": "https://github.com/SkyTech6/AutoBrazier",
+                "is_active": true,
+                "uuid4": "a78c69e1-d1b7-4332-9d71-48d8222aa91a",
+                "file_size": 135049
+            }
+        ]
+    },
+    {
+        "name": "CrimsonMoon",
+        "full_name": "skytech6-CrimsonMoon",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/CrimsonMoon/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-07-13T18:15:51.790001Z",
+        "date_updated": "2024-12-04T15:38:39.391327Z",
+        "uuid4": "623f2da9-5713-4bf0-b7f7-ac9665dceab0",
+        "rating_score": 4,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "CrimsonMoon",
+                "full_name": "skytech6-CrimsonMoon-0.2.0",
+                "description": "A sacraficial alter to praise the moon! Honor it in return for a blood moon!",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-CrimsonMoon-0.2.0.png",
+                "version_number": "0.2.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/CrimsonMoon/0.2.0/",
+                "downloads": 139,
+                "date_created": "2024-12-04T15:38:38.901723Z",
+                "website_url": "https://github.com/CrimsonMods/CrimsonMoon/",
+                "is_active": true,
+                "uuid4": "1915601c-af5a-4e56-b1ec-b34bb8752884",
+                "file_size": 122626
+            }
+        ]
+    },
+    {
+        "name": "ClientUI",
+        "full_name": "XPRising-ClientUI",
+        "owner": "XPRising",
+        "package_url": "https://thunderstore.io/c/v-rising/p/XPRising/ClientUI/",
+        "date_created": "2024-08-16T08:01:30.033432Z",
+        "date_updated": "2024-11-10T13:16:25.882121Z",
+        "uuid4": "5041c2e9-5bf1-452c-bca9-32c441663696",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "ClientUI",
+                "full_name": "XPRising-ClientUI-0.3.9",
+                "description": "ClientUI to display progress bars for XP mods",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/XPRising-ClientUI-0.3.9.png",
+                "version_number": "0.3.9",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "deca-Bloodstone-0.2.2",
+                    "XPRising-XPShared-0.3.9"
+                ],
+                "download_url": "https://thunderstore.io/package/download/XPRising/ClientUI/0.3.9/",
+                "downloads": 384,
+                "date_created": "2024-11-10T13:16:25.210668Z",
+                "website_url": "https://github.com/aontas/XPRising",
+                "is_active": true,
+                "uuid4": "bd1ca5de-8536-4d1b-b523-1fdd0a1f2dd0",
+                "file_size": 88345
+            }
+        ]
+    },
+    {
+        "name": "XPRising",
+        "full_name": "XPRising-XPRising",
+        "owner": "XPRising",
+        "package_url": "https://thunderstore.io/c/v-rising/p/XPRising/XPRising/",
+        "date_created": "2024-05-27T17:19:18.435809Z",
+        "date_updated": "2024-11-10T13:16:18.745614Z",
+        "uuid4": "c6363c13-bb32-4a17-a9b4-4b80046c2ad9",
+        "rating_score": 6,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "XPRising",
+                "full_name": "XPRising-XPRising-0.3.9",
+                "description": "Server mod that exchanges item gear level for an XP levelling system",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/XPRising-XPRising-0.3.9.png",
+                "version_number": "0.3.9",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "deca-Bloodstone-0.2.2",
+                    "XPRising-XPShared-0.3.9"
+                ],
+                "download_url": "https://thunderstore.io/package/download/XPRising/XPRising/0.3.9/",
+                "downloads": 420,
+                "date_created": "2024-11-10T13:16:18.201139Z",
+                "website_url": "https://github.com/aontas/XPRising",
+                "is_active": true,
+                "uuid4": "c20dc255-e1b8-4446-9cb9-f72031306bae",
+                "file_size": 326614
+            }
+        ]
+    },
+    {
+        "name": "XPShared",
+        "full_name": "XPRising-XPShared",
+        "owner": "XPRising",
+        "package_url": "https://thunderstore.io/c/v-rising/p/XPRising/XPShared/",
+        "date_created": "2024-08-16T08:01:16.359349Z",
+        "date_updated": "2024-11-10T13:16:11.137055Z",
+        "uuid4": "6146ae3c-7e3f-4837-bc64-74bfe089aa43",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "Client",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "XPShared",
+                "full_name": "XPRising-XPShared-0.3.9",
+                "description": "Mod to enable communication between XPRising and XPRising.ClientUI",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/XPRising-XPShared-0.3.9.png",
+                "version_number": "0.3.9",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "deca-Bloodstone-0.2.2"
+                ],
+                "download_url": "https://thunderstore.io/package/download/XPRising/XPShared/0.3.9/",
+                "downloads": 488,
+                "date_created": "2024-11-10T13:16:10.571230Z",
+                "website_url": "https://github.com/aontas/XPRising",
+                "is_active": true,
+                "uuid4": "7a6067ec-4b92-4705-9713-2e819881c153",
+                "file_size": 42749
+            }
+        ]
+    },
+    {
+        "name": "CrimsonLog",
+        "full_name": "skytech6-CrimsonLog",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/CrimsonLog/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-08-19T16:54:46.510468Z",
+        "date_updated": "2024-11-08T22:50:13.051483Z",
+        "uuid4": "ded8687a-eda5-4f61-90fe-69525862d9c1",
+        "rating_score": 2,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "CrimsonLog",
+                "full_name": "skytech6-CrimsonLog-1.1.0",
+                "description": "Logging for Moderation",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-CrimsonLog-1.1.0.png",
+                "version_number": "1.1.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-Bloodstone-0.2.2"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/CrimsonLog/1.1.0/",
+                "downloads": 74,
+                "date_created": "2024-11-08T22:50:12.329070Z",
+                "website_url": "https://github.com/CrimsonMods/CrimsonLog/",
+                "is_active": true,
+                "uuid4": "8749753c-0d59-4d08-bb0b-f4259e1202fa",
+                "file_size": 148853
+            }
+        ]
+    },
+    {
+        "name": "Eclipse",
+        "full_name": "zfolmt-Eclipse",
+        "owner": "zfolmt",
+        "package_url": "https://thunderstore.io/c/v-rising/p/zfolmt/Eclipse/",
+        "date_created": "2024-09-29T02:49:39.563122Z",
+        "date_updated": "2024-11-07T17:35:20.137609Z",
+        "uuid4": "d4229452-6768-460a-a4fd-ac727be2c3df",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Mods",
+            "Client",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "Eclipse",
+                "full_name": "zfolmt-Eclipse-1.1.2",
+                "description": "Client companion mod for Bloodcraft!",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/zfolmt-Eclipse-1.1.2.png",
+                "version_number": "1.1.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3"
+                ],
+                "download_url": "https://thunderstore.io/package/download/zfolmt/Eclipse/1.1.2/",
+                "downloads": 881,
+                "date_created": "2024-11-07T17:35:19.357837Z",
+                "website_url": "https://github.com/mfoltz/Eclipse",
+                "is_active": true,
+                "uuid4": "bcd5d63d-7272-4697-95da-666de7187b27",
+                "file_size": 121999
+            }
+        ]
+    },
+    {
+        "name": "TLBVRisingPack",
+        "full_name": "TheLostBoys-TLBVRisingPack",
+        "owner": "TheLostBoys",
+        "package_url": "https://thunderstore.io/c/v-rising/p/TheLostBoys/TLBVRisingPack/",
+        "date_created": "2024-10-20T21:55:39.896216Z",
+        "date_updated": "2024-10-20T21:55:41.959945Z",
+        "uuid4": "14e18c6a-d6cb-4a67-9668-3b1101cf743a",
+        "rating_score": 0,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Client",
+            "1.0 Update",
+            "Server",
+            "Tools",
+            "Mods"
+        ],
+        "versions": [
+            {
+                "name": "TLBVRisingPack",
+                "full_name": "TheLostBoys-TLBVRisingPack-1.0.0",
+                "description": "Modpack for The Lost Boys Discord Group for Real Gamers",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/TheLostBoys-TLBVRisingPack-1.0.0.png",
+                "version_number": "1.0.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-Bloodstone-0.2.2",
+                    "NodusCursorius-RemoveVersionWatermark-1.0.3",
+                    "Mythic-ServerLaunchFix-0.2.0",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "skytech6-CrimsonFOV-0.2.0",
+                    "Trodi-BloodyCore-1.2.4",
+                    "skytech6-AutoBrazier-0.2.1",
+                    "Midon-AutoCloseDoors-2.0.2",
+                    "iZastic-QuickStash-1.3.3",
+                    "iZastic-IntroSkip-1.0.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/TheLostBoys/TLBVRisingPack/1.0.0/",
+                "downloads": 77,
+                "date_created": "2024-10-20T21:55:41.551670Z",
+                "website_url": "",
+                "is_active": true,
+                "uuid4": "1b99a2bf-c1a7-42e2-a84a-b5d4cec68571",
+                "file_size": 46599
+            }
+        ]
+    },
+    {
+        "name": "Bloodcraft",
+        "full_name": "zfolmt-Bloodcraft",
+        "owner": "zfolmt",
+        "package_url": "https://thunderstore.io/c/v-rising/p/zfolmt/Bloodcraft/",
+        "date_created": "2024-05-27T21:55:02.767038Z",
+        "date_updated": "2024-10-05T01:48:09.203191Z",
+        "uuid4": "c75bb82f-9633-488b-821b-92c855ca0351",
+        "rating_score": 11,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "Bloodcraft",
+                "full_name": "zfolmt-Bloodcraft-1.4.2",
+                "description": "Leveling, expertise, legacies, professions, familiars, classes, quests!",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/zfolmt-Bloodcraft-1.4.2.png",
+                "version_number": "1.4.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/zfolmt/Bloodcraft/1.4.2/",
+                "downloads": 2952,
+                "date_created": "2024-10-05T01:48:08.185922Z",
+                "website_url": "https://github.com/mfoltz/Bloodcraft",
+                "is_active": true,
+                "uuid4": "881d65e4-9b7d-48d6-877e-4eb638eb4e40",
+                "file_size": 5356070
+            }
+        ]
+    },
+    {
+        "name": "KindredLogistics",
+        "full_name": "Kindred-KindredLogistics",
+        "owner": "Kindred",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Kindred/KindredLogistics/",
+        "date_created": "2024-05-28T03:01:21.819231Z",
+        "date_updated": "2024-09-21T04:16:30.428708Z",
+        "uuid4": "e1a6f925-99ab-4eeb-a9ac-6109a903a6d7",
+        "rating_score": 13,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "KindredLogistics",
+                "full_name": "Kindred-KindredLogistics-1.2.0",
+                "description": "Inventory management mod. Stashing, craftpulling, finding chests, etc.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Kindred-KindredLogistics-1.2.0.png",
+                "version_number": "1.2.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Kindred/KindredLogistics/1.2.0/",
+                "downloads": 3101,
+                "date_created": "2024-09-21T04:16:29.973896Z",
+                "website_url": "https://github.com/Odjit/KindredLogistics",
+                "is_active": true,
+                "uuid4": "6dfe9cfc-88a2-4e73-94b7-37cf85d47d47",
+                "file_size": 459934
+            }
+        ]
+    },
+    {
+        "name": "KindredSchematics",
+        "full_name": "odjit-KindredSchematics",
+        "owner": "odjit",
+        "package_url": "https://thunderstore.io/c/v-rising/p/odjit/KindredSchematics/",
+        "date_created": "2024-06-23T18:38:38.767660Z",
+        "date_updated": "2024-09-18T20:55:30.529979Z",
+        "uuid4": "b60862e0-ae93-4e81-b75b-80b8d22c843c",
+        "rating_score": 4,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "KindredSchematics",
+                "full_name": "odjit-KindredSchematics-1.2.2",
+                "description": "Commands to build, create, save and load schematics",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/odjit-KindredSchematics-1.2.2.png",
+                "version_number": "1.2.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/odjit/KindredSchematics/1.2.2/",
+                "downloads": 685,
+                "date_created": "2024-09-18T20:55:30.009840Z",
+                "website_url": "https://github.com/odjit/KindredSchematics",
+                "is_active": true,
+                "uuid4": "58af702e-342f-437f-a629-666f19fa5d80",
+                "file_size": 193675
+            }
+        ]
+    },
+    {
+        "name": "OfflineRaidGuard",
+        "full_name": "skytech6-OfflineRaidGuard",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/OfflineRaidGuard/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-05-28T01:07:10.148935Z",
+        "date_updated": "2024-09-17T23:06:17.273881Z",
+        "uuid4": "322cf36d-4d3b-4fa9-844e-751d6723c22f",
+        "rating_score": 3,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "OfflineRaidGuard",
+                "full_name": "skytech6-OfflineRaidGuard-0.2.3",
+                "description": "Stops offline raiding, scopes to either clan or player requirements",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-OfflineRaidGuard-0.2.3.png",
+                "version_number": "0.2.3",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-Bloodstone-0.2.2",
+                    "Trodi-BloodyCore-1.2.4"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/OfflineRaidGuard/0.2.3/",
+                "downloads": 104,
+                "date_created": "2024-09-17T23:06:16.796001Z",
+                "website_url": "https://github.com/SkyTech6/OfflineRaidGuard",
+                "is_active": true,
+                "uuid4": "d50ed20a-76f4-4481-aee6-846ebb1cd48f",
+                "file_size": 97472
+            }
+        ]
+    },
+    {
+        "name": "Gator_Bounty",
+        "full_name": "Gator-Gator_Bounty",
+        "owner": "Gator",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Gator/Gator_Bounty/",
+        "date_created": "2024-09-01T13:00:24.534828Z",
+        "date_updated": "2024-09-01T13:08:22.547140Z",
+        "uuid4": "276c553c-cf91-4689-a2bf-16ce547e555d",
+        "rating_score": 0,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "Gator_Bounty",
+                "full_name": "Gator-Gator_Bounty-1.0.1",
+                "description": "Bounty System for VRising",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Gator-Gator_Bounty-1.0.1.png",
+                "version_number": "1.0.1",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "deca-Bloodstone-0.2.2",
+                    "deca-Killfeed-0.3.1",
+                    "Trodi-BloodyCore-1.2.4"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Gator/Gator_Bounty/1.0.1/",
+                "downloads": 295,
+                "date_created": "2024-09-01T13:08:21.989241Z",
+                "website_url": "https://github.com/tmsullivan7750/GatorBounty",
+                "is_active": true,
+                "uuid4": "69a7d15a-fdfe-4d9d-bf0e-697bbb8b7866",
+                "file_size": 67391
+            }
+        ]
+    },
+    {
+        "name": "KindredPortals",
+        "full_name": "odjit-KindredPortals",
+        "owner": "odjit",
+        "package_url": "https://thunderstore.io/c/v-rising/p/odjit/KindredPortals/",
+        "date_created": "2024-06-30T23:14:45.008636Z",
+        "date_updated": "2024-08-18T18:26:40.563266Z",
+        "uuid4": "90dc01f7-79eb-45af-8b70-c9cdd49347e9",
+        "rating_score": 3,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "KindredPortals",
+                "full_name": "odjit-KindredPortals-1.0.2",
+                "description": "Expand your V Rising fast travel options. Also Map Icons",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/odjit-KindredPortals-1.0.2.png",
+                "version_number": "1.0.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/odjit/KindredPortals/1.0.2/",
+                "downloads": 1317,
+                "date_created": "2024-08-18T18:26:40.053932Z",
+                "website_url": "https://github.com/odjit/KindredPortals",
+                "is_active": true,
+                "uuid4": "d3cedf96-b590-429b-9cfa-507d6c34bf71",
+                "file_size": 158088
+            }
+        ]
+    },
+    {
+        "name": "BloodyBoss",
+        "full_name": "Trodi-BloodyBoss",
+        "owner": "Trodi",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Trodi/BloodyBoss/",
+        "date_created": "2024-05-27T21:02:57.167651Z",
+        "date_updated": "2024-07-28T21:38:10.070223Z",
+        "uuid4": "4822e8f2-f0e0-4569-94de-1c29f953e066",
+        "rating_score": 4,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "BloodyBoss",
+                "full_name": "Trodi-BloodyBoss-1.1.9",
+                "description": "BloodyBoss is a mod for V Rising that allows you to create VBlood world bosses with random rewards that can be set for each of the world bosses.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Trodi-BloodyBoss-1.1.9.png",
+                "version_number": "1.1.9",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.668.5",
+                    "deca-Bloodstone-0.2.2",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "Trodi-BloodyCore-1.2.4"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Trodi/BloodyBoss/1.1.9/",
+                "downloads": 97,
+                "date_created": "2024-06-13T18:33:37.777624Z",
+                "website_url": "https://github.com/oscarpedrero/BloodyBoss",
+                "is_active": true,
+                "uuid4": "2f2755d3-2162-4f5d-9442-7fd8406cc2fe",
+                "file_size": 126908
+            }
+        ]
+    },
+    {
+        "name": "CrimsonQuest",
+        "full_name": "skytech6-CrimsonQuest",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/CrimsonQuest/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-07-13T19:52:06.873360Z",
+        "date_updated": "2024-07-22T14:23:11.930728Z",
+        "uuid4": "85a459c5-f3c1-4db2-91f2-84b31567a0e3",
+        "rating_score": 2,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "CrimsonQuest",
+                "full_name": "skytech6-CrimsonQuest-0.1.1",
+                "description": "Questing System",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-CrimsonQuest-0.1.1.png",
+                "version_number": "0.1.1",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-Bloodstone-0.2.2",
+                    "Trodi-BloodyCore-1.2.4"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/CrimsonQuest/0.1.1/",
+                "downloads": 660,
+                "date_created": "2024-07-22T14:23:11.081165Z",
+                "website_url": "https://github.com/CrimsonMods/CrimsonQuest/",
+                "is_active": true,
+                "uuid4": "75cb0ed8-88d0-4de3-8d72-e88a04f1529c",
+                "file_size": 144829
+            }
+        ]
+    },
+    {
+        "name": "Sanguis",
+        "full_name": "zfolmt-Sanguis",
+        "owner": "zfolmt",
+        "package_url": "https://thunderstore.io/c/v-rising/p/zfolmt/Sanguis/",
+        "date_created": "2024-06-06T05:03:07.923292Z",
+        "date_updated": "2024-07-17T15:22:18.636740Z",
+        "uuid4": "a9ac770e-1230-421f-a4ce-b52411dc7dd7",
+        "rating_score": 2,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "Sanguis",
+                "full_name": "zfolmt-Sanguis-1.0.0",
+                "description": "Reward players for being online with optional daily login bonus!",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/zfolmt-Sanguis-1.0.0.png",
+                "version_number": "1.0.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/zfolmt/Sanguis/1.0.0/",
+                "downloads": 647,
+                "date_created": "2024-07-17T15:22:18.054489Z",
+                "website_url": "https://github.com/mfoltz/Sanguis",
+                "is_active": true,
+                "uuid4": "4de2d431-5d8d-400c-8f4f-ddadbef7222d",
+                "file_size": 499065
+            }
+        ]
+    },
+    {
+        "name": "BloodyEncounters",
+        "full_name": "Trodi-BloodyEncounters",
+        "owner": "Trodi",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Trodi/BloodyEncounters/",
+        "date_created": "2023-11-12T13:08:03.208454Z",
+        "date_updated": "2024-07-17T07:38:19.138424Z",
+        "uuid4": "88de9277-10ec-4050-8f29-7841830cf012",
+        "rating_score": 4,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Client",
+            "1.0 Update",
+            "Server",
+            "Gloomrot Update",
+            "Mods"
+        ],
+        "versions": [
+            {
+                "name": "BloodyEncounters",
+                "full_name": "Trodi-BloodyEncounters-3.0.0",
+                "description": "A server side mod for V Rising which spawns a random NPC near a random online player at random intervals, and the player wins a random item reward if the NPC is killed within the given time limit.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Trodi-BloodyEncounters-3.0.0.png",
+                "version_number": "3.0.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.668.5",
+                    "deca-Bloodstone-0.2.2",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "Trodi-BloodyCore-1.2.4"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Trodi/BloodyEncounters/3.0.0/",
+                "downloads": 1116,
+                "date_created": "2024-07-17T07:38:18.560819Z",
+                "website_url": "https://github.com/oscarpedrero/BloodyEncounters",
+                "is_active": true,
+                "uuid4": "cc3a2815-138b-4d10-9824-acec3bb64f70",
+                "file_size": 84173
+            }
+        ]
+    },
+    {
+        "name": "BloodyWallet",
+        "full_name": "Trodi-BloodyWallet",
+        "owner": "Trodi",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Trodi/BloodyWallet/",
+        "date_created": "2024-06-04T21:41:51.520680Z",
+        "date_updated": "2024-07-16T17:38:49.750649Z",
+        "uuid4": "ecf7b486-aa2b-4d0e-ba8f-8c3f667f3753",
+        "rating_score": 2,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "BloodyWallet",
+                "full_name": "Trodi-BloodyWallet-0.1.2",
+                "description": "This framework is designed to add a virtual currency to VRising. This opens up a world of possibilities for other mods to integrate with it and serve as a bridge for other mods to use this functionality.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Trodi-BloodyWallet-0.1.2.png",
+                "version_number": "0.1.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.668.5",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "Trodi-BloodyCore-1.2.4"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Trodi/BloodyWallet/0.1.2/",
+                "downloads": 996,
+                "date_created": "2024-07-16T17:38:49.212688Z",
+                "website_url": "https://github.com/oscarpedrero/BloodyWallet",
+                "is_active": true,
+                "uuid4": "9cb852bb-53d8-4522-b0a3-734cebd41f1a",
+                "file_size": 147372
+            }
+        ]
+    },
+    {
+        "name": "CrimsonHunt",
+        "full_name": "skytech6-CrimsonHunt",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/CrimsonHunt/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-07-13T19:02:16.705367Z",
+        "date_updated": "2024-07-13T19:02:20.026602Z",
+        "uuid4": "26181543-5f11-4c23-8b8c-5b2356f73546",
+        "rating_score": 3,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "CrimsonHunt",
+                "full_name": "skytech6-CrimsonHunt-0.1.0",
+                "description": "Create battle-pass like rewards for V Blood hunting",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-CrimsonHunt-0.1.0.png",
+                "version_number": "0.1.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-Bloodstone-0.2.2",
+                    "Trodi-BloodyCore-1.2.4"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/CrimsonHunt/0.1.0/",
+                "downloads": 556,
+                "date_created": "2024-07-13T19:02:19.576283Z",
+                "website_url": "https://github.com/CrimsonMods/CrimsonHunt/",
+                "is_active": true,
+                "uuid4": "628ed2cf-87ee-4670-9cac-c87666b233da",
+                "file_size": 156304
+            }
+        ]
+    },
+    {
+        "name": "Protector",
+        "full_name": "GoDMod-Protector",
+        "owner": "GoDMod",
+        "package_url": "https://thunderstore.io/c/v-rising/p/GoDMod/Protector/",
+        "date_created": "2024-07-10T16:33:39.613675Z",
+        "date_updated": "2024-07-10T16:33:43.884836Z",
+        "uuid4": "1c59fac6-b32f-47f1-a0c5-89c238a4c36f",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "Protector",
+                "full_name": "GoDMod-Protector-0.1.10",
+                "description": "Whitelist based access control for V Rising",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/GoDMod-Protector-0.1.10.png",
+                "version_number": "0.1.10",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/GoDMod/Protector/0.1.10/",
+                "downloads": 131,
+                "date_created": "2024-07-10T16:33:43.307144Z",
+                "website_url": "https://github.com/iiiLollo/Protector",
+                "is_active": true,
+                "uuid4": "df007019-e7af-4adf-a665-b97b851e911e",
+                "file_size": 129751
+            }
+        ]
+    },
+    {
+        "name": "RaidGuard",
+        "full_name": "zfolmt-RaidGuard",
+        "owner": "zfolmt",
+        "package_url": "https://thunderstore.io/c/v-rising/p/zfolmt/RaidGuard/",
+        "date_created": "2024-06-26T10:45:17.130560Z",
+        "date_updated": "2024-07-05T01:50:43.164428Z",
+        "uuid4": "e69d6dea-0105-4fbd-9605-8fbaccfae285",
+        "rating_score": 0,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "RaidGuard",
+                "full_name": "zfolmt-RaidGuard-1.0.2",
+                "description": "Highly discourages teaming during active castle raids with optional alliance features.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/zfolmt-RaidGuard-1.0.2.png",
+                "version_number": "1.0.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/zfolmt/RaidGuard/1.0.2/",
+                "downloads": 182,
+                "date_created": "2024-07-05T01:50:42.789965Z",
+                "website_url": "https://github.com/mfoltz/RaidGuard",
+                "is_active": true,
+                "uuid4": "c388b8da-c1ab-4d52-b4ea-1f3fa1f22675",
+                "file_size": 123544
+            }
+        ]
+    },
+    {
+        "name": "BloodyRewards",
+        "full_name": "Trodi-BloodyRewards",
+        "owner": "Trodi",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Trodi/BloodyRewards/",
+        "date_created": "2024-05-27T21:31:22.943146Z",
+        "date_updated": "2024-06-24T18:52:09.670589Z",
+        "uuid4": "83a57cab-9694-4083-87ea-2daa097aac78",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "BloodyRewards",
+                "full_name": "Trodi-BloodyRewards-1.0.9",
+                "description": "Rewards System for VRising.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Trodi-BloodyRewards-1.0.9.png",
+                "version_number": "1.0.9",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.668.5",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "Trodi-BloodyCore-1.2.4",
+                    "Trodi-BloodyWallet-0.1.1"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Trodi/BloodyRewards/1.0.9/",
+                "downloads": 64,
+                "date_created": "2024-06-14T18:47:22.205319Z",
+                "website_url": "https://github.com/oscarpedrero/BloodyRewards",
+                "is_active": true,
+                "uuid4": "41c7ec1d-c6fc-4a86-a86e-8a74de873a45",
+                "file_size": 120661
+            }
+        ]
+    },
+    {
+        "name": "SoulPvEServerClientModPack1",
+        "full_name": "SoulVRising-SoulPvEServerClientModPack1",
+        "owner": "SoulVRising",
+        "package_url": "https://thunderstore.io/c/v-rising/p/SoulVRising/SoulPvEServerClientModPack1/",
+        "date_created": "2023-08-29T20:09:44.470632Z",
+        "date_updated": "2024-06-17T20:15:16.092407Z",
+        "uuid4": "06f517e8-491a-458f-9c60-582329574367",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Client",
+            "1.0 Update",
+            "Server",
+            "Tools",
+            "Gloomrot Update",
+            "Mods"
+        ],
+        "versions": [
+            {
+                "name": "SoulPvEServerClientModPack1",
+                "full_name": "SoulVRising-SoulPvEServerClientModPack1-1.0.9",
+                "description": "All Client Sided Mods For Soul PvE server.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/SoulVRising-SoulPvEServerClientModPack1-1.0.9.png",
+                "version_number": "1.0.9",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-Bloodstone-0.2.2",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "Trodi-BloodyCore-1.2.4",
+                    "Trodi-BloodyShop-1.0.2",
+                    "Trodi-BloodyEncounters-2.0.7",
+                    "vrising-ModernCamera-2.0.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/SoulVRising/SoulPvEServerClientModPack1/1.0.9/",
+                "downloads": 244,
+                "date_created": "2024-06-17T20:15:15.588548Z",
+                "website_url": "https://discord.gg/4rjARBsUGn",
+                "is_active": true,
+                "uuid4": "d1441e18-9a1d-4622-abac-835c3b2b247b",
+                "file_size": 78189
+            }
+        ]
+    },
+    {
+        "name": "JewelCreator",
+        "full_name": "Rianaid-JewelCreator",
+        "owner": "Rianaid",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Rianaid/JewelCreator/",
+        "date_created": "2024-06-03T15:59:28.194382Z",
+        "date_updated": "2024-06-15T01:49:10.568475Z",
+        "uuid4": "81e3e03d-5cdc-4307-880e-d77d53db1af0",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "JewelCreator",
+                "full_name": "Rianaid-JewelCreator-0.1.2",
+                "description": "Server side only mod that allows you to create your own jewels with your chosen skill and skill modifier.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Rianaid-JewelCreator-0.1.2.png",
+                "version_number": "0.1.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Rianaid/JewelCreator/0.1.2/",
+                "downloads": 1471,
+                "date_created": "2024-06-15T01:49:09.252665Z",
+                "website_url": "https://github.com/Rianaid/JewelCreator",
+                "is_active": true,
+                "uuid4": "9e8a5e30-e2ac-4648-ad85-41c8bc84c403",
+                "file_size": 93107
+            }
+        ]
+    },
+    {
+        "name": "ShardExtraLife",
+        "full_name": "Rianaid-ShardExtraLife",
+        "owner": "Rianaid",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Rianaid/ShardExtraLife/",
+        "date_created": "2024-05-29T15:22:13.671043Z",
+        "date_updated": "2024-06-13T16:23:53.578694Z",
+        "uuid4": "de63b233-212a-42d3-ba10-ffafdb9a432f",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "ShardExtraLife",
+                "full_name": "Rianaid-ShardExtraLife-0.2.7",
+                "description": "Server side only mod to change shards params like is: durability, time to break, destroy when broken and drop amount.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Rianaid-ShardExtraLife-0.2.7.png",
+                "version_number": "0.2.7",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Rianaid/ShardExtraLife/0.2.7/",
+                "downloads": 550,
+                "date_created": "2024-06-13T16:23:53.080943Z",
+                "website_url": "https://github.com/Rianaid/ShardExtraLife",
+                "is_active": true,
+                "uuid4": "96263373-110d-4af2-b1b9-6f9da00a32ea",
+                "file_size": 121720
+            }
+        ]
+    },
+    {
+        "name": "CoffinSleep",
+        "full_name": "Caioreix-CoffinSleep",
+        "owner": "Caioreix",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Caioreix/CoffinSleep/",
+        "donation_link": "https://ko-fi.com/caioreix",
+        "date_created": "2022-11-13T19:25:45.063548Z",
+        "date_updated": "2024-06-13T10:13:06.077175Z",
+        "uuid4": "5953adf2-cdec-450b-a24b-31cc47600bd4",
+        "rating_score": 4,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update",
+            "Gloomrot Update"
+        ],
+        "versions": [
+            {
+                "name": "CoffinSleep",
+                "full_name": "Caioreix-CoffinSleep-2.0.2",
+                "description": "A VRising mod that speeds up time while you sleep in your coffin.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Caioreix-CoffinSleep-2.0.2.png",
+                "version_number": "2.0.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.668.5",
+                    "deca-Bloodstone-0.1.4"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Caioreix/CoffinSleep/2.0.2/",
+                "downloads": 5777,
+                "date_created": "2024-06-13T10:13:05.556040Z",
+                "website_url": "https://github.com/caioreix/CoffinSleep",
+                "is_active": true,
+                "uuid4": "975ade80-f737-4c8e-9318-c5d1b287ba01",
+                "file_size": 54524
+            }
+        ]
+    },
+    {
+        "name": "BloodyShop",
+        "full_name": "Trodi-BloodyShop",
+        "owner": "Trodi",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Trodi/BloodyShop/",
+        "date_created": "2022-09-18T18:53:07.481741Z",
+        "date_updated": "2024-06-08T19:23:46.702707Z",
+        "uuid4": "897edbc3-d32d-407c-b0c2-3595727a51e4",
+        "rating_score": 6,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "Client",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "BloodyShop",
+                "full_name": "Trodi-BloodyShop-1.0.2",
+                "description": "Mod to create a store in VRising.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Trodi-BloodyShop-1.0.2.png",
+                "version_number": "1.0.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.668.5",
+                    "deca-Bloodstone-0.2.2",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "Trodi-BloodyCore-1.2.4"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Trodi/BloodyShop/1.0.2/",
+                "downloads": 1247,
+                "date_created": "2024-06-08T19:23:46.115755Z",
+                "website_url": "https://github.com/oscarpedrero/BloodyShop",
+                "is_active": true,
+                "uuid4": "1c4eadca-0472-4f30-b62e-0f2527f55a91",
+                "file_size": 503158
+            }
+        ]
+    },
+    {
+        "name": "BloodyMailBox",
+        "full_name": "Trodi-BloodyMailBox",
+        "owner": "Trodi",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Trodi/BloodyMailBox/",
+        "date_created": "2023-07-30T15:16:06.932412Z",
+        "date_updated": "2024-06-08T19:20:08.799760Z",
+        "uuid4": "1ea660ff-cf09-44dc-9aca-36fd10113cec",
+        "rating_score": 2,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update",
+            "Gloomrot Update"
+        ],
+        "versions": [
+            {
+                "name": "BloodyMailBox",
+                "full_name": "Trodi-BloodyMailBox-1.0.3",
+                "description": "The BloodyMailBox mod for VRising allows users to receive messages and receive notifications of new messages even when they are offline.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Trodi-BloodyMailBox-1.0.3.png",
+                "version_number": "1.0.3",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.668.5",
+                    "deca-Bloodstone-0.2.2",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "Trodi-BloodyCore-1.2.4"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Trodi/BloodyMailBox/1.0.3/",
+                "downloads": 396,
+                "date_created": "2024-06-08T19:20:08.214414Z",
+                "website_url": "https://github.com/oscarpedrero/BloodyMailBox",
+                "is_active": true,
+                "uuid4": "3bf5545b-16c1-4fe4-a51e-d15c2c8f5a82",
+                "file_size": 110117
+            }
+        ]
+    },
+    {
+        "name": "BloodyPoint",
+        "full_name": "Trodi-BloodyPoint",
+        "owner": "Trodi",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Trodi/BloodyPoint/",
+        "date_created": "2023-08-27T16:37:20.860364Z",
+        "date_updated": "2024-06-08T19:10:06.458309Z",
+        "uuid4": "8a63aa34-29cd-4f10-bb85-8c66f7bf880f",
+        "rating_score": 2,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "BloodyPoint",
+                "full_name": "Trodi-BloodyPoint-2.0.5",
+                "description": "Mod so that personal or global waypoints can be created.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Trodi-BloodyPoint-2.0.5.png",
+                "version_number": "2.0.5",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.668.5",
+                    "deca-Bloodstone-0.2.2",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "Trodi-BloodyCore-1.2.4"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Trodi/BloodyPoint/2.0.5/",
+                "downloads": 1084,
+                "date_created": "2024-06-08T19:10:05.927171Z",
+                "website_url": "https://github.com/oscarpedrero/BloodyPoints",
+                "is_active": true,
+                "uuid4": "30bd7b64-fa8b-4c9e-a028-25e75247c81b",
+                "file_size": 79034
+            }
+        ]
+    },
+    {
+        "name": "BloodyMerchant",
+        "full_name": "Trodi-BloodyMerchant",
+        "owner": "Trodi",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Trodi/BloodyMerchant/",
+        "date_created": "2023-11-10T08:46:35.961876Z",
+        "date_updated": "2024-06-08T19:08:56.211729Z",
+        "uuid4": "b0cb52d1-b620-4619-b610-ee76eab4c021",
+        "rating_score": 3,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update",
+            "Gloomrot Update"
+        ],
+        "versions": [
+            {
+                "name": "BloodyMerchant",
+                "full_name": "Trodi-BloodyMerchant-1.0.9",
+                "description": "BloodyMerchant is a mod designed for V Rising, offering the capability to create custom in-game merchants, adding a layer of dynamic and immersive gameplay.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Trodi-BloodyMerchant-1.0.9.png",
+                "version_number": "1.0.9",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.668.5",
+                    "deca-Bloodstone-0.2.2",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "Trodi-BloodyCore-1.2.4",
+                    "Trodi-BloodyWallet-0.1.1"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Trodi/BloodyMerchant/1.0.9/",
+                "downloads": 1197,
+                "date_created": "2024-06-08T19:08:55.726335Z",
+                "website_url": "https://github.com/oscarpedrero/BloodyMerchant",
+                "is_active": true,
+                "uuid4": "64184940-3744-4477-b4a0-a98f87a9241d",
+                "file_size": 116716
+            }
+        ]
+    },
+    {
+        "name": "Notify",
+        "full_name": "Trodi-Notify",
+        "owner": "Trodi",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Trodi/Notify/",
+        "date_created": "2022-07-13T19:30:12.767240Z",
+        "date_updated": "2024-06-08T19:07:34.447087Z",
+        "uuid4": "364e63ab-ebd8-4995-898a-d9c64de16151",
+        "rating_score": 7,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update",
+            "Gloomrot Update"
+        ],
+        "versions": [
+            {
+                "name": "Notify",
+                "full_name": "Trodi-Notify-3.0.9",
+                "description": "A mod that notifies when a user connects or disconnects from the server, new user connect from the server, when a player kills a VBlood boss, Message of the day system and auto announce system that runs every certain interval.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Trodi-Notify-3.0.9.png",
+                "version_number": "3.0.9",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.668.5",
+                    "deca-Bloodstone-0.2.2",
+                    "deca-VampireCommandFramework-0.9.0",
+                    "Trodi-BloodyCore-1.2.2"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Trodi/Notify/3.0.9/",
+                "downloads": 198,
+                "date_created": "2024-06-04T23:54:52.002765Z",
+                "website_url": "https://github.com/oscarpedrero/BloodyNotify",
+                "is_active": true,
+                "uuid4": "d9440767-fef1-4a61-a2fc-3276baa25bdc",
+                "file_size": 82636
+            }
+        ]
+    },
+    {
+        "name": "BloodyCore",
+        "full_name": "Trodi-BloodyCore",
+        "owner": "Trodi",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Trodi/BloodyCore/",
+        "date_created": "2024-05-27T20:45:56.802834Z",
+        "date_updated": "2024-06-08T19:03:39.771273Z",
+        "uuid4": "5a8773b6-222e-4ff1-94c7-33a9989434f6",
+        "rating_score": 5,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Client",
+            "1.0 Update",
+            "Server",
+            "Tools",
+            "Mods"
+        ],
+        "versions": [
+            {
+                "name": "BloodyCore",
+                "full_name": "Trodi-BloodyCore-1.2.4",
+                "description": "Bloody.Core a help library for mod development. It must be installed if any mod uses it.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Trodi-BloodyCore-1.2.4.png",
+                "version_number": "1.2.4",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.668.5",
+                    "deca-Bloodstone-0.2.2"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Trodi/BloodyCore/1.2.4/",
+                "downloads": 6924,
+                "date_created": "2024-06-08T19:03:39.236497Z",
+                "website_url": "https://github.com/oscarpedrero/BloodyCore",
+                "is_active": true,
+                "uuid4": "c1372edf-6017-4def-a82f-d35cbae75757",
+                "file_size": 655232
+            }
+        ]
+    },
+    {
+        "name": "VRisingDiscordBotCompanion",
+        "full_name": "DarkAtra-VRisingDiscordBotCompanion",
+        "owner": "DarkAtra",
+        "package_url": "https://thunderstore.io/c/v-rising/p/DarkAtra/VRisingDiscordBotCompanion/",
+        "donation_link": "https://github.com/sponsors/DarkAtra",
+        "date_created": "2023-06-08T20:22:32.157331Z",
+        "date_updated": "2024-06-07T20:35:33.018182Z",
+        "uuid4": "dab2498d-f5c7-4afc-97d1-9493b670b46d",
+        "rating_score": 2,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update",
+            "Gloomrot Update"
+        ],
+        "versions": [
+            {
+                "name": "VRisingDiscordBotCompanion",
+                "full_name": "DarkAtra-VRisingDiscordBotCompanion-0.6.3",
+                "description": "A companion mod for DarkAtra's v-rising-discord-bot.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/DarkAtra-VRisingDiscordBotCompanion-0.6.3.png",
+                "version_number": "0.6.3",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-Bloodstone-0.2.2"
+                ],
+                "download_url": "https://thunderstore.io/package/download/DarkAtra/VRisingDiscordBotCompanion/0.6.3/",
+                "downloads": 215,
+                "date_created": "2024-06-07T20:35:32.257783Z",
+                "website_url": "https://github.com/DarkAtra/v-rising-discord-bot-companion",
+                "is_active": true,
+                "uuid4": "d437294c-df65-409d-a5a9-5e625cb43264",
+                "file_size": 22752
+            }
+        ]
+    },
+    {
+        "name": "AutoCloseDoors",
+        "full_name": "Midon-AutoCloseDoors",
+        "owner": "Midon",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Midon/AutoCloseDoors/",
+        "date_created": "2024-06-05T09:43:04.963198Z",
+        "date_updated": "2024-06-05T13:00:57.239422Z",
+        "uuid4": "4cfb31ba-92d3-4360-80d5-69e55759799d",
+        "rating_score": 2,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "AutoCloseDoors",
+                "full_name": "Midon-AutoCloseDoors-2.0.2",
+                "description": "Mod to automatically close doors after a few seconds.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Midon-AutoCloseDoors-2.0.2.png",
+                "version_number": "2.0.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-Bloodstone-0.2.2",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Midon/AutoCloseDoors/2.0.2/",
+                "downloads": 3539,
+                "date_created": "2024-06-05T13:00:56.735884Z",
+                "website_url": "https://github.com/Midon83/AutoCloseDoors",
+                "is_active": true,
+                "uuid4": "f66b6b7a-57b5-47bc-8d8a-bd4f59ce3763",
+                "file_size": 94670
+            }
+        ]
+    },
+    {
+        "name": "StarterKit",
+        "full_name": "Rianaid-StarterKit",
+        "owner": "Rianaid",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Rianaid/StarterKit/",
+        "date_created": "2024-06-04T13:32:51.251221Z",
+        "date_updated": "2024-06-04T13:32:55.218276Z",
+        "uuid4": "22322b11-4b7e-4ab2-9472-d03d795c97f8",
+        "rating_score": 0,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "StarterKit",
+                "full_name": "Rianaid-StarterKit-0.1.0",
+                "description": "Server side only mod that allows you to issue different starter kits to new vampires.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Rianaid-StarterKit-0.1.0.png",
+                "version_number": "0.1.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Rianaid/StarterKit/0.1.0/",
+                "downloads": 396,
+                "date_created": "2024-06-04T13:32:54.792428Z",
+                "website_url": "https://github.com/Rianaid/StarterKit",
+                "is_active": true,
+                "uuid4": "71f990ab-a535-4714-bbed-3debb155fa2c",
+                "file_size": 59474
+            }
+        ]
+    },
+    {
+        "name": "KindredArenas",
+        "full_name": "odjit-KindredArenas",
+        "owner": "odjit",
+        "package_url": "https://thunderstore.io/c/v-rising/p/odjit/KindredArenas/",
+        "date_created": "2024-03-02T07:05:52.719339Z",
+        "date_updated": "2024-06-03T21:02:54.692385Z",
+        "uuid4": "bf7a3231-e5d0-4682-b9af-ec6bd2227cb3",
+        "rating_score": 6,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update",
+            "Gloomrot Update"
+        ],
+        "versions": [
+            {
+                "name": "KindredArenas",
+                "full_name": "odjit-KindredArenas-1.3.0",
+                "description": "Sets PvP protection buff in designated zones.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/odjit-KindredArenas-1.3.0.png",
+                "version_number": "1.3.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/odjit/KindredArenas/1.3.0/",
+                "downloads": 465,
+                "date_created": "2024-06-03T21:02:54.221536Z",
+                "website_url": "https://github.com/odjit/KindredArenas",
+                "is_active": true,
+                "uuid4": "e9943f9f-7891-4956-9304-20e9cd970677",
+                "file_size": 520575
+            }
+        ]
+    },
+    {
+        "name": "MuteChatPlayer",
+        "full_name": "Rianaid-MuteChatPlayer",
+        "owner": "Rianaid",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Rianaid/MuteChatPlayer/",
+        "date_created": "2024-06-03T00:25:56.607409Z",
+        "date_updated": "2024-06-03T00:25:59.710216Z",
+        "uuid4": "dcd69a84-70b8-4f88-ac16-16107ed68af0",
+        "rating_score": 2,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "MuteChatPlayer",
+                "full_name": "Rianaid-MuteChatPlayer-0.1.0",
+                "description": "Server side only mod which allows server admins to prohibit a specific player from sending messages to the chat.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Rianaid-MuteChatPlayer-0.1.0.png",
+                "version_number": "0.1.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Rianaid/MuteChatPlayer/0.1.0/",
+                "downloads": 161,
+                "date_created": "2024-06-03T00:25:59.345857Z",
+                "website_url": "https://github.com/Rianaid/MuteChatPlayer",
+                "is_active": true,
+                "uuid4": "fd8eb82f-b611-4507-b29b-17d46e2ee3d2",
+                "file_size": 96113
+            }
+        ]
+    },
+    {
+        "name": "BetterMissions",
+        "full_name": "Caioreix-BetterMissions",
+        "owner": "Caioreix",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Caioreix/BetterMissions/",
+        "donation_link": "https://ko-fi.com/caioreix",
+        "date_created": "2022-11-16T06:04:19.842559Z",
+        "date_updated": "2024-06-01T07:36:59.736175Z",
+        "uuid4": "2aeb9970-d5ba-4666-9c12-40be43d92573",
+        "rating_score": 4,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update",
+            "Gloomrot Update"
+        ],
+        "versions": [
+            {
+                "name": "BetterMissions",
+                "full_name": "Caioreix-BetterMissions-2.0.1",
+                "description": "An VRising mod to do a better control of the servant missions.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Caioreix-BetterMissions-2.0.1.png",
+                "version_number": "2.0.1",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-Bloodstone-0.2.2"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Caioreix/BetterMissions/2.0.1/",
+                "downloads": 4743,
+                "date_created": "2024-06-01T07:36:59.300489Z",
+                "website_url": "https://github.com/caioreix/BetterMissions",
+                "is_active": true,
+                "uuid4": "5b16c25b-d595-438a-bc6d-2fee8bddc250",
+                "file_size": 64640
+            }
+        ]
+    },
+    {
+        "name": "SkanksAIO",
+        "full_name": "Skies-SkanksAIO",
+        "owner": "Skies",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Skies/SkanksAIO/",
+        "date_created": "2023-08-06T17:01:33.310458Z",
+        "date_updated": "2024-05-31T19:07:47.581176Z",
+        "uuid4": "4c07ec05-e1d8-4c98-bf5c-cf5bdf8c5a9f",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "SkanksAIO",
+                "full_name": "Skies-SkanksAIO-1.6.2",
+                "description": "V Rising server mod that adds a discord server link, a web server with interactive map, and a few other things like admin commands etc.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Skies-SkanksAIO-1.6.2.png",
+                "version_number": "1.6.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-Bloodstone-0.2.2"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Skies/SkanksAIO/1.6.2/",
+                "downloads": 376,
+                "date_created": "2024-05-31T19:07:47.110295Z",
+                "website_url": "https://github.com/skythebro/SkanksAIO",
+                "is_active": true,
+                "uuid4": "59fa094b-b2f4-49b7-a50f-3c9bc065752b",
+                "file_size": 2466206
+            }
+        ]
+    },
+    {
+        "name": "BloodRefill",
+        "full_name": "Skies-BloodRefill",
+        "owner": "Skies",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Skies/BloodRefill/",
+        "date_created": "2023-07-28T18:03:26.674291Z",
+        "date_updated": "2024-05-31T19:06:53.827822Z",
+        "uuid4": "c9428234-58f6-4ed4-8869-ce7c71aa0224",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update",
+            "Gloomrot Update"
+        ],
+        "versions": [
+            {
+                "name": "BloodRefill",
+                "full_name": "Skies-BloodRefill-2.0.0",
+                "description": "A server-side only mod that allows players to refill their blood pool in different ways.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Skies-BloodRefill-2.0.0.png",
+                "version_number": "2.0.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-Bloodstone-0.2.2"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Skies/BloodRefill/2.0.0/",
+                "downloads": 2542,
+                "date_created": "2024-05-31T19:06:53.388127Z",
+                "website_url": "https://github.com/skythebro/VMods",
+                "is_active": true,
+                "uuid4": "2c6be67b-65fe-4018-8603-b2c0436287b7",
+                "file_size": 109859
+            }
+        ]
+    },
+    {
+        "name": "SpiderKiller",
+        "full_name": "Skies-SpiderKiller",
+        "owner": "Skies",
+        "package_url": "https://thunderstore.io/c/v-rising/p/Skies/SpiderKiller/",
+        "date_created": "2023-07-16T10:08:38.113833Z",
+        "date_updated": "2024-05-31T19:05:26.836648Z",
+        "uuid4": "f19e46c4-be34-4dfc-adbd-93554f897cdc",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update",
+            "Gloomrot Update"
+        ],
+        "versions": [
+            {
+                "name": "SpiderKiller",
+                "full_name": "Skies-SpiderKiller-1.5.2",
+                "description": "Mod that kills spiders in a range around you and your friends. So you don't have to fight those pesky things!",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/Skies-SpiderKiller-1.5.2.png",
+                "version_number": "1.5.2",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-Bloodstone-0.2.2",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/Skies/SpiderKiller/1.5.2/",
+                "downloads": 326,
+                "date_created": "2024-05-31T19:05:26.194660Z",
+                "website_url": "https://github.com/skythebro/VRisingKillSpiders",
+                "is_active": true,
+                "uuid4": "f198f282-9492-4eff-9c1f-91fee0cbe468",
+                "file_size": 44583
+            }
+        ]
+    },
+    {
+        "name": "CrimsonFOV",
+        "full_name": "skytech6-CrimsonFOV",
+        "owner": "skytech6",
+        "package_url": "https://thunderstore.io/c/v-rising/p/skytech6/CrimsonFOV/",
+        "donation_link": "https://ko-fi.com/skytech6",
+        "date_created": "2024-05-29T17:47:31.228522Z",
+        "date_updated": "2024-05-29T17:47:35.030589Z",
+        "uuid4": "c80fb0c4-dde7-494e-95f6-e100f384f39a",
+        "rating_score": 3,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Mods",
+            "Client",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "CrimsonFOV",
+                "full_name": "skytech6-CrimsonFOV-0.2.0",
+                "description": "Modifies the client camera field of view",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/skytech6-CrimsonFOV-0.2.0.png",
+                "version_number": "0.2.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3"
+                ],
+                "download_url": "https://thunderstore.io/package/download/skytech6/CrimsonFOV/0.2.0/",
+                "downloads": 1377,
+                "date_created": "2024-05-29T17:47:34.482883Z",
+                "website_url": "https://github.com/SkyTech6/CrimsonDropRate/",
+                "is_active": true,
+                "uuid4": "51719a8b-fbf3-4f25-b922-edc04cf669ee",
+                "file_size": 142110
+            }
+        ]
+    },
+    {
+        "name": "RemoveVersionWatermark",
+        "full_name": "NodusCursorius-RemoveVersionWatermark",
+        "owner": "NodusCursorius",
+        "package_url": "https://thunderstore.io/c/v-rising/p/NodusCursorius/RemoveVersionWatermark/",
+        "date_created": "2024-05-26T21:12:04.443143Z",
+        "date_updated": "2024-05-26T21:12:07.059384Z",
+        "uuid4": "37b9dbd8-47c6-4513-9cf2-401e2095676e",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": false,
+        "has_nsfw_content": false,
+        "categories": [
+            "Mods",
+            "Client",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "RemoveVersionWatermark",
+                "full_name": "NodusCursorius-RemoveVersionWatermark-1.0.3",
+                "description": "Removes version watermark",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/NodusCursorius-RemoveVersionWatermark-1.0.3.png",
+                "version_number": "1.0.3",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3"
+                ],
+                "download_url": "https://thunderstore.io/package/download/NodusCursorius/RemoveVersionWatermark/1.0.3/",
+                "downloads": 834,
+                "date_created": "2024-05-26T21:12:06.641490Z",
+                "website_url": "https://github.com/NodusCursorius/VRising-RemoveVersionWatermark",
+                "is_active": true,
+                "uuid4": "cd4ba773-e86b-49cd-889b-364ce6be8f5b",
+                "file_size": 179987
+            }
+        ]
+    },
+    {
+        "name": "SmartConnect",
+        "full_name": "zfolmt-SmartConnect",
+        "owner": "zfolmt",
+        "package_url": "https://thunderstore.io/c/v-rising/p/zfolmt/SmartConnect/",
+        "date_created": "2024-09-10T05:09:16.875943Z",
+        "date_updated": "2024-09-10T05:09:20.387852Z",
+        "uuid4": "3d0ad3a3-3312-46a8-acc6-f529866eacae",
+        "rating_score": 0,
+        "is_pinned": false,
+        "is_deprecated": true,
+        "has_nsfw_content": false,
+        "categories": [
+            "Mods",
+            "Client",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "SmartConnect",
+                "full_name": "zfolmt-SmartConnect-1.0.0",
+                "description": "Automatically continues (last played) or joins (server address) based on configured options from the main menu!",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/zfolmt-SmartConnect-1.0.0.png",
+                "version_number": "1.0.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3"
+                ],
+                "download_url": "https://thunderstore.io/package/download/zfolmt/SmartConnect/1.0.0/",
+                "downloads": 121,
+                "date_created": "2024-09-10T05:09:19.859598Z",
+                "website_url": "https://github.com/mfoltz/SmartConnect",
+                "is_active": true,
+                "uuid4": "778d2039-2771-4f4e-908e-7263316bd8a7",
+                "file_size": 115563
+            }
+        ]
+    },
+    {
+        "name": "Nocturnes",
+        "full_name": "zfolmt-Nocturnes",
+        "owner": "zfolmt",
+        "package_url": "https://thunderstore.io/c/v-rising/p/zfolmt/Nocturnes/",
+        "date_created": "2024-06-05T02:17:44.703287Z",
+        "date_updated": "2024-06-05T02:17:47.355021Z",
+        "uuid4": "d32c84e4-107d-4c58-8cca-4eb66e0b1c6a",
+        "rating_score": 1,
+        "is_pinned": false,
+        "is_deprecated": true,
+        "has_nsfw_content": false,
+        "categories": [
+            "Server",
+            "Mods",
+            "1.0 Update"
+        ],
+        "versions": [
+            {
+                "name": "Nocturnes",
+                "full_name": "zfolmt-Nocturnes-0.1.0",
+                "description": "Reward players for being online with optional daily login bonus.",
+                "icon": "https://gcdn.thunderstore.io/live/repository/icons/zfolmt-Nocturnes-0.1.0.png",
+                "version_number": "0.1.0",
+                "dependencies": [
+                    "BepInEx-BepInExPack_V_Rising-1.691.3",
+                    "deca-VampireCommandFramework-0.9.0"
+                ],
+                "download_url": "https://thunderstore.io/package/download/zfolmt/Nocturnes/0.1.0/",
+                "downloads": 59,
+                "date_created": "2024-06-05T02:17:46.986516Z",
+                "website_url": "https://github.com/mfoltz/Nocturnes",
+                "is_active": true,
+                "uuid4": "a5f677fa-ad86-4189-a694-be1e87e38207",
+                "file_size": 81861
+            }
+        ]
+    }
+]
