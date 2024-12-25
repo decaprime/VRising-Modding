@@ -5,6 +5,13 @@ nav_order: 3
 ---
 
 # How to use Server Mods In-Game
+- [Adding to the AdminList](#adding-to-the-adminlist)
+- [Authorizing yourself as an Admin in-game](#authorizing-yourself-as-an-admin-in-game)
+- [Enabling Console](#enabling-console)
+- [Using the Console in Game](#using-the-console-in-game)
+- [Using Native V Rising Commands (Console)](#using-native-v-rising-commands-console)
+- [Using MOD Commands (Chatbox)](#using-mod-commands-chatbox)
+
 
 ## Adding to the AdminList
 The very first thing you will need to do is add yourself to the list of admins. 
@@ -29,7 +36,7 @@ You can do this before launching the server, or even after. If you do it after, 
 
 Once in game you will need to auhtorize yourself as an admin.
 
-### Enabling Console
+## Enabling Console
 First you will need to enable the use of the console in game.
 Hit `Esc` and in the menu, go to `Options`.
 Once here, stay under the `General` tab and look at the options. You should see a `Console Enabled ` option about 8 rows down.
@@ -38,7 +45,7 @@ Once here, stay under the `General` tab and look at the options. You should see 
 
 Make sure the box is ticked as indicated.
 
-### Using the Console in Game
+## Using the Console in Game
 
 Once you are back to the game, you can make the console appear by pressing the `~` button. (Usually located directly above TAB)
 
@@ -49,12 +56,12 @@ Once the console has dropped down, you can type in `Adminauth` to authorize your
 ![image](https://github.com/decaprime/VRising-Modding/assets/615782/fcb3b5c7-c0a2-43c1-a48d-4052309cb107)
 
 
-### Using Native V Rising Commands (Console)
+## Using Native V Rising Commands (Console)
 
 Much like authorizing yourself, you may enter commands in this console in order to use native V Rising commands. You can see a list of commands by typing in `list`. (Take care it doesn't autocomplete to `listusers`)
 Commands in the console do not have a prefix as part of the command. (No slashes and the like)
 
-### Using MOD Commands (Chatbox)
+## Using MOD Commands (Chatbox)
 
 Mod commands however, are not entered in the console. They must be entered in the chat. If you have VCF installed, you can check this by typing `.help`
 Most mods ustilize the `.` prefix before their commands, as they use VCF. If they are not using VCF it could be other symbols.
