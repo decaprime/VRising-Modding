@@ -13,7 +13,7 @@ https://thunderstore.io/c/v-rising/api/v1/package/
 
 
 <h1>Server Mods</h1>
-{% assign server_mods = "KindredCommands,CrimsonFAQ,Bloodcraft,XPRising,KindredPortals,CrimsonBanned,CrimsonDice,CrimsonClans,CrimsonChatFilter,CrimsonDropRate,AutoBrazier,CrimsonMoon,CrimsonLog,KindredLogistics,KindredSchematics,Gator_Bounty,BloodyBoss,Sanguis,BloodyEncounters,BloodyWallet,OfflineRaidGuard,RaidGuard,CrimsonQuest,CrimsonHunt,Protector,BloodyRewards,JewelCreator,ShardExtraLife,CoffinSleep,BloodyShop,BloodyMailBox,BloodyPoint,BloodyMerchant,Notify,AutoCloseDoors,StarterKit,KindredArenas,MuteChatPlayer,BetterMissions,BloodRefill,SpiderKiller" | split: "," | sort %}
+{% assign server_mods = "KindredCommands,CrimsonFAQ,Bloodcraft,XPRising,KindredPortals,CrimsonBanned,CrimsonDice,CrimsonClans,CrimsonChatFilter,CrimsonDropRate,AutoBrazier,CrimsonMoon,CrimsonLog,KindredLogistics,KindredSchematics,Gator_Bounty,BloodyBoss,Sanguis,BloodyEncounters,BloodyWallet,OfflineRaidGuard,RaidGuard,CrimsonQuest,CrimsonHunt,Protector,BloodyRewards,JewelCreator,ShardExtraLife,CoffinSleep,BloodyShop,BloodyMailBox,BloodyPoint,BloodyMerchant,Notify,AutoCloseDoors,StarterKit,KindredArenas,MuteChatPlayer,BetterMissions,BloodRefill,SpiderKiller" | split: "," | sort "date_updated" | reverse %}
 <table>
   <tr>
     <th>Mod Name</th>
@@ -32,7 +32,7 @@ https://thunderstore.io/c/v-rising/api/v1/package/
 </table>
 
 <h1>Client Mods</h1>
-{% assign client_mods = "CrimsonFOV,ClientUI,RemoveVersionWatermark,Eclipse" | split: "," | sort %}
+{% assign client_mods = "CrimsonFOV,ClientUI,RemoveVersionWatermark,Eclipse" | split: "," | sort "date_updated" | reverse %}
 <table>
   <tr>
     <th>Mod Name</th>
