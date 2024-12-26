@@ -14,12 +14,11 @@ https://thunderstore.io/c/v-rising/api/v1/package/
 {% assign all_mods = site.data.OpenSourceMods %}
 
 {% assign server_mods = "KindredCommands,CrimsonFAQ,Bloodcraft,XPRising,KindredPortals,CrimsonBanned,CrimsonDice,CrimsonClans,CrimsonChatFilter,CrimsonDropRate,AutoBrazier,CrimsonMoon,CrimsonLog,KindredLogistics,KindredSchematics,Gator_Bounty,BloodyBoss,Sanguis,BloodyEncounters,BloodyWallet,OfflineRaidGuard,RaidGuard,CrimsonQuest,CrimsonHunt,Protector,BloodyRewards,JewelCreator,ShardExtraLife,CoffinSleep,BloodyShop,BloodyMailBox,BloodyPoint,BloodyMerchant,Notify,AutoCloseDoors,StarterKit,KindredArenas,MuteChatPlayer,BetterMissions,BloodRefill,SpiderKiller" | split: "," %}
+{% assign client_mods = "CrimsonFOV,ClientUI,RemoveVersionWatermark,Eclipse" | split: "," %}
+{% assign framework_mods = "Bloodstone,VampireCommandFramework,CrimsonSQL,BloodyCore,XPShared" | split: "," %}
+
 {% assign server_mods_data = all_mods | where_exp: "item", "server_mods contains item.name" | sort: "date_updated" | reverse %}
-
-{% assign client_mods = "CrimsonFOV,ClientUI,RemoveVersionWatermark,Eclipse" | split: ","}
 {% assign client_mods_data = all_mods | where_exp: "item", "client_mods contains item.name" | sort: "date_updated" | reverse %}
-
-{% assign framework_mods = "Bloodstone,VampireCommandFramework,CrimsonSQL,BloodyCore,XPShared" | split: ","}
 {% assign framework_mods_data = all_mods | where_exp: "item", "framework_mods contains item.name" | sort: "date_updated" | reverse %}
 
 <h1>Server Mods</h1>
