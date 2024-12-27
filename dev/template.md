@@ -25,8 +25,8 @@ Alternatively, there is also an extended (and opinionated) template available.
 
 `-how` A simple example mod pre-built and ready to build with how-to tips on how to get started making mods
 `-desc` A description of your mod.
-`-bloodstone` Include [Bloodstone](./frameworks/bloodstone.md) framework
-`-bloodycore` Include [Bloody.Core](./frameworks/bloodycore.md) framework
+`-bloodstone` Include [Bloodstone](./bloodstone.md) framework
+`-bloodycore` Include [Bloody.Core](https://github.com/oscarpedrero/BloodyCore) framework
 `-vamp` Include [VAMP](https://github.com/CrimsonMods/VAMP) framework
 
 Plus always includes [VampireCommandFramework](https://github.com/decaprime/VampireCommandFramework/)
