@@ -25,6 +25,15 @@ $feedback-color: darken($sidebar-color, 3%);
 //@import "./vendor/OneDarkJekyll/syntax-one-dark-vivid";
 
 $code-background-color: #31343f;
+.highlight {
+    .k, .kd { color: #569CD6; }  // keywords
+    .nf { color: #DCDCAA; }      // method names
+    .p { color: #D4D4D4; }       // punctuation
+    .s { color: #CE9178; }       // strings
+    .n { color: #9CDCFE; }       // parameters
+    .c1 { color: #6A9955; }      // comments
+    .kt { color: #4EC9B0; }      // types
+  }
 
 // @import "./vendor/OneDarkJekyll/syntax-firewatch";
 // $code-background-color: #282c34;
