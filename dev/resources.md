@@ -12,6 +12,7 @@ The VRising modding community focuses on open-source mods to encourage learning 
 - [**Open Source Repositories**](https://wiki.vrisingmods.com/dev/open%20source.html)
 
 ### Prefabs
+Lists of the various prefabs, grouped by type, or you can review all of them.
 - [Prefabs list](https://wiki.vrisingmods.com/prefabs/)
 ---
 
@@ -19,7 +20,7 @@ The VRising modding community focuses on open-source mods to encourage learning 
 
 - [**KindredExtract**](https://github.com/Odjit/KindredExtract) <img src="https://github.com/user-attachments/assets/a0e5a99d-af88-4d9d-9fee-84cc3978aeae" width="60" style="vertical-align: middle;" >
 
-- [**VRising Data Extractor**](https://github.com/adainrivers/virising-data-extractor?tab=readme-ov-file) 
+- [**VRising Data Extractor**](https://github.com/adainrivers/virising-data-extractor?tab=readme-ov-file) Used for the info on the Gaming tools site.
 ---
 
 ## Web Resources
