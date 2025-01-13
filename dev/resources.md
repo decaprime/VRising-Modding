@@ -11,6 +11,7 @@ parent: For Developers
   - The VRising modding community focuses on open-source mods to encourage learning and the development of new features. Feel free to explore and reference any of the open-source mods listed here, but please be sure to **credit the creators** and follow any relevant license requirements.
 - [**Prefabs list**](https://wiki.vrisingmods.com/prefabs/)
   - Lists of the various prefabs, grouped by type, or you can review all of them.
+  
 ---
 
 ## Mod Tools
@@ -18,6 +19,7 @@ parent: For Developers
 Tools made by those in the community.
 - [**KindredExtract**](https://github.com/Odjit/KindredExtract) <img src="https://github.com/user-attachments/assets/a0e5a99d-af88-4d9d-9fee-84cc3978aeae" width="60" style="vertical-align: middle;" >
 - [**VRising Data Extractor**](https://github.com/adainrivers/virising-data-extractor?tab=readme-ov-file) Used for the info on the Gaming tools site.
+  
 ---
 
 ## Web Resources
