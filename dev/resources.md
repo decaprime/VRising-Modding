@@ -4,10 +4,13 @@ parent: For Developers
 ---
 
 # Resources for Mod Developers
+
 ## Wiki Resources
+
 ### Open Source Mods
 The VRising modding community focuses on open-source mods to encourage learning and the development of new features. Feel free to explore and reference any of the open-source mods listed here, but please be sure to **credit the creators** and follow any relevant license requirements.
 - [**Open Source Repositories**](https://wiki.vrisingmods.com/dev/open%20source.html)
+
 ### Prefabs
 - [Prefabs list](https://wiki.vrisingmods.com/prefabs/)
 ---
