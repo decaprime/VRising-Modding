@@ -10,3 +10,6 @@ We have mod [templates](./template.md) to make getting started simple as [`dotne
 
 ### Resources
 You can reference [resources](./resources.md) and [open source](./open%20source.md) for more information for now.
+
+### Thunderstore Uploading
+[Upload](./upload_to_thunderstore.md) your mods to thunderstore! Quick run down of how to navigate and set up your package.
