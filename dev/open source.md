@@ -1,6 +1,6 @@
 ---
 title: Open Source Mods
-parent: For Developers
+parent: Resources
 ---
 
 <!---
