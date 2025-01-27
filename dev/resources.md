@@ -29,6 +29,7 @@ Tools made by those in the community.
 - [Territory ID Map](https://i.imgur.com/VkXoKwB.jpeg) Helpful for finding the correct ID for each territory
 - [Coordinate/Chunk Map](https://i.imgur.com/UBmjxdG.jpeg) Helpful for at-a-glance general chunk/coordinate reference.
 - [Map Icon reference](https://docs.google.com/spreadsheets/d/1FcbO8aMtH2FtSx-ntoMXjoyXhfGQkjnjzj1nkeR2Tk4/edit?gid=0#gid=0) Details about mapicon images.
+- [VRising Modding GPT](https://chatgpt.com/g/g-XGdFZaBHL-c-rising) Custom GPT with access to server system queries and game prefabs. Useful for learning about C# and refining code in a VRising context, though do note AI tools should be used with caution and an understanding of their limitations. 
 
 ---
 
