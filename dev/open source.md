@@ -21,9 +21,9 @@ https://thunderstore.io/c/v-rising/api/v1/package/
 {% assign client_mods_data = all_mods | where_exp: "item", "client_mods contains item.name" | sort: "date_updated" | reverse %}
 {% assign framework_mods_data = all_mods | where_exp: "item", "framework_mods contains item.name" | sort: "date_updated" | reverse %}
 
-{% assign server_mods_data = server_mods_data | reject_exp: "item", "item.is_deprecated == 'true'" %}
-{% assign client_mods_data = client_mods_data | reject_exp: "item", "item.is_deprecated == 'true'" %}
-{% assign framework_mods_data = framework_mods_data | reject_exp: "item", "item.is_deprecated == 'true'" %}
+{% assign server_mods_data = server_mods_data | reject_exp: "item", "server_mods contains item.is_deprecated == 'true'" %}
+{% assign client_mods_data = client_mods_data | reject_exp: "item", "client_mods contains item.is_deprecated == 'true'" %}
+{% assign framework_mods_data = framework_mods_data | reject_exp: "item", "client_mods contains item.is_deprecated == 'true'" %}
 
 <h1>Server Mods</h1>
 
