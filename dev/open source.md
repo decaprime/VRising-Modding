@@ -17,9 +17,9 @@ https://thunderstore.io/c/v-rising/api/v1/package/
 {% assign client_mods = "ClientUI,RemoveVersionWatermark,Eclipse" | split: "," %}
 {% assign framework_mods = "Bloodstone,VampireCommandFramework,CrimsonSQL,BloodyCore,XPShared" | split: "," %}
 
-{% assign server_mods_data = all_mods | where_exp: "item", "server_mods contains item.name" | sort: "date_updated" | reverse %}
-{% assign client_mods_data = all_mods | where_exp: "item", "client_mods contains item.name" | sort: "date_updated" | reverse %}
-{% assign framework_mods_data = all_mods | where_exp: "item", "framework_mods contains item.name" | sort: "date_updated" | reverse %}
+{% assign server_mods_data = all_mods | where_exp: "item", "server_mods contains item.name and item.is_deprecated == false" | sort: "date_updated" | reverse %}
+{% assign client_mods_data = all_mods | where_exp: "item", "client_mods contains item.name and item.is_deprecated == false" | sort: "date_updated" | reverse %}
+{% assign framework_mods_data = all_mods | where_exp: "item", "framework_mods contains item.name and item.is_deprecated == false" | sort: "date_updated" | reverse %}
 
 <h1>Server Mods</h1>
 
