@@ -25,7 +25,14 @@ https://thunderstore.io/c/v-rising/api/v1/package/
 {% assign client_mods_data = client_mods_data | reject_exp: "item", "item.is_deprecated == true" %}
 {% assign framework_mods_data = framework_mods_data | reject_exp: "item", "item.is_deprecated == true" %}
 <!-- Debugging: Output the deprecated status of each mod -->
-<h2>Debugging Server Mods</h2>
+<h2>Debugging Server Mods Before Filter</h2>
+{% for mod in server_mods_data %}
+  <p>{{ mod.name }} - Deprecated: {{ mod.is_deprecated }}</p>
+{% endfor %}
+
+{% assign server_mods_data = server_mods_data | reject_exp: "item", "item.is_deprecated == true" %}
+
+<h2>Debugging Server Mods After Filter</h2>
 {% for mod in server_mods_data %}
   <p>{{ mod.name }} - Deprecated: {{ mod.is_deprecated }}</p>
 {% endfor %}
