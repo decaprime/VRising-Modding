@@ -38,7 +38,7 @@ https://thunderstore.io/c/v-rising/api/v1/package/
     <tr>
       <td><a href="{{ latest_version.website_url }}">{{ mod.name }}</a></td>
       <td>{{ latest_version.description }}</td>
-      <td><a href="https://thunderstore.io/c/v-rising/p{{ mod.owner }}">{{ mod.owner }}</a></td>
+      <td><a href="https://thunderstore.io/c/v-rising/p/{{ mod.owner }}">{{ mod.owner }}</a></td>
     </tr>
   {% endfor %}
 </table>
@@ -55,7 +55,7 @@ https://thunderstore.io/c/v-rising/api/v1/package/
     <tr>
       <td><a href="{{ latest_version.website_url }}">{{ mod.name }}</a></td>
       <td>{{ latest_version.description }}</td>
-      <td><a href="https://thunderstore.io/c/v-rising/p{{ mod.owner }}">{{ mod.owner }}</a></td>
+      <td><a href="https://thunderstore.io/c/v-rising/p/{{ mod.owner }}">{{ mod.owner }}</a></td>
     </tr>
   {% endfor %}
 </table>
@@ -72,7 +72,7 @@ https://thunderstore.io/c/v-rising/api/v1/package/
     <tr>
       <td><a href="{{ latest_version.website_url }}">{{ mod.name }}</a></td>
       <td>{{ latest_version.description }}</td>
-      <td><a href="https://thunderstore.io/c/v-rising/p{{ mod.owner }}">{{ mod.owner }}</a></td>
+      <td><a href="https://thunderstore.io/c/v-rising/p/{{ mod.owner }}">{{ mod.owner }}</a></td>
     </tr>
   {% endfor %}
 </table>
