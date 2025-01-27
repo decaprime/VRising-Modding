@@ -13,23 +13,24 @@ https://thunderstore.io/c/v-rising/api/v1/package/
 
 {% assign all_mods = site.data.OpenSourceMods %}
 
+{% assign server_mods = "KindredCommands,Bloodcraft,XPRising,KindredPortals,AutoBrazier,KindredLogistics,KindredSchematics,Gator_Bounty,BloodyBoss,Sanguis,BloodyEncounters,BloodyWallet,RaidGuard,Protector,BloodyRewards,JewelCreator,ShardExtraLife,CoffinSleep,BloodyShop,BloodyMailBox,BloodyPoint,BloodyMerchant,Notify,AutoCloseDoors,StarterKit,KindredArenas,MuteChatPlayer,BetterMissions,BloodRefill,SpiderKiller" | split: "," %}
+{% assign client_mods = "ClientUI,RemoveVersionWatermark,Eclipse" | split: "," %}
+{% assign framework_mods = "Bloodstone,VampireCommandFramework,CrimsonSQL,BloodyCore,XPShared" | split: "," %}
+
 {% assign server_mods_data = all_mods | where_exp: "item", "server_mods contains item.name" %}
 {% assign client_mods_data = all_mods | where_exp: "item", "client_mods contains item.name" %}
 {% assign framework_mods_data = all_mods | where_exp: "item", "framework_mods contains item.name" %}
 
-{% assign server_mods_data = server_mods_data | group_by: "name" %}
-{% assign client_mods_data = client_mods_data | group_by: "name" %}
-{% assign framework_mods_data = framework_mods_data | group_by: "name" %}
+{% assign server_mods_data = server_mods_data | reject_exp: "item", "item.is_deprecated == true" %}
+{% assign client_mods_data = client_mods_data | reject_exp: "item", "item.is_deprecated == true" %}
+{% assign framework_mods_data = framework_mods_data | reject_exp: "item", "item.is_deprecated == true" %}
 
-{% assign server_mods_data = server_mods_data | map: "items" | map: "items | sort: 'date_updated' | reverse | first" %}
-{% assign client_mods_data = client_mods_data | map: "items" | map: "items | sort: 'date_updated' | reverse | first" %}
-{% assign framework_mods_data = framework_mods_data | map: "items" | map: "items | sort: 'date_updated' | reverse | first" %}
-
-{% assign server_mods_data = server_mods_data | reject_exp: "mod", "mod.is_deprecated == true" %}
-{% assign client_mods_data = client_mods_data | reject_exp: "mod", "mod.is_deprecated == true" %}
-{% assign framework_mods_data = framework_mods_data | reject_exp: "mod", "mod.is_deprecated == true" %}
+{% assign server_mods_data = server_mods_data | sort: "date_updated" | reverse %}
+{% assign client_mods_data = client_mods_data | sort: "date_updated" | reverse %}
+{% assign framework_mods_data = framework_mods_data | sort: "date_updated" | reverse %}
 
 <h1>Server Mods</h1>
+
 <table>
   <tr>
     <th>Mod Name</th>
@@ -37,9 +38,10 @@ https://thunderstore.io/c/v-rising/api/v1/package/
     <th>Author</th>
   </tr>
   {% for mod in server_mods_data %}
+    {% assign latest_version = mod.versions | first %}
     <tr>
-      <td><a href="{{ mod.website_url }}">{{ mod.name }}</a></td>
-      <td>{{ mod.description }}</td>
+      <td><a href="{{ latest_version.website_url }}">{{ mod.name }}</a></td>
+      <td>{{ latest_version.description }}</td>
       <td><a href="https://thunderstore.io/c/v-rising/p/{{ mod.owner }}">{{ mod.owner }}</a></td>
     </tr>
   {% endfor %}
@@ -53,9 +55,10 @@ https://thunderstore.io/c/v-rising/api/v1/package/
     <th>Author</th>
   </tr>
   {% for mod in client_mods_data %}
+    {% assign latest_version = mod.versions | first %}
     <tr>
-      <td><a href="{{ mod.website_url }}">{{ mod.name }}</a></td>
-      <td>{{ mod.description }}</td>
+      <td><a href="{{ latest_version.website_url }}">{{ mod.name }}</a></td>
+      <td>{{ latest_version.description }}</td>
       <td><a href="https://thunderstore.io/c/v-rising/p/{{ mod.owner }}">{{ mod.owner }}</a></td>
     </tr>
   {% endfor %}
@@ -69,9 +72,10 @@ https://thunderstore.io/c/v-rising/api/v1/package/
     <th>Author</th>
   </tr>
   {% for mod in framework_mods_data %}
+    {% assign latest_version = mod.versions | first %}
     <tr>
-      <td><a href="{{ mod.website_url }}">{{ mod.name }}</a></td>
-      <td>{{ mod.description }}</td>
+      <td><a href="{{ latest_version.website_url }}">{{ mod.name }}</a></td>
+      <td>{{ latest_version.description }}</td>
       <td><a href="https://thunderstore.io/c/v-rising/p/{{ mod.owner }}">{{ mod.owner }}</a></td>
     </tr>
   {% endfor %}
