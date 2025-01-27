@@ -13,13 +13,17 @@ https://thunderstore.io/c/v-rising/api/v1/package/
 
 {% assign all_mods = site.data.OpenSourceMods %}
 
-{% assign server_mods = "KindredCommands,Bloodcraft,XPRising,KindredPortals,AutoBrazier,KindredLogistics,KindredSchematics,Gator_Bounty,BloodyBoss,Sanguis,BloodyEncounters,BloodyWallet,OfflineRaidGuard,RaidGuard,Protector,BloodyRewards,JewelCreator,ShardExtraLife,CoffinSleep,BloodyShop,BloodyMailBox,BloodyPoint,BloodyMerchant,Notify,AutoCloseDoors,StarterKit,KindredArenas,MuteChatPlayer,BetterMissions,BloodRefill,SpiderKiller" | split: "," %}
+{% assign server_mods = "KindredCommands,Bloodcraft,XPRising,KindredPortals,AutoBrazier,KindredLogistics,KindredSchematics,Gator_Bounty,BloodyBoss,Sanguis,BloodyEncounters,BloodyWallet,RaidGuard,Protector,BloodyRewards,JewelCreator,ShardExtraLife,CoffinSleep,BloodyShop,BloodyMailBox,BloodyPoint,BloodyMerchant,Notify,AutoCloseDoors,StarterKit,KindredArenas,MuteChatPlayer,BetterMissions,BloodRefill,SpiderKiller" | split: "," %}
 {% assign client_mods = "ClientUI,RemoveVersionWatermark,Eclipse" | split: "," %}
 {% assign framework_mods = "Bloodstone,VampireCommandFramework,CrimsonSQL,BloodyCore,XPShared" | split: "," %}
 
-{% assign server_mods_data = all_mods | where_exp: "item", "server_mods contains item.name and item.is_deprecated == false" | sort: "date_updated" | reverse %}
-{% assign client_mods_data = all_mods | where_exp: "item", "client_mods contains item.name and item.is_deprecated == false" | sort: "date_updated" | reverse %}
-{% assign framework_mods_data = all_mods | where_exp: "item", "framework_mods contains item.name and item.is_deprecated == false" | sort: "date_updated" | reverse %}
+{% assign server_mods_data = all_mods | where_exp: "item", "server_mods contains item.name" | sort: "date_updated" | reverse %}
+{% assign client_mods_data = all_mods | where_exp: "item", "client_mods contains item.name" | sort: "date_updated" | reverse %}
+{% assign framework_mods_data = all_mods | where_exp: "item", "framework_mods contains item.name" | sort: "date_updated" | reverse %}
+
+{% assign server_mods_data = server_mods_data | reject_exp: "item", "item.is_deprecated == true" %}
+{% assign client_mods_data = client_mods_data | reject_exp: "item", "item.is_deprecated == true" %}
+{% assign framework_mods_data = framework_mods_data | reject_exp: "item", "item.is_deprecated == true" %}
 
 <h1>Server Mods</h1>
 
@@ -34,7 +38,7 @@ https://thunderstore.io/c/v-rising/api/v1/package/
     <tr>
       <td><a href="{{ latest_version.website_url }}">{{ mod.name }}</a></td>
       <td>{{ latest_version.description }}</td>
-      <td><a href="https://github.com/{{ mod.owner }}">{{ mod.owner }}</a></td>
+      <td><a href="https://thunderstore.io/c/v-rising/p{{ mod.owner }}">{{ mod.owner }}</a></td>
     </tr>
   {% endfor %}
 </table>
@@ -51,7 +55,7 @@ https://thunderstore.io/c/v-rising/api/v1/package/
     <tr>
       <td><a href="{{ latest_version.website_url }}">{{ mod.name }}</a></td>
       <td>{{ latest_version.description }}</td>
-      <td><a href="https://github.com/{{ mod.owner }}">{{ mod.owner }}</a></td>
+      <td><a href="https://thunderstore.io/c/v-rising/p{{ mod.owner }}">{{ mod.owner }}</a></td>
     </tr>
   {% endfor %}
 </table>
@@ -68,7 +72,7 @@ https://thunderstore.io/c/v-rising/api/v1/package/
     <tr>
       <td><a href="{{ latest_version.website_url }}">{{ mod.name }}</a></td>
       <td>{{ latest_version.description }}</td>
-      <td><a href="https://github.com/{{ mod.owner }}">{{ mod.owner }}</a></td>
+      <td><a href="https://thunderstore.io/c/v-rising/p{{ mod.owner }}">{{ mod.owner }}</a></td>
     </tr>
   {% endfor %}
 </table>
