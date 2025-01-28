@@ -148,6 +148,6 @@ Tools made by those in the community.
 3. **Dispose NativeArray**: Enclose the `NativeArray<Entity>` disposal in a `try-finally` block.  
 4. **Logging**: Use `Plugin.LogInstance.LogInfo` for informative, context-rich logs.
 
-*This instruction set is organized to allow easy addition, refinement and modification of sections as V Rising’s modding environment evolves.*
+*This instruction set is organized to allow easy addition, refinement and modification of sections as V Rising’s modding environment evolves. Sections such as 7 & 8 seem most beneficial for improving responses, but feel free to suggest improvements elsewhere as well.*
 
 ---
