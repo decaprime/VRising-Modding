@@ -34,7 +34,7 @@ Before starting development, you'll need to install and configure a few essentia
 
 - **dnSpy Plugin**: [dnspy.Cpp2IL](https://github.com/BadRyuner/dnspy.Cpp2IL) is an extension for dnSpy that enables users to view IL2CPP-compiled Unity games directly within the dnSpy interface.
 
-- **Cpp2IL**: [Cpp2IL](https://github.com/SamboyCoding/Cpp2IL) is a tool designed to reverse Unity's IL2CPP (Intermediate Language to C++) build process back to the original managed DLLs1. It aims to reconstruct game assemblies from IL2CPP-compiled games, making them readable by tools like dnSpy.
+- **Cpp2IL**: [Cpp2IL](https://github.com/SamboyCoding/Cpp2IL) is a tool designed to reverse Unity's IL2CPP (Intermediate Language to C++) build process back to the original managed DLLs. It aims to reconstruct game assemblies from IL2CPP-compiled games, making them readable by tools like dnSpy.
 
 - **Il2CppDumper** [Il2CppDumper](https://github.com/Perfare/Il2CppDumper) is a tool designed to help reverse engineer Unity games compiled with IL2CPP, allowing users to extract and analyze game assemblies.
 
