@@ -23,13 +23,24 @@ Before starting development, you'll need to install and configure a few essentia
 4. **Finish Installation**  
    Complete the installation process and launch Visual Studio. If you missed installing the workload or the individual component, you can always reopen the installer and choose **Modify** to add these after. You can customize the editor further if you want, but the default setup with Unity support should be enough for mod development.
 
-
+5. **Tutorial Video (Optional)**  
+   To get familiar with Visual Studio, it’s recommended to watch a few [tutorial videos](https://www.youtube.com/watch?v=VcU2HGsxeII). You can find official Visual Studio tutorials or Unity-specific tutorials that explain how to use the IDE for modding.
+   
 ### Additional Resources
 
-- To get familiar with Visual Studio, it’s recommended to watch a few [tutorial videos](https://www.youtube.com/watch?v=VcU2HGsxeII). You can find official Visual Studio tutorials or Unity-specific tutorials that explain how to use the IDE for modding.
-
 - **IDE Options**: Some developers prefer using [Rider](https://www.jetbrains.com/rider/), an IDE from JetBrains, for Unity development. Rider has integrated support for Unity and C# and includes powerful features such as built-in debugging tools and a decompiler (dnSpy). If you’re comfortable with it, you can use Rider as an alternative to Visual Studio.
-- It can be helpful to have a decompiler such as [dnSpy](https://dnspy.org/), [dotPeek](https://www.jetbrains.com/decompiler/), or [ILSpy](https://github.com/icsharpcode/ILSpy#ilspy-------). You can use these to inspect the files in `VRisingDedicatedServer\BepInEx\interop`.
+
+- **Decompilers**: It can be helpful to have a decompiler such as [dnSpy](https://dnspy.org/), [dotPeek](https://www.jetbrains.com/decompiler/), or [ILSpy](https://github.com/icsharpcode/ILSpy#ilspy-------). You can use these to inspect the files in `VRisingDedicatedServer\BepInEx\interop`.
+
+- **dnSpy Plugin**: [dnspy.Cpp2IL](https://github.com/BadRyuner/dnspy.Cpp2IL) is an extension for dnSpy that enables users to view IL2CPP-compiled Unity games directly within the dnSpy interface.
+
+- **Cpp2IL**: [Cpp2IL](https://github.com/SamboyCoding/Cpp2IL) is a tool designed to reverse Unity's IL2CPP (Intermediate Language to C++) build process back to the original managed DLLs1. It aims to reconstruct game assemblies from IL2CPP-compiled games, making them readable by tools like dnSpy.
+
+- **Il2CppDumper** [Il2CppDumper](https://github.com/Perfare/Il2CppDumper) is a tool designed to help reverse engineer Unity games compiled with IL2CPP, allowing users to extract and analyze game assemblies.
+
+***Note: What is the difference between Cpp2IL vs Il2CppDumper***?
+- Il2CppDumper: *Primarily focuses on extracting metadata and generating dummy DLLs from IL2CPP-compiled games.*
+- Cpp2IL: *Aims to reverse the IL2CPP build process back to the original managed DLLs, providing more comprehensive code reconstruction.*
 
 --- 
 
