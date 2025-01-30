@@ -39,8 +39,8 @@ Before starting development, you'll need to install and configure a few essentia
 - **Il2CppDumper** [Il2CppDumper](https://github.com/Perfare/Il2CppDumper) is a tool designed to help reverse engineer Unity games compiled with IL2CPP, allowing users to extract and analyze game assemblies.
 
 ***Note: What is the difference between Cpp2IL vs Il2CppDumper***?
-- Il2CppDumper: *Primarily focuses on extracting metadata and generating dummy DLLs from IL2CPP-compiled games.*
 - Cpp2IL: *Aims to reverse the IL2CPP build process back to the original managed DLLs, providing more comprehensive code reconstruction.*
+- Il2CppDumper: *Primarily focuses on extracting metadata and generating dummy DLLs from IL2CPP-compiled games.*
 
 --- 
 
