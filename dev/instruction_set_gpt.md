@@ -71,7 +71,7 @@ parent: For Developers
 
 #### 7.1 System Queries and NativeArray Usage
 1. **Predefined Queries**: Use existing system queries (e.g., `_Query` or `EntityQueries[n]`) instead of creating new ones whenever possible.  
-2. **Entity Access**: Retrieve entities via `ToEntityArray` with `Allocator.Temp`. Reserve `Allocator.TempJob` for explicitly managed cleanup scenarios.
+2. **Entity Access**: Retrieve entities via `ToEntityArray` with `Allocator.Temp`. Reserve `Allocator.TempJob` for scenarios which may require processing over several frames which is uncommon and should not generally be suggested unless the user inquires about it.
 
 #### 7.2 Component Access
 1. **Component Checks**: Always check for a component’s presence using `EntityManager.HasComponent<T>(entity)` before retrieving data.  
