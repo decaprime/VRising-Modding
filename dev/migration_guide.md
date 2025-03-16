@@ -25,10 +25,9 @@ This version of game libs privately packages the interop changes from above with
 - `using BepInEx.IL2CPP;` -> `using BepInEx.Unity.IL2CPP;`
 - `using UnhollowerRuntimeLib;` -> `using Il2CppInterop.Runtime;`
 - `using StunLocalization;` -> `using Stunlock.Localization;`
-
-## Prefab Changes
 - `PrefabGUID` calls need `using Stunlock.Core;`
 
-## Term Changes
+## Name Changes
 - `FixedString64` -> `FixedString64Bytes`
 - `GetExistingSystem` -> `GetExistingSystemManaged`
+  
