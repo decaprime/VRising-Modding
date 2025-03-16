@@ -18,10 +18,16 @@ This version of game libs privately packages the interop changes from above with
     <PackageReference Include="VRising.Unhollowed.Client" Version="1.0.*" />
 ```
 
-## Using Changes
-`PrefabGUID` calls need `using Stunlock.Core;`
+## BepInEx Changes
+- `BaseUnityPlugin` -> `BasePlugin`
 
-## Namespace Changes (can find replace)
+## Namespace Changes
+- `using BepInEx.IL2CPP;` -> `using BepInEx.Unity.IL2CPP;`
+- `using UnhollowerRuntimeLib;` -> `using Il2CppInterop.Runtime;`
+- `using StunLocalization;` -> `using Stunlock.Localization;`
+- `PrefabGUID` calls need `using Stunlock.Core;`
+
+## Name Changes
 - `FixedString64` -> `FixedString64Bytes`
 - `GetExistingSystem` -> `GetExistingSystemManaged`
-
+  
