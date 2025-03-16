@@ -1,6 +1,6 @@
 
 # V Rising Modding Wiki
-![](/images/mod_logo_red_purple.png)
+![](/images/VRisingModdingLogoNew.png)
 
 You can edit the wiki contents in this repository as markdown.
 
