@@ -6,7 +6,7 @@ nav_order: 1
 <img src="https://github.com/user-attachments/assets/19c9b954-030d-403b-87f1-53cb1c2a96a5" width="700">
 
 This is a wiki for V Rising mod developers and users. 
-## Join the Community
+
 [Join Discord](https://vrisingmods.com/discord){: .btn .btn-purple .fs-6 .mt-2 .px-6 }
 
 ## Getting Started
