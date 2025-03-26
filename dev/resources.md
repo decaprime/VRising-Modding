@@ -11,7 +11,7 @@ parent: For Developers
   - The VRising modding community focuses on open-source mods to encourage learning and the development of new features. Feel free to explore and reference any of the open-source mods listed here, but please be sure to **credit the creators** and follow any relevant license requirements.
 - [**Prefabs list**](https://wiki.vrisingmods.com/prefabs/)
   - Lists of the various prefabs, grouped by type, or you can review all of them.
-- [**GPT Instructions**](https://wiki.vrisingmods.com/dev/gpt_instructions.md)
+- [**GPT Instructions**](https://wiki.vrisingmods.com/dev/gpt_instructions.html)
   - Instructions to help guide responses for [C#(Rising)](https://chatgpt.com/g/g-XGdFZaBHL-c-rising).
   
 ---
