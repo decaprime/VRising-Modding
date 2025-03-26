@@ -1,6 +1,6 @@
 ---
 title: Instruction Set (GPT)
-parent: For Developers
+parent: Resources
 ---
 
 ## V Rising Technical Guidelines and Best Practices - Instruction Set for C#(Rising)
