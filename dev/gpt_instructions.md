@@ -1,5 +1,5 @@
 ---
-title: Instruction Set (GPT)
+title: GPT Instructions
 parent: Resources
 ---
 
