@@ -20,25 +20,3 @@ This will get you started with a mod named _NameOfYourMod_, using [Bloodstone](.
 
 
 ---
-
-
-## Template Plus
-Alternatively, there is also an extended (and opinionated) template available providing optional sample code, a common project structure, multiple framework options, and more. 
-
-### Installation
-`dotnet new --install VRising.ModTemplatePlus`
-
-### Example usage
-`dotnet new vrisingmodplus -n NameOfYourMod -h -desc "Description of your mod"`
-
-- `-h` A simple example mod pre-built and ready to build with how-to tips on how to get started making mods
-- `-desc` A description of your mod.
-
-### Dependencies
-- Plus always includes [VampireCommandFramework](https://github.com/decaprime/VampireCommandFramework/)
-- **Optional Dependencies**
-  - `-bloodstone` Include [Bloodstone](./bloodstone.md) framework
-  - `-bloodycore` Include [Bloody.Core](https://github.com/oscarpedrero/BloodyCore) framework
-  - `-vamp` Include [VAMP](https://github.com/CrimsonMods/VAMP) framework
-
-
