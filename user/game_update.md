@@ -1,5 +1,5 @@
 ---
-title: 1.0 Game Update
+title: Oakveil Game Update
 parent: For Users
 nav_exclude: false
 has_toc: false
