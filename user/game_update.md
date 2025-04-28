@@ -12,7 +12,7 @@ Previous versions of mods and BepInEx do not work with the Oakveil game update. 
 {: .warning-title }
 > A Note
 > 
-> Please note Mods that are not yet updated may take some unknown amount of time to be updated to 1.0. We would like to remind all users who enjoy playing with mods to be patient and understand that modders are working on getting the mods updated and stable.
+> Please note Mods that are not yet updated may take some unknown amount of time to be updated to 1.1. We would like to remind all users who enjoy playing with mods to be patient and understand that modders are working on getting the mods updated and stable.
 >
 
 ### Intended for testing
