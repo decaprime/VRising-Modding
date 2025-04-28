@@ -12,7 +12,7 @@ Previous versions of mods and BepInEx do not work with the Oakveil game update. 
 {: .warning-title }
 > A Note
 > 
-> Please note Mods that are not yet updated may take some unknown amount of time to be updated to 1.0. We would like to remind all users who enjoy playing with mods to be patient and understand that modders are working on getting the mods updated and stable.
+> Please note Mods that are not yet updated may take some unknown amount of time to be updated to 1.1. We would like to remind all users who enjoy playing with mods to be patient and understand that modders are working on getting the mods updated and stable.
 >
 
 ### Intended for testing
@@ -26,6 +26,8 @@ The remainder of this page is provided for developers and anyone willing to acce
 | --- | --- | --- | --- | --- |
 | [VampireCommandFramework](https://github.com/Odjit/VampireCommandFramework/releases/tag/1.1) | 0.999 | deca/odjit | SERVER | April 28 |
 | [KindredCommands](https://github.com/Odjit/KindredCommands/releases/tag/1.1) | 2.5.0 | odjit | SERVER | April 28 |
+| [Protector](https://github.com/iiiLollo/Protector/releases/tag/0.2.0rc) | 0.2.0rc | Orkom | SERVER | April 28 |
 | [Penumbra](https://github.com/mfoltz/Penumbra/releases/tag/v1.0.2) | 1.0.2 | zfolmt | SERVER | April 28 |
 | [RetroCamera](https://github.com/mfoltz/RetroCamera/releases/tag/v1.0.0) | 1.0.0 | zfolmt | CLIENT | April 28 |
+
 
