@@ -25,5 +25,6 @@ The remainder of this page is provided for developers and anyone willing to acce
 | Mod | Version | Discord | Client | Last Update |
 | --- | --- | --- | --- | --- |
 | [VampireCommandFramework](https://github.com/Odjit/VampireCommandFramework/releases/tag/1.1) | 0.999 | deca/odjit | SERVER | April 28 |
+| [KindredCommands](https://github.com/Odjit/KindredCommands/releases/tag/1.1) | 2.5.0 | odjit | SERVER | April 28 |
 
 
