@@ -1,9 +1,9 @@
 ---
 title: 1.0 Game Update
 parent: For Users
-nav_exclude: true
+nav_exclude: false
 has_toc: false
-hide: true
+hide: false
 ---
 
 # RE: 1.1 - Updated 4/27
