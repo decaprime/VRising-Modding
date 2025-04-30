@@ -4,7 +4,7 @@ nav_order: 1
 ---
 
 <div style="text-align: center;">
-    <img src="https://github.com/user-attachments/assets/19c9b954-030d-403b-87f1-53cb1c2a96a5" width="500">
+    <img src="https://github.com/user-attachments/assets/b04cb6ae-6635-4fc2-8f75-2b28d4060edb" width="500">
 </div>
 
 <div class="text-center" style="margin-top: 20px;">
