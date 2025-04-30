@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: prefab
 title: VBlood & Primal Prefabs
 parent: Prefabs
 nav_exclude: false
