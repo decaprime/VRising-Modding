@@ -26,7 +26,4 @@ The remainder of this page is provided for developers and anyone willing to acce
 | --- | --- | --- | --- | --- |
 | [VampireCommandFramework](https://github.com/Odjit/VampireCommandFramework/releases/tag/1.1) | 0.999 | deca/odjit | SERVER | April 28 |
 | [Protector](https://github.com/iiiLollo/Protector/releases/tag/0.2.0rc) | 0.2.0rc | Orkom | SERVER | April 28 |
-| [Penumbra](https://github.com/mfoltz/Penumbra/releases/tag/v1.0.2) | 1.0.2 | zfolmt | SERVER | April 28 |
-| [RetroCamera](https://github.com/mfoltz/RetroCamera/releases/tag/v1.0.0) | 1.0.0 | zfolmt | CLIENT | April 28 |
-
 
