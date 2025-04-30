@@ -14,6 +14,10 @@ nav_order: 3
 
 
 ## Adding to the AdminList
+### For locally hosted games
+You can skip this step.
+
+### For servers
 The very first thing you will need to do is add yourself to the list of admins. 
 You will need to navigate to your Server's adminlist location. Typically, this will be found at `C:\Program Files (x86)\Steam\steamapps\common\VRisingDedicatedServer\save-data\Settings`
 
