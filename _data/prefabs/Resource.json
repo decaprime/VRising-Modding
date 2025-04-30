@@ -1,7 +1,6 @@
 {
   "Resource_DeathContainer_Drop": 55868820,
   "Resource_Drop_Bag": -132814229,
-  "Resource_Drop_Base": 1779092394,
   "Resource_Drop_BloodCrystal": -2134166369,
   "Resource_Drop_BloodRose": 2035436823,
   "Resource_Drop_Bone": 741092750,
@@ -24,6 +23,7 @@
   "Resource_Drop_CopperOre": -1293505743,
   "Resource_Drop_Cotton": -584778120,
   "Resource_Drop_CottonYarn": 470647052,
+  "Resource_Drop_Emery": 1954116869,
   "Resource_Drop_EMP": 1188008126,
   "Resource_Drop_EnergyCore01": -1751477752,
   "Resource_Drop_EnergyCore02": -1758094831,
@@ -95,6 +95,7 @@
   "Resource_Drop_OnyxTear": -2073210980,
   "Resource_Drop_PaintingFrame": 1582869873,
   "Resource_Drop_Paper": -1707229047,
+  "Resource_Drop_Passive": -1674657717,
   "Resource_Drop_Pendant": -583542658,
   "Resource_Drop_Plantfiber": -2146401969,
   "Resource_Drop_PotionBottle": -1094561191,

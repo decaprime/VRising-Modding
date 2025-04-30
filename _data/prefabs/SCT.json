@@ -11,6 +11,7 @@
   "SCT_Type_DamageDone": 781573820,
   "SCT_Type_DamageDoneWeak": -403787477,
   "SCT_Type_DamageTaken": -1967038487,
+  "SCT_Type_DamageTakenCorruption": 2141794156,
   "SCT_Type_Generic": -1687715009,
   "SCT_Type_HaveEquippedItems": 1868620532,
   "SCT_Type_Healing": -856835573,

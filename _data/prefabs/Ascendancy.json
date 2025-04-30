@@ -1,0 +1,20 @@
+{
+  "AscendancyPassive_Blood_T01_BloodMend": 254413498,
+  "AscendancyPassive_Blood_T02_BloodDrain": 762152014,
+  "AscendancyPassive_Blood_T03_LeechMastery": 980613835,
+  "AscendancyPassive_Chaos_T01_VeilCooldown": -1314793423,
+  "AscendancyPassive_Chaos_T02_UltimatePower": -463084646,
+  "AscendancyPassive_Chaos_T03_ChaosMastery": -974227542,
+  "AscendancyPassive_Frost_T01_ShieldEfficiency": 1401357351,
+  "AscendancyPassive_Frost_T02_AllResist": 1943795419,
+  "AscendancyPassive_Frost_T03_FrostMastery": -1877359740,
+  "AscendancyPassive_Illusion_T01_SpellCooldown": 1380208342,
+  "AscendancyPassive_Illusion_T02_ShapeshiftSpeed": -849582362,
+  "AscendancyPassive_Illusion_T03_IllusionMastery": 522943404,
+  "AscendancyPassive_Storm_T01_AttackSpeed": 1805361793,
+  "AscendancyPassive_Storm_T02_MountSpeed": 399289260,
+  "AscendancyPassive_Storm_T03_StormMastery": -655574135,
+  "AscendancyPassive_Unholy_T01_HealthRegen": -2030466757,
+  "AscendancyPassive_Unholy_T02_FeedCooldown": 1178142107,
+  "AscendancyPassive_Unholy_T03_SkeletonMastery": -392743276
+}

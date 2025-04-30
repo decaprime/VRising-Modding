@@ -1,4 +1,5 @@
 {
+  "ServantCoffinBuildMenuGroup": 709084037,
   "ServantComponentsTemplate": -1746730611,
   "ServantInjury_BloodLoss": -2075488993,
   "ServantInjury_Cross": 935529743,
@@ -54,6 +55,10 @@
   "ServantMission_Silverlight_HarpyNest_South": -389296424,
   "ServantMission_Silverlight_SilverMines": 348653938,
   "ServantMission_Silverlight_Vineyard": -851359443,
+  "ServantMission_Strongblade_Bastion": 222147257,
+  "ServantMission_Strongblade_CarversLoggingOutpost": 2064518699,
+  "ServantMission_Strongblade_Shoreline": 1928198431,
+  "ServantMission_Strongblade_VenomMixingOutpost": 2051852663,
   "ServantMission_TEST": -756885851,
   "ServantMissionBuff": -1100464221,
   "ServantMissionSettings": -1830466155,
@@ -67,6 +72,7 @@
   "ServantPerk_Faction_FarbaneExpert": 1427742366,
   "ServantPerk_Faction_GloomrotExpert": -1509519094,
   "ServantPerk_Faction_NoctemExpert": -1031211388,
+  "ServantPerk_Faction_OakveilExpert": -1745352584,
   "ServantPerk_Faction_SilverExpert": 226032448,
   "ServantPerkCollection": -64904809
 }
