@@ -1,0 +1,432 @@
+[
+  [
+    "Matka",
+    "CHAR_Cursed_Witch_VBlood",
+    "VBlood"
+  ],
+  [
+    "Terah",
+    "CHAR_Geomancer_Human_VBlood",
+    "VBlood"
+  ],
+  [
+    "Jade",
+    "CHAR_VHunter_Jade_VBlood",
+    "VBlood"
+  ],
+  [
+    "Beatrice",
+    "CHAR_Villager_Tailor_VBlood",
+    "VBlood"
+  ],
+  [
+    "Nicholaus",
+    "CHAR_Undead_Priest_VBlood",
+    "VBlood"
+  ],
+  [
+    "Quincey (Quincy)",
+    "CHAR_Bandit_Tourok_VBlood",
+    "VBlood"
+  ],
+  [
+    "Ungora (Spider)",
+    "CHAR_Spider_Queen_VBlood",
+    "VBlood"
+  ],
+  [
+    "Terrorclaw",
+    "CHAR_Winter_Yeti_VBlood",
+    "VBlood"
+  ],
+  [
+    "Lidia",
+    "CHAR_Bandit_Chaosarrow_VBlood",
+    "VBlood"
+  ],
+  [
+    "Goreswine",
+    "CHAR_Undead_BishopOfDeath_VBlood",
+    "VBlood"
+  ],
+  [
+    "Octavian",
+    "CHAR_Militia_Leader_VBlood",
+    "VBlood"
+  ],
+  [
+    "Leandra",
+    "CHAR_Undead_BishopOfShadows_VBlood",
+    "VBlood"
+  ],
+  [
+    "Rufus",
+    "CHAR_Bandit_Foreman_VBlood",
+    "VBlood"
+  ],
+  [
+    "Keely",
+    "CHAR_Bandit_Frostarrow_VBlood",
+    "VBlood"
+  ],
+  [
+    "Kodia the Ferocious Bear",
+    "CHAR_Forest_Bear_Dire_Vblood",
+    "VBlood"
+  ],
+  [
+    "Christina",
+    "CHAR_Militia_Nun_VBlood",
+    "VBlood"
+  ],
+  [
+    "Clive",
+    "CHAR_Bandit_Bomber_VBlood",
+    "VBlood"
+  ],
+  [
+    "Gorecrusher the Behemoth",
+    "CHAR_Cursed_MountainBeast_VBlood",
+    "VBlood"
+  ],
+  [
+    "Foulrot",
+    "CHAR_Undead_ZealousCultist_VBlood",
+    "VBlood"
+  ],
+  [
+    "Polora",
+    "CHAR_Poloma_VBlood",
+    "VBlood"
+  ],
+  [
+    "Styx (Bat)",
+    "CHAR_BatVampire_VBlood",
+    "VBlood"
+  ],
+  [
+    "Mairwyn the Elementalist",
+    "CHAR_ArchMage_VBlood",
+    "VBlood"
+  ],
+  [
+    "Albert The Duke of Balaton (Frog)",
+    "CHAR_Cursed_ToadKing_VBlood",
+    "VBlood"
+  ],
+  [
+    "Talzur The Winged Horror",
+    "CHAR_Manticore_VBlood",
+    "VBlood"
+  ],
+  [
+    "Vincent",
+    "CHAR_Militia_Guard_VBlood",
+    "VBlood"
+  ],
+  [
+    "Raziel",
+    "CHAR_Militia_BishopOfDunley_VBlood",
+    "VBlood"
+  ],
+  [
+    "Morian",
+    "CHAR_Harpy_Matriarch_VBlood",
+    "VBlood"
+  ],
+  [
+    "Solarus",
+    "CHAR_ChurchOfLight_Paladin_VBlood",
+    "VBlood"
+  ],
+  [
+    "Tristan",
+    "CHAR_VHunter_Leader_VBlood",
+    "VBlood"
+  ],
+  [
+    "Errol",
+    "CHAR_Bandit_StoneBreaker_VBlood",
+    "VBlood"
+  ],
+  [
+    "Azariel",
+    "CHAR_ChurchOfLight_Cardinal_VBlood",
+    "VBlood"
+  ],
+  [
+    "Willfred (Wilfred)",
+    "CHAR_WerewolfChieftain_Human",
+    "VBlood"
+  ],
+  [
+    "Alpha Wolf",
+    "CHAR_Forest_Wolf_VBlood",
+    "VBlood"
+  ],
+  [
+    "Meredith",
+    "CHAR_Militia_Longbowman_LightArrow_Vblood",
+    "VBlood"
+  ],
+  [
+    "Nibbles the Putrid Rat",
+    "CHAR_Vermin_DireRat_VBlood",
+    "VBlood"
+  ],
+  [
+    "Frostmaw",
+    "CHAR_Wendigo_VBlood",
+    "VBlood"
+  ],
+  [
+    "Grayson",
+    "CHAR_Bandit_Stalker_VBlood",
+    "VBlood"
+  ],
+  [
+    "Adam",
+    "CHAR_Gloomrot_Monster_VBlood",
+    "VBlood"
+  ],
+  [
+    "Voltatia",
+    "CHAR_Gloomrot_RailgunSergeant_VBlood",
+    "VBlood"
+  ],
+  [
+    "Ziva",
+    "CHAR_Gloomrot_Iva_VBlood",
+    "VBlood"
+  ],
+  [
+    "Angram",
+    "CHAR_Gloomrot_Purifier_VBlood",
+    "VBlood"
+  ],
+  [
+    "Henry Blackbrew",
+    "CHAR_Gloomrot_TheProfessor_VBlood",
+    "VBlood"
+  ],
+  [
+    "Domina",
+    "CHAR_Gloomrot_Voltage_VBlood",
+    "VBlood"
+  ],
+  [
+    "Cyril",
+    "CHAR_Undead_CursedSmith_VBlood",
+    "VBlood"
+  ],
+  [
+    "Ben The Old Wanderer",
+    "CHAR_Villager_CursedWanderer_VBlood",
+    "VBlood"
+  ],
+  [
+    "Baron du Bouchon",
+    "CHAR_ChurchOfLight_Sommelier_VBlood",
+    "VBlood"
+  ],
+  [
+    "Sir Magnus the Overseer",
+    "CHAR_ChurchOfLight_Overseer_VBlood",
+    "VBlood"
+  ],
+  [
+    "Maja",
+    "CHAR_Militia_Scribe_VBlood",
+    "VBlood"
+  ],
+  [
+    "Bane",
+    "CHAR_Undead_Infiltrator_VBlood",
+    "VBlood"
+  ],
+  [
+    "Grethel the Glassblower",
+    "CHAR_Militia_Glassblower_VBlood",
+    "VBlood"
+  ],
+  [
+    "Kriig",
+    "CHAR_Undead_Leader_Vblood",
+    "VBlood"
+  ],
+  [
+    "Finn",
+    "CHAR_Bandit_Fisherman_VBlood",
+    "VBlood"
+  ],
+  [
+    "Elena",
+    "CHAR_Vampire_IceRanger_VBlood",
+    "VBlood"
+  ],
+  [
+    "Valencia",
+    "CHAR_Vampire_BloodKnight_VBlood",
+    "VBlood"
+  ],
+  [
+    "Cassius",
+    "CHAR_Vampire_HighLord_VBlood",
+    "VBlood"
+  ],
+  [
+    "Dracula",
+    "CHAR_Vampire_Dracula_VBlood",
+    "VBlood"
+  ],
+  [
+    "Simon Belmont",
+    "CHAR_VHunter_CastleMan",
+    "VBlood"
+  ],
+  [
+    "Sir Erwin the Gallant Cavalier",
+    "CHAR_Militia_Fabian_VBlood",
+    "VBlood"
+  ],
+  [
+    "Gaius The Cursed Champion",
+    "CHAR_Undead_ArenaChampion_VBlood",
+    "VBlood"
+  ],
+  [
+    "Jakira the Shadow Huntress",
+    "CHAR_Blackfang_Livith_VBlood",
+    "VBlood"
+  ],
+  [
+    "Stavros the Carver",
+    "CHAR_Blackfang_CarverBoss_VBlood",
+    "VBlood"
+  ],
+  [
+    "Lucile the Venom Alchemist",
+    "CHAR_Blackfang_Lucie_VBlood",
+    "VBlood"
+  ],
+  [
+    "Dantos the Forgebinder",
+    "CHAR_Blackfang_Valyr_VBlood",
+    "VBlood"
+  ],
+  [
+    "Megara the Serpent Queen",
+    "CHAR_Blackfang_Morgana_VBlood",
+    "VBlood"
+  ],
+  [
+    "Primal Lidia",
+    "CHAR_Bandit_Chaosarrow_GateBoss_Minor",
+    "Primal"
+  ],
+  [
+    "Primal Rufus",
+    "CHAR_Bandit_Foreman_VBlood_GateBoss_Minor",
+    "Primal"
+  ],
+  [
+    "Primal Errol",
+    "CHAR_Bandit_StoneBreaker_VBlood_GateBoss_Minor",
+    "Primal"
+  ],
+  [
+    "Primal Quincey",
+    "CHAR_Bandit_Tourok_GateBoss_Minor",
+    "Primal"
+  ],
+  [
+    "Primal Keely",
+    "CHAR_Frostarrow_GateBoss_Minor",
+    "Primal"
+  ],
+  [
+    "Primal Angram",
+    "CHAR_Gloomrot_Purifier_VBlood_GateBoss_Major",
+    "Primal"
+  ],
+  [
+    "Primal Domina",
+    "CHAR_Gloomrot_Voltage_VBlood_GateBoss_Major",
+    "Primal"
+  ],
+  [
+    "Primal Vincent",
+    "CHAR_Militia_Guard_VBlood_GateBoss_Minor",
+    "Primal"
+  ],
+  [
+    "Primal Octavian",
+    "CHAR_Militia_Leader_VBlood_GateBoss_Major",
+    "Primal"
+  ],
+  [
+    "Primal Poloma",
+    "CHAR_Poloma_VBlood_GateBoss_Minor",
+    "Primal"
+  ],
+  [
+    "Primal Ungora",
+    "CHAR_Spider_Queen_VBlood_GateBoss_Major",
+    "Primal"
+  ],
+  [
+    "Primal Goreswine",
+    "CHAR_Undead_BishopOfDeath_VBlood_GateBoss_Minor",
+    "Primal"
+  ],
+  [
+    "Primal Leandra",
+    "CHAR_Undead_BishopOfShadows_VBlood_GateBoss_Major",
+    "Primal"
+  ],
+  [
+    "Primal Bane",
+    "CHAR_Undead_Infiltrator_VBlood_GateBoss_Major",
+    "Primal"
+  ],
+  [
+    "Primal Kriig",
+    "CHAR_Undead_Leader_Vblood_GateBoss_Minor",
+    "Primal"
+  ],
+  [
+    "Primal Foulrot",
+    "CHAR_Undead_ZealousCultist_VBlood_GateBoss_Major",
+    "Primal"
+  ],
+  [
+    "Primal Jade",
+    "CHAR_VHunter_Jade_VBlood_GateBoss_Major",
+    "Primal"
+  ],
+  [
+    "Primal Tristan",
+    "CHAR_VHunter_Leader_GateBoss_Minor",
+    "Primal"
+  ],
+  [
+    "Primal Ben",
+    "CHAR_Villager_CursedWanderer_VBlood_GateBoss_Major",
+    "Primal"
+  ],
+  [
+    "Primal Frostmaw",
+    "CHAR_Wendigo_GateBoss_Major",
+    "Primal"
+  ],
+  [
+    "Primal Willfred",
+    "CHAR_WerewolfChieftain_VBlood_GateBoss_Major",
+    "Primal"
+  ],
+  [
+    "Primal Terrorclaw",
+    "CHAR_Winter_Yeti_VBlood_GateBoss_Major",
+    "Primal"
+  ]
+]
