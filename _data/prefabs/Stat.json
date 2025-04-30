@@ -13,6 +13,7 @@
   "StatMod_SpellCooldownReduction": -1639076208,
   "StatMod_SpellLeech": -427223401,
   "StatMod_SpellPower": 1705753146,
+  "StatMod_TravelCooldownReduction": 703010343,
   "StatMod_Unique_AttackSpeed_High": -1545133628,
   "StatMod_Unique_AttackSpeed_Mid": 1448170922,
   "StatMod_Unique_BloodEfficiency_High": -1700712765,
@@ -37,5 +38,6 @@
   "StatMod_Unique_VampireDamage_Mid": 530283515,
   "StatMod_Unique_WeaponCooldown_Mid": 29688024,
   "StatMod_Unique_WeaponLeech_Mid": 1996994528,
-  "StatMod_WeaponCooldownReduction": -1122907647
+  "StatMod_WeaponCooldownReduction": -1122907647,
+  "StatMod_WeaponSkillPower": 1683818955
 }
