@@ -1,6 +1,6 @@
 ---
 layout: default
-title: VBlood & Primal
+title: VBlood Names
 parent: Prefabs
 data_file: vblood_names
 nav_exclude: false
