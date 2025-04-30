@@ -26,4 +26,5 @@ The remainder of this page is provided for developers and anyone willing to acce
 | --- | --- | --- | --- | --- |
 | [VampireCommandFramework](https://github.com/Odjit/VampireCommandFramework/releases/tag/1.1) | 0.999 | deca/odjit | SERVER | April 28 |
 | [Protector](https://github.com/iiiLollo/Protector/releases/tag/0.2.0rc) | 0.2.0rc | Orkom | SERVER | April 28 |
+| [PrisonerExchange](https://github.com/helskog/PrisonerExchange/releases/tag/Pre-release) | 1.0.3 | helskog | SERVER | April 29 |
 
