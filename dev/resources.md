@@ -19,7 +19,7 @@ parent: For Developers
 ## Mod Tools
 
 Tools made by those in the community.
-- [**KindredExtract**](https://github.com/Odjit/KindredExtract) <img src="https://github.com/user-attachments/assets/a0e5a99d-af88-4d9d-9fee-84cc3978aeae" width="60" style="vertical-align: middle;" >
+- [**KindredExtract**](https://thunderstore.io/c/v-rising/p/odjit/KindredExtract/) <img src="https://github.com/user-attachments/assets/a0e5a99d-af88-4d9d-9fee-84cc3978aeae" width="60" style="vertical-align: middle;" >
 - [**VRising Data Extractor**](https://github.com/adainrivers/virising-data-extractor?tab=readme-ov-file) Used for the info on the Gaming tools site.
   
 ---
