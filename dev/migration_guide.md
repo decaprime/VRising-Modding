@@ -19,7 +19,7 @@ This version of game libs privately packages the interop changes from above with
     <PackageReference Include="VRising.Unhollowed.Client" Version="1.1.*" />
 ```
 
-## ServerChatUtils parameter change (string --> FixedString512Bytes)
+## ServerChatUtils Parameter Change (string --> FixedString512Bytes)
 
 ```xml
 	public static void SendSystemMessage(this User user, string message)
