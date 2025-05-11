@@ -6,6 +6,7 @@ parent: For Developers
 # Migrating plugins for 1.1
 
 - BepInEx (TESTING): [RC2 1.733.2](https://github.com/decaprime/VRising-Modding/releases/tag/1.733.2)
+- VampireCommandFramework (TESTING): [VCF 0.0.999](https://github.com/Odjit/VampireCommandFramework/releases/tag/1.1)
 - Game Libs: [nuget](https://www.nuget.org/packages/VRising.Unhollowed.Client/)
 
 This version of game libs privately packages the interop changes from above with the already interop'd client assemblies. This avoids the need for the MSBuild task creating the interop and is intended to get developers rolling on release date. 
