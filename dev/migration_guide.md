@@ -1,11 +1,12 @@
 ---
-title: Migration Guide for 1.0 Update
+title: Migration Guide for 1.1 Update
 parent: For Developers
 ---
 
-# Migrating plugins for 1.0
+# Migrating plugins for 1.1
 
-- BepInEx: [Thunderstore 1.691.3](https://v-rising.thunderstore.io/package/BepInEx/BepInExPack_V_Rising/)
+- BepInEx (TESTING): [RC2 1.733.2](https://github.com/decaprime/VRising-Modding/releases/tag/1.733.2)
+- VampireCommandFramework (TESTING): [VCF 0.0.999](https://github.com/Odjit/VampireCommandFramework/releases/tag/1.1)
 - Game Libs: [nuget](https://www.nuget.org/packages/VRising.Unhollowed.Client/)
 
 This version of game libs privately packages the interop changes from above with the already interop'd client assemblies. This avoids the need for the MSBuild task creating the interop and is intended to get developers rolling on release date. 
@@ -13,15 +14,41 @@ This version of game libs privately packages the interop changes from above with
 
 ## `.csproj` changes
 ```xml
-    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.691" IncludeAssets="compile" />
-    <PackageReference Include="BepInEx.Core" Version="6.0.0-be.691" IncludeAssets="compile" />
-    <PackageReference Include="VRising.Unhollowed.Client" Version="1.0.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.1.0" />
+    <PackageReference Include="BepInEx.Unity.IL2CPP" Version="6.0.0-be.733" IncludeAssets="compile" />
+    <PackageReference Include="VRising.Unhollowed.Client" Version="1.1.*" />
 ```
 
-## Using Changes
-`PrefabGUID` calls need `using Stunlock.Core;`
+## ServerChatUtils Parameter Change (string --> FixedString512Bytes)
 
-## Namespace Changes (can find replace)
-- `FixedString64` -> `FixedString64Bytes`
-- `GetExistingSystem` -> `GetExistingSystemManaged`
+```xml
+	public static void SendSystemMessage(this User user, string message)
+	{
+		FixedString512Bytes unityMessage = message;
+		ServerChatUtils.SendSystemMessageToClient(Server.EntityManager, user, ref unityMessage);
+	}
+```
 
+## PrefabGuid Names (PrefabCollectionSystem.PrefabGuidToNameDictionary --> PrefabCollectionSystem._PrefabLookupMap.GetName())
+
+```xml
+	public static string LookupName(this PrefabGUID prefabGuid)
+	{
+		var prefabCollectionSystem = Core.Server.GetExistingSystemManaged<PrefabCollectionSystem>();
+		return (prefabCollectionSystem._PrefabLookupMap.GuidToEntityMap.ContainsKey(prefabGuid)
+			? prefabCollectionSystem._PrefabLookupMap.GetName(prefabGuid) + " PrefabGuid(" + prefabGuid.GuidHash + ")" : "GUID Not Found");
+	}
+```
+
+## Creating EntityQueries (EntityQueryDesc --> EntityQueryBuilder w/ Allocator.Temp)
+
+```xml
+    var entityQueryBuilder = new EntityQueryBuilder(Allocator.Temp)
+        .AddAll(new(Il2CppType.Of<T1>(), ComponentType.AccessMode.ReadWrite))
+        .WithOptions(options);
+    var query = Core.EntityManager.CreateEntityQuery(ref entityQueryBuilder);
+```
+
+## Major System Changes (SystemBase --> ISystem)
+
+- DealDamageSystem
