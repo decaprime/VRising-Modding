@@ -1,10 +1,12 @@
 ---
 title: Oakveil Game Update
 parent: For Users
-nav_exclude: false
+nav_exclude: true
 has_toc: false
-hide: false
+hide: true
 ---
+
+# Thunderstore releases: BepInEx and VCF have been updated to [thunderstore](https://thunderstore.io/c/v-rising/). This page is deprecated. 5/17
 
 # RE: 1.1 - Updated 4/27
 Previous versions of mods and BepInEx do not work with the Oakveil game update. There will be an announcement in discord and versions published to Thunderstore when they are ready. We have a BepInEx release candidate that we need developers to update and test their mods with.
