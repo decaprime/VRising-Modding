@@ -62,3 +62,5 @@ To update your mod, you will need to essentially update the zip file and reuploa
 If you wish to update anything in the zip, the mod, README, CHANGELOG, or MANIFEST, you must upload a new version.
 
 Basic update syntax: `Major.Minor.Patch` Bugfixes are a patch, a few new commands are minor, and big overhauls/major feature introductions or compatability updates are major.
+
+Keep in mind that `x.x.42` is bigger/farther advanced than `x.x.5`. These are not decimals. For further information, read up on [semantic versioning](https://semver.org/).
