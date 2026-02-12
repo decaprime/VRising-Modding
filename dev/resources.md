@@ -46,7 +46,7 @@ Tools made by those in the community.
 2. Install the .NET 6 SDK via [manual download](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) or [winget](https://learn.microsoft.com/en-us/dotnet/core/install/windows?tabs=net60) (winget install Microsoft.DotNet.SDK.6)
 
 #### Installation
-1. Download the `UnityExplorer.BepInEx.IL2CPP.CoreCLR.zip` directly from the repository [Releases](https://github.com/yukieiji/UnityExplorer/releases)
+1. Download the `UnityExplorer.BepInEx.Unity.IL2CPP.CoreCLR.zip` directly from the repository [Releases](https://github.com/yukieiji/UnityExplorer/releases)
 2. Extract to your desired location.
 3. Copy the folder `sinai-dev-UnityExplorer` inside the `plugins` folder to the `BepInEx\plugins` folder.
 4. The next time you run the game with BepInEx, the Unity Explorer UI will be overlayed in the game. See https://github.com/yukieiji/UnityExplorer for more information about how to use it.
