@@ -1,0 +1,73 @@
+---
+layout: default
+parent: Console Commands
+nav_exclude: false
+search_exclude: false
+---
+
+<h1>{{ page.title }} Console Commands</h1>
+
+{% assign raw = site.data[page.data_file] %}
+{% if raw.commands %}
+  {% assign commands = raw.commands %}
+{% else %}
+  {% assign commands = raw %}
+{% endif %}
+
+{% include data_table_search.html %}
+{{ content }}
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Category</th>
+      <th>Visibility</th>
+      <th>Arguments</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for cmd in commands %}
+      {% assign arg_names = "" | split: "|" %}
+      {% if cmd.args %}
+        {% for a in cmd.args %}
+          {% if a.name %}
+            {% assign arg_names = arg_names | push: a.name %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% assign search_parts = "" | split: "|" %}
+      {% if cmd.name %}{% assign search_parts = search_parts | push: cmd.name %}{% endif %}
+      {% if cmd.category %}{% assign search_parts = search_parts | push: cmd.category %}{% endif %}
+      {% if cmd.visibility %}{% assign search_parts = search_parts | push: cmd.visibility %}{% endif %}
+      {% if cmd.description %}{% assign search_parts = search_parts | push: cmd.description %}{% endif %}
+      {% assign search_parts = search_parts | concat: arg_names %}
+
+      {% if cmd.aliases %}
+        {% assign search_parts = search_parts | concat: cmd.aliases %}
+      {% endif %}
+      {% if cmd.tags %}
+        {% assign search_parts = search_parts | concat: cmd.tags %}
+      {% endif %}
+
+      <tr>
+        <td><code id="{{ cmd.id | default: cmd.name | slugify }}">{{ cmd.name }}</code></td>
+        <td>{{ cmd.category }}</td>
+        <td>{{ cmd.visibility }}</td>
+        <td>
+          {% if arg_names.size > 0 %}
+            <code>{{ arg_names | join: ", " }}</code>
+          {% else %}
+            —
+          {% endif %}
+        </td>
+        <td>
+          {{ cmd.description }}
+          <span class="sr-only">{{ search_parts | join: " " }}</span>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
