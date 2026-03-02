@@ -40,9 +40,8 @@ document.addEventListener('DOMContentLoaded', function () {
       options.columnDefs = [
         { targets: [0], width: '220px' },
         { targets: [1], width: '68px' },
-        { targets: [2], width: '52px' },
+        { targets: [2], width: '60px' },
         { targets: [3], width: '240px' },
-        { targets: [4], width: '99%' },
         { targets: [5], visible: false, searchable: true }
       ];
     }
