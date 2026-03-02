@@ -1,0 +1,299 @@
+---
+layout: default
+parent: Console Commands
+nav_exclude: false
+search_exclude: false
+---
+
+{% assign raw = site.data[page.data_file] %}
+{% if raw.commands %}
+  {% assign commands = raw.commands %}
+{% else %}
+  {% assign commands = raw %}
+{% endif %}
+
+{% include data_table_search.html %}
+{{ content }}
+
+<style>
+  .main-content { max-width: none !important; }
+
+  .table-scroll { width: 100%; overflow-x: auto; overflow-y: visible; }
+
+  table.datatable { width: 100% !important; min-width: 800px; border-collapse: collapse; table-layout: fixed; }
+  table.datatable td, table.datatable th { padding: 0.5rem 0.75rem; vertical-align: top; }
+
+  th.col-cmd, td.col-cmd { width: 220px !important; white-space: nowrap; }
+  td.col-cmd code {
+    display: inline-block;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+  th.col-user, td.col-user { width: 68px !important; white-space: nowrap; text-align: center; padding-left: 0.25rem; padding-right: 0.25rem; }
+  th.col-hidden, td.col-hidden { width: 60px !important; white-space: nowrap; text-align: center; padding-left: 0.25rem; padding-right: 0.25rem; }
+
+  details.cmd-note { display: inline-block; vertical-align: middle; margin-left: 0.3rem; }
+  details.cmd-note > summary {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    font-size: 0.9rem;
+    color: #e67e22;
+    opacity: 0.85;
+  }
+  details.cmd-note > summary::-webkit-details-marker { display: none; }
+
+  .note-panel {
+    margin-top: 0.35rem;
+    padding: 0.6rem 0.7rem;
+    border-radius: 0.75rem;
+    background: rgba(25,25,30,0.95);
+    border: 1px solid rgba(230,126,34,0.35);
+    max-width: 480px;
+    white-space: normal;
+  }
+
+  td.col-user.user-admin { color: #c0392b; }
+  td.col-user.user-player { color: #27ae60; }
+  td.col-hidden .icon-hidden { opacity: 0.4; }
+  td.col-hidden .icon-visible { opacity: 0.85; }
+
+  th.col-args, td.col-args { width: 240px !important; }
+  th.col-desc, td.col-desc { width: auto !important; min-width: 220px; }
+
+  td.col-desc:has(.desc-text) { cursor: pointer; }
+  td.col-desc:has(.desc-text):hover { background: rgba(255,255,255,0.04); }
+
+  td.col-desc .desc-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.25rem;
+    overflow-wrap: anywhere;
+  }
+
+  td.col-desc.expanded .desc-text {
+    display: block;
+    overflow: visible;
+    -webkit-line-clamp: unset;
+  }
+
+  th.col-search, td.col-search { display: none; }
+
+  .muted { opacity: 0.7; }
+
+  .arg-wrap { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: flex-start; }
+
+  details.arg-detail { display: inline-block; }
+  details.arg-detail > summary {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+
+    display: inline-block;
+    padding: 0.12rem 0.45rem;
+    border-radius: 0.55rem;
+    font-size: 0.82rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    white-space: nowrap;
+  }
+  details.arg-detail > summary::-webkit-details-marker { display: none; }
+
+  .arg-panel {
+    margin-top: 0.35rem;
+    padding: 0.6rem 0.7rem;
+    border-radius: 0.75rem;
+    background: rgba(25,25,30,0.70);
+    border: 1px solid rgba(255,255,255,0.12);
+    max-width: 560px;
+  }
+
+  .arg-title { font-weight: 700; margin: 0 0 0.35rem 0; }
+  .arg-panel p { margin: 0.25rem 0; }
+
+  .arg-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.35rem 0 0.5rem 0; }
+  .badge {
+    display: inline-block;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    border: 1px solid rgba(255,255,255,0.12);
+    opacity: 0.95;
+    white-space: nowrap;
+  }
+
+  .arg-suggestions { margin-top: 0.5rem; }
+  .arg-suggestions ul { margin: 0.3rem 0 0 1.1rem; }
+
+  .dataTables_wrapper { overflow: visible; }
+</style>
+
+<script>
+  document.addEventListener('click', function (e) {
+    const clickedArg = e.target.closest('details.arg-detail');
+    const clickedNote = e.target.closest('details.cmd-note');
+    document.querySelectorAll('details.arg-detail[open], details.cmd-note[open]').forEach(d => {
+      if (d !== clickedArg && d !== clickedNote) d.removeAttribute('open');
+    });
+
+    const desc = e.target.closest('td.col-desc');
+    if (desc && desc.querySelector('.desc-text') && !e.target.closest('a')) {
+      desc.classList.toggle('expanded');
+    }
+  });
+</script>
+
+<div class="table-scroll">
+  <table id="console-commands-table" class="datatable">
+<thead>
+      <tr>
+        <th class="col-cmd">Command</th>
+        <th class="col-user">User</th>
+        <th class="col-hidden">Hidden</th>
+        <th class="col-args">Arguments</th>
+        <th class="col-desc">Description</th>
+        <th class="col-search">Search</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for cmd in commands %}
+        {% assign arg_names = "" | split: "|" %}
+        {% if cmd.args %}
+          {% for a in cmd.args %}
+            {% if a.name %}
+              {% assign arg_names = arg_names | push: a.name %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign search_parts = "" | split: "|" %}
+        {% if cmd.name %}{% assign search_parts = search_parts | push: cmd.name %}{% endif %}
+        {% if cmd.user %}{% assign search_parts = search_parts | push: cmd.user %}{% endif %}
+        {% if cmd.description %}{% assign search_parts = search_parts | push: cmd.description %}{% endif %}
+        {% assign search_parts = search_parts | concat: arg_names %}
+
+        {% if cmd.args %}
+          {% for a in cmd.args %}
+            {% if a.description %}{% assign search_parts = search_parts | push: a.description %}{% endif %}
+            {% if a.type %}{% assign search_parts = search_parts | push: a.type %}{% endif %}
+            {% if a.suggestions %}
+              {% for s in a.suggestions %}
+                {% if s.text %}{% assign search_parts = search_parts | push: s.text %}{% else %}{% assign search_parts = search_parts | push: s %}{% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if a.enum_values %}{% assign search_parts = search_parts | concat: a.enum_values %}{% endif %}
+          {% endfor %}
+        {% endif %}
+
+        <tr>
+          <td class="col-cmd">
+            <code id="{{ cmd.id | default: cmd.name | slugify }}" title="{{ cmd.name }}">{{ cmd.name }}</code>{% if cmd.note %}<details class="cmd-note"><summary>⚠</summary><div class="note-panel">{{ cmd.note }}</div></details>{% endif %}
+          </td>
+
+          <td class="col-user{% if cmd.user == 'Admin' %} user-admin{% else %} user-player{% endif %}">{{ cmd.user }}</td>
+          <td class="col-hidden">{% if cmd.hidden %}<span class="icon-visible">✓</span>{% else %}<span class="icon-hidden">✗</span>{% endif %}</td>
+
+          <td class="col-args">
+            {% if cmd.args and cmd.args.size > 0 %}
+              <div class="arg-wrap">
+                {% for a in cmd.args %}
+                  {% assign disp_name = a.name | default: "Value" %}
+                  {% assign desc = a.description | default: a.summary | default: "" %}
+                  {% assign type = a.type | default: "" %}
+                  {% assign handling = a.suggestionHandling | default: "" %}
+
+                  <details class="arg-detail">
+                    <summary title="{{ desc }}">{{ disp_name }}</summary>
+                    <div class="arg-panel">
+                      <div class="arg-title"><code>{{ disp_name }}</code></div>
+
+                      {% if desc != "" %}
+                        <p>{{ desc }}</p>
+                      {% endif %}
+
+                      <div class="arg-meta">
+                        {% if type != "" %}<span class="badge">type: <code>{{ type }}</code></span>{% endif %}
+                        {% if a.required == true %}<span class="badge">required</span>{% endif %}
+                        {% if a.required == false %}<span class="badge">optional</span>{% endif %}
+                        {% if a.default != nil %}<span class="badge">default: <code>{{ a.default }}</code></span>{% endif %}
+                        {% if a.min != nil or a.max != nil %}
+                          <span class="badge">range: <code>{{ a.min | default: "?" }}</code>.. <code>{{ a.max | default: "?" }}</code></span>
+                        {% endif %}
+                        {% if handling != "" %}<span class="badge">suggestions: <code>{{ handling }}</code></span>{% endif %}
+                      </div>
+
+                      {% assign has_suggestions = false %}
+                      {% if a.suggestions and a.suggestions.size > 0 %}
+                        {% assign has_suggestions = true %}
+                        <div class="arg-suggestions">
+                          <div class="muted">Suggestions</div>
+                          <ul>
+                            {% for s in a.suggestions %}
+                              {% if s.text %}
+                                <li><code>{{ s.text }}</code></li>
+                              {% else %}
+                                <li><code>{{ s }}</code></li>
+                              {% endif %}
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      {% elsif a.enum_values and a.enum_values.size > 0 %}
+                        {% assign has_suggestions = true %}
+                        <div class="arg-suggestions">
+                          <div class="muted">Suggestions</div>
+                          <ul>
+                            {% for s in a.enum_values %}
+                              <li><code>{{ s }}</code></li>
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      {% endif %}
+
+                      {% if has_suggestions == false %}
+                        <div class="arg-suggestions">
+                          <div class="muted">Suggestions</div>
+                          <ul>
+                            {% if type == "Boolean" or type == "bool" %}
+                              <li><code>true</code></li>
+                              <li><code>false</code></li>
+                              <li><code>1</code></li>
+                              <li><code>0</code></li>
+                            {% elsif type == "Int32" or type == "Int64" or type == "int" %}
+                              <li><code>0</code></li>
+                              <li><code>1</code></li>
+                              <li><code>2</code></li>
+                              <li><code>5</code></li>
+                              <li><code>10</code></li>
+                            {% elsif type == "Single" or type == "Double" or type == "float" %}
+                              <li><code>0.1</code></li>
+                              <li><code>0.5</code></li>
+                              <li><code>1.0</code></li>
+                              <li><code>2.0</code></li>
+                            {% else %}
+                              <li class="muted">No suggestions available.</li>
+                            {% endif %}
+                          </ul>
+                        </div>
+                      {% endif %}
+                    </div>
+                  </details>
+                {% endfor %}
+              </div>
+            {% else %}
+              <span class="muted">—</span>
+            {% endif %}
+          </td>
+
+          <td class="col-desc">{% if cmd.description != "" %}<span class="desc-text" title="{{ cmd.description }}">{{ cmd.description }}</span>{% endif %}</td>
+
+          <td class="col-search">{{ search_parts | join: " " }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
