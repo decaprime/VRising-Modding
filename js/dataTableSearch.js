@@ -44,6 +44,13 @@ document.addEventListener('DOMContentLoaded', function () {
         { targets: [3], width: '240px' },
         { targets: [5], visible: false, searchable: true }
       ];
+      options.initComplete = function () {
+        const tableNode = this.api().table().node();
+        const cols = tableNode.querySelectorAll('colgroup col');
+        if (cols[4]) cols[4].style.width = '';
+        const ths = tableNode.querySelectorAll('thead th');
+        if (ths[4]) ths[4].style.width = '';
+      };
     }
 
     new DataTable(this, options);
