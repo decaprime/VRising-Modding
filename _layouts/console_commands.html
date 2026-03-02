@@ -16,14 +16,9 @@ search_exclude: false
 {{ content }}
 
 <style>
-  .table-scroll { width: 100%; overflow-x: auto; overflow-y: visible; }
+  .main-content { max-width: none !important; }
 
-  @media (min-width: 50em) {
-    .table-scroll {
-      margin-left: calc(-1 * clamp(1rem, 5%, 3rem));
-      width: calc(100vw - 264px);
-    }
-  }
+  .table-scroll { width: 100%; overflow-x: auto; overflow-y: visible; }
 
   table.datatable { width: 100% !important; border-collapse: collapse; }
   table.datatable td, table.datatable th { padding: 0.5rem 0.75rem; vertical-align: top; }
