@@ -5,7 +5,14 @@ nav_exclude: false
 search_exclude: false
 ---
 
-<h1>{{ page.title }} Console Commands</h1>
+{% comment %}
+  Uses a JSON data file named exactly like page.data_file (no extension),
+  e.g. _data/consoleCommands.json and page front matter: data_file: consoleCommands
+
+  Supports either:
+    - a raw array: [ {command}, {command}, ... ]
+    - a wrapped object: { meta: {...}, commands: [ ... ] }
+{% endcomment %}
 
 {% assign raw = site.data[page.data_file] %}
 {% if raw.commands %}
@@ -17,6 +24,44 @@ search_exclude: false
 {% include data_table_search.html %}
 {{ content }}
 
+<style>
+  /* Hide the helper column (still searchable by DataTables) */
+  th.col-search, td.col-search { display: none; }
+
+  /* Make the table behave predictably */
+  table { width: 100%; table-layout: fixed; }
+
+  table td, table th {
+    padding: 0.5rem 0.75rem;
+    vertical-align: top;
+  }
+
+  /* Keep command compact */
+  td.col-cmd code { white-space: nowrap; }
+
+  /* Clamp long descriptions so rows don't become skyscrapers */
+  td.col-desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;       /* show 3 lines */
+    -webkit-box-orient: vertical;
+    line-height: 1.25rem;
+  }
+
+  /* Argument "chips" */
+  .arg-chip {
+    display: inline-block;
+    padding: 0.15rem 0.45rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    margin: 0 0.25rem 0.25rem 0;
+    white-space: nowrap;
+  }
+
+  .muted { opacity: 0.7; }
+</style>
+
 <table>
   <thead>
     <tr>
@@ -25,10 +70,12 @@ search_exclude: false
       <th>Visibility</th>
       <th>Arguments</th>
       <th>Description</th>
+      <th class="col-search">Search</th>
     </tr>
   </thead>
   <tbody>
     {% for cmd in commands %}
+      {% comment %} Collect argument names {% endcomment %}
       {% assign arg_names = "" | split: "|" %}
       {% if cmd.args %}
         {% for a in cmd.args %}
@@ -38,35 +85,41 @@ search_exclude: false
         {% endfor %}
       {% endif %}
 
+      {% comment %}
+        Build extra searchable text, without showing it in the UI.
+        Searched via the hidden "Search" column.
+      {% endcomment %}
       {% assign search_parts = "" | split: "|" %}
       {% if cmd.name %}{% assign search_parts = search_parts | push: cmd.name %}{% endif %}
       {% if cmd.category %}{% assign search_parts = search_parts | push: cmd.category %}{% endif %}
       {% if cmd.visibility %}{% assign search_parts = search_parts | push: cmd.visibility %}{% endif %}
       {% if cmd.description %}{% assign search_parts = search_parts | push: cmd.description %}{% endif %}
       {% assign search_parts = search_parts | concat: arg_names %}
-
-      {% if cmd.aliases %}
-        {% assign search_parts = search_parts | concat: cmd.aliases %}
-      {% endif %}
-      {% if cmd.tags %}
-        {% assign search_parts = search_parts | concat: cmd.tags %}
-      {% endif %}
+      {% if cmd.aliases %}{% assign search_parts = search_parts | concat: cmd.aliases %}{% endif %}
+      {% if cmd.tags %}{% assign search_parts = search_parts | concat: cmd.tags %}{% endif %}
 
       <tr>
-        <td><code id="{{ cmd.id | default: cmd.name | slugify }}">{{ cmd.name }}</code></td>
-        <td>{{ cmd.category }}</td>
-        <td>{{ cmd.visibility }}</td>
-        <td>
+        <td class="col-cmd">
+          <code id="{{ cmd.id | default: cmd.name | slugify }}">{{ cmd.name }}</code>
+        </td>
+
+        <td class="col-cat">{{ cmd.category }}</td>
+
+        <td class="col-vis">{{ cmd.visibility }}</td>
+
+        <td class="col-args">
           {% if arg_names.size > 0 %}
-            <code>{{ arg_names | join: ", " }}</code>
+            {% for n in arg_names %}
+              <span class="arg-chip">{{ n }}</span>
+            {% endfor %}
           {% else %}
-            —
+            <span class="muted">—</span>
           {% endif %}
         </td>
-        <td>
-          {{ cmd.description }}
-          <span class="sr-only">{{ search_parts | join: " " }}</span>
-        </td>
+
+        <td class="col-desc">{{ cmd.description }}</td>
+
+        <td class="col-search">{{ search_parts | join: " " }}</td>
       </tr>
     {% endfor %}
   </tbody>
