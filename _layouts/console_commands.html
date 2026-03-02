@@ -16,27 +16,15 @@ search_exclude: false
 {{ content }}
 
 <style>
-  /* Allow horizontal scroll so DataTables doesn't crush columns */
-  .table-scroll {
-    width: 100%;
-    overflow-x: auto;
-  }
+  .table-scroll { width: 100%; overflow-x: auto; overflow-y: visible; }
 
-  table.datatable {
-    width: 100% !important;
-    border-collapse: collapse;
-  }
+  table.datatable { width: 100% !important; border-collapse: collapse; }
+  table.datatable td, table.datatable th { padding: 0.5rem 0.75rem; vertical-align: top; }
 
-  table.datatable td, table.datatable th {
-    padding: 0.5rem 0.75rem;
-    vertical-align: top;
-  }
-
-  /* Column sizing */
-  th.col-cmd, td.col-cmd { width: 220px; white-space: nowrap; }
+  th.col-cmd, td.col-cmd { width: 240px; white-space: nowrap; }
   td.col-cmd code {
     display: inline-block;
-    max-width: 220px;
+    max-width: 240px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -45,27 +33,9 @@ search_exclude: false
   th.col-cat, td.col-cat { width: 120px; white-space: nowrap; }
   th.col-vis, td.col-vis { width: 120px; white-space: nowrap; }
 
-  th.col-args, td.col-args { width: 240px; white-space: nowrap; }
-  .arg-chip {
-    display: inline-block;
-    padding: 0.12rem 0.4rem;
-    border-radius: 0.5rem;
-    font-size: 0.82rem;
-    border: 1px solid rgba(255,255,255,0.15);
-    margin-right: 0.25rem;
-    white-space: nowrap;
-  }
-  .arg-more {
-    display: inline-block;
-    padding: 0.12rem 0.4rem;
-    border-radius: 0.5rem;
-    font-size: 0.82rem;
-    border: 1px dashed rgba(255,255,255,0.22);
-    opacity: 0.9;
-    white-space: nowrap;
-  }
-
+  th.col-args, td.col-args { width: 440px; }
   th.col-desc, td.col-desc { width: auto; }
+
   td.col-desc {
     overflow: hidden;
     display: -webkit-box;
@@ -75,14 +45,67 @@ search_exclude: false
     overflow-wrap: anywhere;
   }
 
-  /* Helper search column is hidden visually */
   th.col-search, td.col-search { display: none; }
 
   .muted { opacity: 0.7; }
+
+  .arg-wrap { display: flex; flex-wrap: wrap; gap: 0.35rem; align-items: flex-start; }
+
+  details.arg-detail { display: inline-block; }
+  details.arg-detail > summary {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+
+    display: inline-block;
+    padding: 0.12rem 0.45rem;
+    border-radius: 0.55rem;
+    font-size: 0.82rem;
+    border: 1px solid rgba(255,255,255,0.15);
+    white-space: nowrap;
+  }
+  details.arg-detail > summary::-webkit-details-marker { display: none; }
+
+  .arg-panel {
+    margin-top: 0.35rem;
+    padding: 0.6rem 0.7rem;
+    border-radius: 0.75rem;
+    background: rgba(25,25,30,0.70);
+    border: 1px solid rgba(255,255,255,0.12);
+    max-width: 560px;
+  }
+
+  .arg-title { font-weight: 700; margin: 0 0 0.35rem 0; }
+  .arg-panel p { margin: 0.25rem 0; }
+
+  .arg-meta { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.35rem 0 0.5rem 0; }
+  .badge {
+    display: inline-block;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    border: 1px solid rgba(255,255,255,0.12);
+    opacity: 0.95;
+    white-space: nowrap;
+  }
+
+  .arg-suggestions { margin-top: 0.5rem; }
+  .arg-suggestions ul { margin: 0.3rem 0 0 1.1rem; }
+
+  .dataTables_wrapper { overflow: visible; }
 </style>
 
+<script>
+  // Close other open arg details when opening a new one
+  document.addEventListener('click', function (e) {
+    const clicked = e.target.closest('details.arg-detail');
+    document.querySelectorAll('details.arg-detail[open]').forEach(d => {
+      if (d !== clicked) d.removeAttribute('open');
+    });
+  });
+</script>
+
 <div class="table-scroll">
-  <!-- IMPORTANT: This id is what the JS uses to apply special options -->
   <table id="console-commands-table" class="datatable">
     <thead>
       <tr>
@@ -111,11 +134,19 @@ search_exclude: false
         {% if cmd.visibility %}{% assign search_parts = search_parts | push: cmd.visibility %}{% endif %}
         {% if cmd.description %}{% assign search_parts = search_parts | push: cmd.description %}{% endif %}
         {% assign search_parts = search_parts | concat: arg_names %}
-        {% if cmd.aliases %}{% assign search_parts = search_parts | concat: cmd.aliases %}{% endif %}
-        {% if cmd.tags %}{% assign search_parts = search_parts | concat: cmd.tags %}{% endif %}
 
-        {% assign arg_count = arg_names | size %}
-        {% assign tooltip_args = arg_names | join: ", " %}
+        {% if cmd.args %}
+          {% for a in cmd.args %}
+            {% if a.description %}{% assign search_parts = search_parts | push: a.description %}{% endif %}
+            {% if a.type %}{% assign search_parts = search_parts | push: a.type %}{% endif %}
+            {% if a.suggestions %}
+              {% for s in a.suggestions %}
+                {% if s.text %}{% assign search_parts = search_parts | push: s.text %}{% else %}{% assign search_parts = search_parts | push: s %}{% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if a.enum_values %}{% assign search_parts = search_parts | concat: a.enum_values %}{% endif %}
+          {% endfor %}
+        {% endif %}
 
         <tr>
           <td class="col-cmd">
@@ -125,15 +156,99 @@ search_exclude: false
           <td class="col-cat">{{ cmd.category }}</td>
           <td class="col-vis">{{ cmd.visibility }}</td>
 
-          <td class="col-args" title="{{ tooltip_args }}">
-            {% if arg_count > 0 %}
-              <span class="arg-chip">{{ arg_names[0] }}</span>
-              {% if arg_count > 1 %}
-                <span class="arg-chip">{{ arg_names[1] }}</span>
-              {% endif %}
-              {% if arg_count > 2 %}
-                <span class="arg-more">+{{ arg_count | minus: 2 }}</span>
-              {% endif %}
+          <td class="col-args">
+            {% if cmd.args and cmd.args.size > 0 %}
+              <div class="arg-wrap">
+                {% for a in cmd.args %}
+                  {% assign disp_name = a.name | default: "Value" %}
+                  {% assign desc = a.description | default: a.summary | default: "" %}
+                  {% assign type = a.type | default: "" %}
+                  {% assign handling = a.suggestionHandling | default: "" %}
+
+                  <details class="arg-detail">
+                    <summary title="{{ desc }}">{{ disp_name }}</summary>
+                    <div class="arg-panel">
+                      <div class="arg-title"><code>{{ disp_name }}</code></div>
+
+                      {% if desc != "" %}
+                        <p>{{ desc }}</p>
+                      {% endif %}
+
+                      <div class="arg-meta">
+                        {% if type != "" %}<span class="badge">type: <code>{{ type }}</code></span>{% endif %}
+                        {% if a.required == true %}<span class="badge">required</span>{% endif %}
+                        {% if a.required == false %}<span class="badge">optional</span>{% endif %}
+                        {% if a.default != nil %}<span class="badge">default: <code>{{ a.default }}</code></span>{% endif %}
+                        {% if a.min != nil or a.max != nil %}
+                          <span class="badge">range: <code>{{ a.min | default: "?" }}</code>.. <code>{{ a.max | default: "?" }}</code></span>
+                        {% endif %}
+                        {% if handling != "" %}<span class="badge">suggestions: <code>{{ handling }}</code></span>{% endif %}
+                      </div>
+
+                      {% comment %}
+                        Suggestions rendering supports BOTH:
+                          suggestions: ["1","2"]
+                          suggestions: [{ "text": "1" }, { "text": "2" }]
+                        If missing, we generate simple defaults based on type.
+                      {% endcomment %}
+
+                      {% assign has_suggestions = false %}
+                      {% if a.suggestions and a.suggestions.size > 0 %}
+                        {% assign has_suggestions = true %}
+                        <div class="arg-suggestions">
+                          <div class="muted">Suggestions</div>
+                          <ul>
+                            {% for s in a.suggestions %}
+                              {% if s.text %}
+                                <li><code>{{ s.text }}</code></li>
+                              {% else %}
+                                <li><code>{{ s }}</code></li>
+                              {% endif %}
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      {% elsif a.enum_values and a.enum_values.size > 0 %}
+                        {% assign has_suggestions = true %}
+                        <div class="arg-suggestions">
+                          <div class="muted">Suggestions</div>
+                          <ul>
+                            {% for s in a.enum_values %}
+                              <li><code>{{ s }}</code></li>
+                            {% endfor %}
+                          </ul>
+                        </div>
+                      {% endif %}
+
+                      {% if has_suggestions == false %}
+                        <div class="arg-suggestions">
+                          <div class="muted">Suggestions</div>
+                          <ul>
+                            {% if type == "Boolean" or type == "bool" %}
+                              <li><code>true</code></li>
+                              <li><code>false</code></li>
+                              <li><code>1</code></li>
+                              <li><code>0</code></li>
+                            {% elsif type == "Int32" or type == "Int64" or type == "int" %}
+                              <li><code>0</code></li>
+                              <li><code>1</code></li>
+                              <li><code>2</code></li>
+                              <li><code>5</code></li>
+                              <li><code>10</code></li>
+                            {% elsif type == "Single" or type == "Double" or type == "float" %}
+                              <li><code>0.1</code></li>
+                              <li><code>0.5</code></li>
+                              <li><code>1.0</code></li>
+                              <li><code>2.0</code></li>
+                            {% else %}
+                              <li class="muted">No suggestions available.</li>
+                            {% endif %}
+                          </ul>
+                        </div>
+                      {% endif %}
+                    </div>
+                  </details>
+                {% endfor %}
+              </div>
             {% else %}
               <span class="muted">—</span>
             {% endif %}
@@ -141,7 +256,6 @@ search_exclude: false
 
           <td class="col-desc" title="{{ cmd.description }}">{{ cmd.description }}</td>
 
-          <!-- Hidden column used only to improve searching -->
           <td class="col-search">{{ search_parts | join: " " }}</td>
         </tr>
       {% endfor %}
