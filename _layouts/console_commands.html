@@ -32,8 +32,13 @@ search_exclude: false
     white-space: nowrap;
   }
 
-  th.col-cat, td.col-cat { width: 100px; white-space: nowrap; }
-  th.col-vis, td.col-vis { width: 100px; white-space: nowrap; }
+  th.col-user, td.col-user { width: 80px; white-space: nowrap; text-align: center; }
+  th.col-hidden, td.col-hidden { width: 64px; white-space: nowrap; text-align: center; }
+
+  td.col-user.user-admin { color: #c0392b; }
+  td.col-user.user-player { color: #27ae60; }
+  td.col-hidden .icon-hidden { opacity: 0.4; }
+  td.col-hidden .icon-visible { opacity: 0.85; }
 
   th.col-args, td.col-args { width: 240px; }
   th.col-desc, td.col-desc { width: auto; min-width: 220px; }
@@ -125,8 +130,8 @@ search_exclude: false
     <thead>
       <tr>
         <th class="col-cmd">Command</th>
-        <th class="col-cat">Category</th>
-        <th class="col-vis">Visibility</th>
+        <th class="col-user">User</th>
+        <th class="col-hidden">Hidden</th>
         <th class="col-args">Arguments</th>
         <th class="col-desc">Description</th>
         <th class="col-search">Search</th>
@@ -145,8 +150,7 @@ search_exclude: false
 
         {% assign search_parts = "" | split: "|" %}
         {% if cmd.name %}{% assign search_parts = search_parts | push: cmd.name %}{% endif %}
-        {% if cmd.category %}{% assign search_parts = search_parts | push: cmd.category %}{% endif %}
-        {% if cmd.visibility %}{% assign search_parts = search_parts | push: cmd.visibility %}{% endif %}
+        {% if cmd.user %}{% assign search_parts = search_parts | push: cmd.user %}{% endif %}
         {% if cmd.description %}{% assign search_parts = search_parts | push: cmd.description %}{% endif %}
         {% assign search_parts = search_parts | concat: arg_names %}
 
@@ -168,8 +172,8 @@ search_exclude: false
             <code id="{{ cmd.id | default: cmd.name | slugify }}" title="{{ cmd.name }}">{{ cmd.name }}</code>
           </td>
 
-          <td class="col-cat">{{ cmd.category }}</td>
-          <td class="col-vis">{{ cmd.visibility }}</td>
+          <td class="col-user{% if cmd.user == 'Admin' %} user-admin{% else %} user-player{% endif %}">{{ cmd.user }}</td>
+          <td class="col-hidden">{% if cmd.hidden %}<span class="icon-hidden">✗</span>{% else %}<span class="icon-visible">✓</span>{% endif %}</td>
 
           <td class="col-args">
             {% if cmd.args and cmd.args.size > 0 %}
