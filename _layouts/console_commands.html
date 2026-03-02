@@ -16,12 +16,14 @@ search_exclude: false
 {{ content }}
 
 <style>
-  /* DataTables: make horizontal layouts not implode */
-  .dt-container { width: 100%; }
-  .table-scroll { width: 100%; overflow-x: auto; }
+  /* Allow horizontal scroll so DataTables doesn't crush columns */
+  .table-scroll {
+    width: 100%;
+    overflow-x: auto;
+  }
 
   table.datatable {
-    width: 100% !important; /* DataTables injects inline width */
+    width: 100% !important;
     border-collapse: collapse;
   }
 
@@ -30,7 +32,7 @@ search_exclude: false
     vertical-align: top;
   }
 
-  /* Columns */
+  /* Column sizing */
   th.col-cmd, td.col-cmd { width: 220px; white-space: nowrap; }
   td.col-cmd code {
     display: inline-block;
@@ -73,13 +75,14 @@ search_exclude: false
     overflow-wrap: anywhere;
   }
 
-  /* Helper column: hidden */
+  /* Helper search column is hidden visually */
   th.col-search, td.col-search { display: none; }
 
   .muted { opacity: 0.7; }
 </style>
 
 <div class="table-scroll">
+  <!-- IMPORTANT: This id is what the JS uses to apply special options -->
   <table id="console-commands-table" class="datatable">
     <thead>
       <tr>
@@ -118,6 +121,7 @@ search_exclude: false
           <td class="col-cmd">
             <code id="{{ cmd.id | default: cmd.name | slugify }}" title="{{ cmd.name }}">{{ cmd.name }}</code>
           </td>
+
           <td class="col-cat">{{ cmd.category }}</td>
           <td class="col-vis">{{ cmd.visibility }}</td>
 
@@ -137,6 +141,7 @@ search_exclude: false
 
           <td class="col-desc" title="{{ cmd.description }}">{{ cmd.description }}</td>
 
+          <!-- Hidden column used only to improve searching -->
           <td class="col-search">{{ search_parts | join: " " }}</td>
         </tr>
       {% endfor %}
