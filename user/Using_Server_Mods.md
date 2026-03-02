@@ -63,7 +63,7 @@ Once the console has dropped down, you can type in `Adminauth` to authorize your
 ## Using Native V Rising Commands (Console)
 
 Much like authorizing yourself, you may enter commands in this console in order to use native V Rising commands. You can see a list of commands by typing in `list`. (Take care it doesn't autocomplete to `listusers`)
-Commands in the console do not have a prefix as part of the command. (No slashes and the like) For a list with the descriptions included, see [Console Commands](/user/Console_Commands.md).
+Commands in the console do not have a prefix as part of the command. (No slashes and the like) For a list with the descriptions included, see [Console Commands](https://wiki.vrisingmods.com/user/Console_Commands.html).
 
 ## Using MOD Commands (Chatbox)
 
