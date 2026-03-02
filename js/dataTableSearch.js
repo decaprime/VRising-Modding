@@ -38,6 +38,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (isConsoleCommands) {
       options.autoWidth = false;
       options.columnDefs = [
+        { targets: [0], width: '220px' },
+        { targets: [1], width: '68px' },
+        { targets: [2], width: '48px' },
+        { targets: [3], width: '240px' },
         { targets: [5], visible: false, searchable: true }
       ];
     }
