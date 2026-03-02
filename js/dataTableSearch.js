@@ -4,20 +4,17 @@ document.addEventListener('DOMContentLoaded', function () {
     return;
   }
 
-  // Ensure dark mode class is applied
+  // Force dark mode class
   $('html').each(function () {
     $(this).addClass('dark');
   });
 
-  // Helper: detect if a table is already a DataTable (avoid double-init)
-  function isDataTable(el) {
-    // DataTables v2 adds wrapper elements; easiest is a data attribute marker
+  function alreadyInit(el) {
     return el.dataset && el.dataset.dtInit === '1';
   }
 
-  // Init each table
   $('table').each(function () {
-    if (isDataTable(this)) return;
+    if (alreadyInit(this)) return;
 
     const isConsoleCommands = this.id === 'console-commands-table';
 
@@ -39,23 +36,16 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     if (isConsoleCommands) {
-      // These two are the big fixes for your layout
-      options.autoWidth = false;     // stop DataTables from guessing widths
-      options.scrollX = true;        // allow horizontal scroll instead of crushing columns
+      options.autoWidth = false;
+      options.scrollX = true;
 
-      // Hide the helper "Search" column (last column) but keep it searchable
-      // Your layout places it as the 6th column (index 5).
+      // Last column (index 5) is the hidden "Search" helper column
       options.columnDefs = [
         { targets: [5], visible: false, searchable: true }
       ];
     }
 
-    console.log('Processing table:', this, 'consoleCommands:', isConsoleCommands);
-
-    // DataTables v2 constructor
     new DataTable(this, options);
-
-    // Mark as initialized
     this.dataset.dtInit = '1';
   });
 });
