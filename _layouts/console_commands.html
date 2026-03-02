@@ -23,17 +23,39 @@ search_exclude: false
   table.datatable { width: 100% !important; border-collapse: collapse; }
   table.datatable td, table.datatable th { padding: 0.5rem 0.75rem; vertical-align: top; }
 
-  th.col-cmd, td.col-cmd { width: 200px; white-space: nowrap; }
+  th.col-cmd, td.col-cmd { width: 220px; white-space: nowrap; }
   td.col-cmd code {
     display: inline-block;
-    max-width: 200px;
+    max-width: 180px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    vertical-align: middle;
   }
 
-  th.col-user, td.col-user { width: 80px; white-space: nowrap; text-align: center; }
-  th.col-hidden, td.col-hidden { width: 64px; white-space: nowrap; text-align: center; }
+  th.col-user, td.col-user { width: 68px; white-space: nowrap; text-align: center; }
+  th.col-hidden, td.col-hidden { width: 48px; white-space: nowrap; text-align: center; }
+
+  details.cmd-note { display: inline-block; vertical-align: middle; margin-left: 0.3rem; }
+  details.cmd-note > summary {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+    font-size: 0.9rem;
+    color: #e67e22;
+    opacity: 0.85;
+  }
+  details.cmd-note > summary::-webkit-details-marker { display: none; }
+
+  .note-panel {
+    margin-top: 0.35rem;
+    padding: 0.6rem 0.7rem;
+    border-radius: 0.75rem;
+    background: rgba(25,25,30,0.95);
+    border: 1px solid rgba(230,126,34,0.35);
+    max-width: 480px;
+    white-space: normal;
+  }
 
   td.col-user.user-admin { color: #c0392b; }
   td.col-user.user-player { color: #27ae60; }
@@ -114,8 +136,9 @@ search_exclude: false
 <script>
   document.addEventListener('click', function (e) {
     const clickedArg = e.target.closest('details.arg-detail');
-    document.querySelectorAll('details.arg-detail[open]').forEach(d => {
-      if (d !== clickedArg) d.removeAttribute('open');
+    const clickedNote = e.target.closest('details.cmd-note');
+    document.querySelectorAll('details.arg-detail[open], details.cmd-note[open]').forEach(d => {
+      if (d !== clickedArg && d !== clickedNote) d.removeAttribute('open');
     });
 
     const desc = e.target.closest('td.col-desc');
@@ -169,11 +192,11 @@ search_exclude: false
 
         <tr>
           <td class="col-cmd">
-            <code id="{{ cmd.id | default: cmd.name | slugify }}" title="{{ cmd.name }}">{{ cmd.name }}</code>
+            <code id="{{ cmd.id | default: cmd.name | slugify }}" title="{{ cmd.name }}">{{ cmd.name }}</code>{% if cmd.note %}<details class="cmd-note"><summary>⚠</summary><div class="note-panel">{{ cmd.note }}</div></details>{% endif %}
           </td>
 
           <td class="col-user{% if cmd.user == 'Admin' %} user-admin{% else %} user-player{% endif %}">{{ cmd.user }}</td>
-          <td class="col-hidden">{% if cmd.hidden %}<span class="icon-hidden">✗</span>{% else %}<span class="icon-visible">✓</span>{% endif %}</td>
+          <td class="col-hidden">{% if cmd.hidden %}<span class="icon-visible">✓</span>{% else %}<span class="icon-hidden">✗</span>{% endif %}</td>
 
           <td class="col-args">
             {% if cmd.args and cmd.args.size > 0 %}

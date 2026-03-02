@@ -93,7 +93,8 @@
       }
     ],
     "user": "Admin",
-    "hidden": false
+    "hidden": false,
+    "note": "Requires ServerHostSettings → AdminOnlyDebugEvents → true"
   },
   {
     "name": "ApplyWeaponCoating",
@@ -653,7 +654,8 @@
       }
     ],
     "user": "Player",
-    "hidden": true
+    "hidden": true,
+    "note": "Unknown behavior — do not use"
   },
   {
     "name": "CompleteCurrentJournalQuest",
@@ -2522,7 +2524,8 @@
       }
     ],
     "user": "Admin",
-    "hidden": false
+    "hidden": false,
+    "note": "Does not work (use CastleHeartEvent)"
   },
   {
     "name": "DepthOfField",
@@ -21415,7 +21418,8 @@
       }
     ],
     "user": "Admin",
-    "hidden": true
+    "hidden": true,
+    "note": "Unstable — do not use (once executed will continue to loop)"
   },
   {
     "name": "ForceJoinClan",
@@ -22132,7 +22136,8 @@
       }
     ],
     "user": "Admin",
-    "hidden": true
+    "hidden": true,
+    "note": "Does not work"
   },
   {
     "name": "GenerateCastlesInRegion",
@@ -22189,7 +22194,8 @@
       }
     ],
     "user": "Admin",
-    "hidden": true
+    "hidden": true,
+    "note": "Does not work"
   },
   {
     "name": "GenerateJewel",
@@ -22782,7 +22788,8 @@
       }
     ],
     "user": "Admin",
-    "hidden": false
+    "hidden": false,
+    "note": "Unstable — do not use (on full inventory it will spam console → crashes server)"
   },
   {
     "name": "GenerateLegendaryWeapon",
@@ -30439,7 +30446,8 @@
       }
     ],
     "user": "Admin",
-    "hidden": false
+    "hidden": false,
+    "note": "Does not work if inventory is full"
   },
   {
     "name": "givecombatpresetandallunlocks",
@@ -30766,7 +30774,8 @@
       }
     ],
     "user": "Player",
-    "hidden": false
+    "hidden": false,
+    "note": "Does not work"
   },
   {
     "name": "HideHud",
@@ -30794,7 +30803,8 @@
       }
     ],
     "user": "Player",
-    "hidden": false
+    "hidden": false,
+    "note": "Unknown behavior — do not use"
   },
   {
     "name": "Interpolation_ExtrapolateOnFail",
@@ -31225,7 +31235,8 @@
     "description": "Open the folder for crash dumps",
     "args": [],
     "user": "Player",
-    "hidden": false
+    "hidden": false,
+    "note": "Does not work (use OpenLogsFolder)"
   },
   {
     "name": "OpenLogsFolder",
@@ -37267,7 +37278,8 @@
       }
     ],
     "user": "Admin",
-    "hidden": false
+    "hidden": false,
+    "note": "Primal is unstable — do not use"
   },
   {
     "name": "WarEvent_SetRemainingTime",
@@ -37315,7 +37327,8 @@
       }
     ],
     "user": "Admin",
-    "hidden": false
+    "hidden": false,
+    "note": "Primal is unstable — do not use"
   },
   {
     "name": "WarEvent_StartInChunk",
