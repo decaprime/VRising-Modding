@@ -37,9 +37,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (isConsoleCommands) {
       options.autoWidth = false;
-      options.scrollX = true;
-
-      // Last column (index 5) is the hidden "Search" helper column
       options.columnDefs = [
         { targets: [5], visible: false, searchable: true }
       ];
