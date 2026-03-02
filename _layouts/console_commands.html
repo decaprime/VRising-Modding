@@ -21,20 +21,20 @@ search_exclude: false
   table.datatable { width: 100% !important; border-collapse: collapse; }
   table.datatable td, table.datatable th { padding: 0.5rem 0.75rem; vertical-align: top; }
 
-  th.col-cmd, td.col-cmd { width: 240px; white-space: nowrap; }
+  th.col-cmd, td.col-cmd { width: 200px; white-space: nowrap; }
   td.col-cmd code {
     display: inline-block;
-    max-width: 240px;
+    max-width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
 
-  th.col-cat, td.col-cat { width: 120px; white-space: nowrap; }
-  th.col-vis, td.col-vis { width: 120px; white-space: nowrap; }
+  th.col-cat, td.col-cat { width: 100px; white-space: nowrap; }
+  th.col-vis, td.col-vis { width: 100px; white-space: nowrap; }
 
-  th.col-args, td.col-args { width: 440px; }
-  th.col-desc, td.col-desc { width: auto; }
+  th.col-args, td.col-args { width: 240px; }
+  th.col-desc, td.col-desc { width: auto; min-width: 220px; }
 
   td.col-desc {
     overflow: hidden;
@@ -43,6 +43,18 @@ search_exclude: false
     -webkit-box-orient: vertical;
     line-height: 1.25rem;
     overflow-wrap: anywhere;
+    cursor: pointer;
+  }
+
+  td.col-desc:hover {
+    background: rgba(255,255,255,0.04);
+  }
+
+  td.col-desc.expanded {
+    display: block;
+    overflow: visible;
+    -webkit-line-clamp: unset;
+    cursor: default;
   }
 
   th.col-search, td.col-search { display: none; }
@@ -96,12 +108,16 @@ search_exclude: false
 </style>
 
 <script>
-  // Close other open arg details when opening a new one
   document.addEventListener('click', function (e) {
-    const clicked = e.target.closest('details.arg-detail');
+    const clickedArg = e.target.closest('details.arg-detail');
     document.querySelectorAll('details.arg-detail[open]').forEach(d => {
-      if (d !== clicked) d.removeAttribute('open');
+      if (d !== clickedArg) d.removeAttribute('open');
     });
+
+    const desc = e.target.closest('td.col-desc');
+    if (desc && !e.target.closest('a')) {
+      desc.classList.toggle('expanded');
+    }
   });
 </script>
 
@@ -184,13 +200,6 @@ search_exclude: false
                         {% endif %}
                         {% if handling != "" %}<span class="badge">suggestions: <code>{{ handling }}</code></span>{% endif %}
                       </div>
-
-                      {% comment %}
-                        Suggestions rendering supports BOTH:
-                          suggestions: ["1","2"]
-                          suggestions: [{ "text": "1" }, { "text": "2" }]
-                        If missing, we generate simple defaults based on type.
-                      {% endcomment %}
 
                       {% assign has_suggestions = false %}
                       {% if a.suggestions and a.suggestions.size > 0 %}

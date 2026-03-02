@@ -101,7 +101,7 @@
         "required": true,
         "suggestions": [
           {
-            "text": "0.Entity(108267:2)"
+            "text": "0.Entity(108022:2)"
           }
         ],
         "suggestionHandling": "dynamic"
@@ -125,14 +125,36 @@
       {
         "name": "Unnamed Argument",
         "type": "String",
-        "required": true
+        "required": true,
+        "suggestions": [
+          {
+            "text": "dump"
+          },
+          {
+            "text": "end"
+          },
+          {
+            "text": "start"
+          }
+        ]
       },
       {
         "name": "World",
         "description": "server/client",
         "type": "String",
         "required": false,
-        "default": "server"
+        "default": "server",
+        "suggestions": [
+          {
+            "text": "both"
+          },
+          {
+            "text": "client"
+          },
+          {
+            "text": "server"
+          }
+        ]
       }
     ]
   },
@@ -625,7 +647,7 @@
         "description": "Number of quests to complete in one go.",
         "type": "Int32",
         "required": true,
-        "default": "539332352"
+        "default": "-534409472"
       },
       {
         "name": "Character Name",
@@ -786,7 +808,13 @@
       {
         "name": "Alias",
         "description": "The existing Alias to remove.",
-        "required": true
+        "required": true,
+        "suggestions": [
+          {
+            "text": "autorotatecamera",
+            "description": "This is an alias for:\n.2"
+          }
+        ]
       }
     ]
   },
@@ -889,7 +917,7 @@
         "description": " Blood quality. Optional, default 100.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "secondary type",
@@ -933,21 +961,21 @@
         "description": "The quality of the secondary blood from 0 to 100, optional with default 100.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "secondary blood buff tier",
         "description": "The tier of the secondary blood buff that is usually picked in blood mixer. 1-3 (i.e same as buff naming standard). Optional, defaults to first tier.",
         "type": "Int32",
         "required": false,
-        "default": "539332352"
+        "default": "-534409472"
       },
       {
         "name": "amount",
         "description": "Amount. Optional, default 100 (full)",
         "type": "Int32",
         "required": false,
-        "default": "539332352"
+        "default": "-534409472"
       }
     ]
   },
@@ -1334,7 +1362,7 @@
         "description": "Power of the previous spell mod. Range 0.0 - 1.0.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "SpellMod 2",
@@ -1374,7 +1402,7 @@
         "description": "Power of the previous spell mod. Range 0.0 - 1.0.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "SpellMod 3",
@@ -1411,7 +1439,7 @@
         "description": "Power of the previous spell mod. Range 0.0 - 1.0.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "SpellMod 4",
@@ -1445,7 +1473,7 @@
         "description": "Power of the previous spell mod. Range 0.0 - 1.0.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       }
     ]
   },
@@ -1827,7 +1855,7 @@
         "description": "Power of the previous spell mod. Range 0.0 - 1.0.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "SpellMod 2",
@@ -1867,7 +1895,7 @@
         "description": "Power of the previous spell mod. Range 0.0 - 1.0.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "SpellMod 3",
@@ -1904,7 +1932,7 @@
         "description": "Power of the previous spell mod. Range 0.0 - 1.0.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "SpellMod 4",
@@ -1938,7 +1966,7 @@
         "description": "Power of the previous spell mod. Range 0.0 - 1.0.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       }
     ]
   },
@@ -2303,7 +2331,7 @@
         "description": "Power of the previous stat mod. Range 0.0 - 1.0.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "StatMod 2",
@@ -2322,7 +2350,7 @@
         "description": "Power of the previous stat mod. Range 0.0 - 1.0.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "StatMod 3",
@@ -2336,7 +2364,7 @@
         "description": "Power of the previous stat mod. Range 0.0 - 1.0.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       }
     ]
   },
@@ -2481,14 +2509,25 @@
         "description": "Server/client.",
         "type": "String",
         "required": true,
-        "default": "server"
+        "default": "server",
+        "suggestions": [
+          {
+            "text": "both"
+          },
+          {
+            "text": "client"
+          },
+          {
+            "text": "server"
+          }
+        ]
       },
       {
         "name": "Num to print",
         "description": "How many lines to print. 0 = all",
         "type": "Int32",
         "required": false,
-        "default": "539332352"
+        "default": "-534409472"
       },
       {
         "name": "Full info",
@@ -2520,7 +2559,22 @@
         "description": "Which World you want to target",
         "type": "String",
         "required": true,
-        "default": "Server"
+        "default": "Server",
+        "suggestions": [
+          {
+            "text": "Both",
+            "description": "Server and Client"
+          },
+          {
+            "text": "Client"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Server"
+          }
+        ]
       }
     ]
   },
@@ -2545,7 +2599,22 @@
         "description": "Which World you want to target",
         "type": "String",
         "required": true,
-        "default": "Server"
+        "default": "Server",
+        "suggestions": [
+          {
+            "text": "Both",
+            "description": "Server and Client"
+          },
+          {
+            "text": "Client"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Server"
+          }
+        ]
       },
       {
         "name": "ExtraDebugging",
@@ -2568,7 +2637,22 @@
         "description": "Which World you want to target",
         "type": "String",
         "required": true,
-        "default": "Server"
+        "default": "Server",
+        "suggestions": [
+          {
+            "text": "Both",
+            "description": "Server and Client"
+          },
+          {
+            "text": "Client"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Server"
+          }
+        ]
       }
     ]
   },
@@ -2585,7 +2669,22 @@
         "description": "Which World you want to target",
         "type": "String",
         "required": true,
-        "default": "Server"
+        "default": "Server",
+        "suggestions": [
+          {
+            "text": "Both",
+            "description": "Server and Client"
+          },
+          {
+            "text": "Client"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Server"
+          }
+        ]
       }
     ]
   },
@@ -2602,7 +2701,18 @@
         "description": "Which World you want to target",
         "type": "String",
         "required": true,
-        "default": "Server"
+        "default": "Server",
+        "suggestions": [
+          {
+            "text": "Client"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Server"
+          }
+        ]
       },
       {
         "name": "Entity",
@@ -2632,7 +2742,22 @@
         "description": "Which World you want to target",
         "type": "String",
         "required": true,
-        "default": "Server"
+        "default": "Server",
+        "suggestions": [
+          {
+            "text": "Both",
+            "description": "Server and Client"
+          },
+          {
+            "text": "Client"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Server"
+          }
+        ]
       }
     ]
   },
@@ -2649,7 +2774,22 @@
         "description": "Which World you want to target",
         "type": "String",
         "required": true,
-        "default": "Server"
+        "default": "Server",
+        "suggestions": [
+          {
+            "text": "Both",
+            "description": "Server and Client"
+          },
+          {
+            "text": "Client"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Server"
+          }
+        ]
       }
     ]
   },
@@ -2666,7 +2806,22 @@
         "description": "Which World you want to target",
         "type": "String",
         "required": true,
-        "default": "Server"
+        "default": "Server",
+        "suggestions": [
+          {
+            "text": "Both",
+            "description": "Server and Client"
+          },
+          {
+            "text": "Client"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Server"
+          }
+        ]
       }
     ]
   },
@@ -2682,7 +2837,22 @@
         "description": "Which World you want to target",
         "type": "String",
         "required": true,
-        "default": "Server"
+        "default": "Server",
+        "suggestions": [
+          {
+            "text": "Both",
+            "description": "Server and Client"
+          },
+          {
+            "text": "Client"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Server"
+          }
+        ]
       }
     ]
   },
@@ -2699,7 +2869,22 @@
         "description": "Which World you want to target",
         "type": "String",
         "required": true,
-        "default": "Server"
+        "default": "Server",
+        "suggestions": [
+          {
+            "text": "Both",
+            "description": "Server and Client"
+          },
+          {
+            "text": "Client"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Server"
+          }
+        ]
       }
     ]
   },
@@ -2716,7 +2901,18 @@
         "description": "Which World you want to target",
         "type": "String",
         "required": true,
-        "default": "Server"
+        "default": "Server",
+        "suggestions": [
+          {
+            "text": "Client"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Server"
+          }
+        ]
       },
       {
         "name": "Component",
@@ -20897,7 +21093,22 @@
         "description": "Which World you want to target",
         "type": "String",
         "required": true,
-        "default": "Server"
+        "default": "Server",
+        "suggestions": [
+          {
+            "text": "Both",
+            "description": "Server and Client"
+          },
+          {
+            "text": "Client"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Server"
+          }
+        ]
       },
       {
         "name": "OnlyRequired",
@@ -20928,7 +21139,22 @@
         "description": "Which World you want to target",
         "type": "String",
         "required": true,
-        "default": "Server"
+        "default": "Server",
+        "suggestions": [
+          {
+            "text": "Both",
+            "description": "Server and Client"
+          },
+          {
+            "text": "Client"
+          },
+          {
+            "text": "Default"
+          },
+          {
+            "text": "Server"
+          }
+        ]
       },
       {
         "name": "Include Per-Collection Statistics",
@@ -21039,7 +21265,7 @@
         "description": "Number of items to force each crafting station to craft",
         "type": "Int32",
         "required": true,
-        "default": "539332352"
+        "default": "-534409472"
       }
     ]
   },
@@ -21108,7 +21334,18 @@
         "description": "Server/client.",
         "type": "String",
         "required": true,
-        "default": "server"
+        "default": "server",
+        "suggestions": [
+          {
+            "text": "both"
+          },
+          {
+            "text": "client"
+          },
+          {
+            "text": "server"
+          }
+        ]
       }
     ]
   },
@@ -21215,7 +21452,7 @@
         "description": "The quality of the primary blood from 0 to 100, optional with default 100.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "Secondary Blood Type",
@@ -21259,14 +21496,14 @@
         "description": "The quality of the secondary blood from 0 to 100, optional with default 100.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "Secondary Blood Buff Tier",
         "description": "The tier of the secondary blood buff that is usually picked in blood mixer. 1-3 (i.e same as buff naming standard). Must be valid for supplied secondary blood quality. Optional, defaults to first tier.",
         "type": "Int32",
         "required": false,
-        "default": "539332352"
+        "default": "-534409472"
       }
     ]
   },
@@ -30018,7 +30255,7 @@
         "description": "The amount of items",
         "type": "Int32",
         "required": false,
-        "default": "539332352"
+        "default": "-534409472"
       }
     ]
   },
@@ -30433,7 +30670,7 @@
         "description": "The number of threads to use.",
         "type": "Int32",
         "required": true,
-        "default": "539332352"
+        "default": "-534409472"
       }
     ]
   },
@@ -30488,7 +30725,7 @@
         "description": "Max FPS (will be clamped between 20 and 300)",
         "type": "Int32",
         "required": false,
-        "default": "539332352"
+        "default": "-534409472"
       }
     ]
   },
@@ -30631,7 +30868,18 @@
         "description": "Server/client.",
         "type": "String",
         "required": true,
-        "default": "server"
+        "default": "server",
+        "suggestions": [
+          {
+            "text": "both"
+          },
+          {
+            "text": "client"
+          },
+          {
+            "text": "server"
+          }
+        ]
       },
       {
         "name": "State",
@@ -30725,7 +30973,18 @@
         "description": "Disabled, Enabled, EnabledWithStackTrace",
         "type": "String",
         "required": true,
-        "default": ""
+        "default": "",
+        "suggestions": [
+          {
+            "text": "Disabled"
+          },
+          {
+            "text": "Enabled"
+          },
+          {
+            "text": "EnabledWithStackTrace"
+          }
+        ]
       }
     ]
   },
@@ -30760,7 +31019,18 @@
         "description": "Server/client.",
         "type": "String",
         "required": true,
-        "default": "server"
+        "default": "server",
+        "suggestions": [
+          {
+            "text": "both"
+          },
+          {
+            "text": "client"
+          },
+          {
+            "text": "server"
+          }
+        ]
       }
     ]
   },
@@ -30980,7 +31250,18 @@
         "description": "Server/client.",
         "type": "String",
         "required": true,
-        "default": "server"
+        "default": "server",
+        "suggestions": [
+          {
+            "text": "both"
+          },
+          {
+            "text": "client"
+          },
+          {
+            "text": "server"
+          }
+        ]
       }
     ]
   },
@@ -31213,27 +31494,58 @@
         "description": "Server/client.",
         "type": "String",
         "required": true,
-        "default": "server"
+        "default": "server",
+        "suggestions": [
+          {
+            "text": "both"
+          },
+          {
+            "text": "client"
+          },
+          {
+            "text": "server"
+          }
+        ]
       },
       {
         "name": "Unnamed Argument",
         "type": "Single",
-        "required": true
+        "required": true,
+        "suggestions": [
+          {
+            "text": "1.5"
+          }
+        ]
       },
       {
         "name": "Unnamed Argument",
         "type": "Single",
-        "required": true
+        "required": true,
+        "suggestions": [
+          {
+            "text": "0.5"
+          }
+        ]
       },
       {
         "name": "Unnamed Argument",
         "type": "Single",
-        "required": true
+        "required": true,
+        "suggestions": [
+          {
+            "text": "0.2"
+          }
+        ]
       },
       {
         "name": "Unnamed Argument",
         "type": "Single",
-        "required": true
+        "required": true,
+        "suggestions": [
+          {
+            "text": "1.0"
+          }
+        ]
       }
     ]
   },
@@ -31275,7 +31587,18 @@
         "description": "server/client",
         "type": "String",
         "required": true,
-        "default": "server"
+        "default": "server",
+        "suggestions": [
+          {
+            "text": "both"
+          },
+          {
+            "text": "client"
+          },
+          {
+            "text": "server"
+          }
+        ]
       },
       {
         "name": "Disabled",
@@ -31491,7 +31814,7 @@
         "description": "The amount of scaling that should be applied. Recommended range 1.0-1.5.",
         "type": "Single",
         "required": true,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       }
     ]
   },
@@ -31508,7 +31831,18 @@
         "description": "Mode for playing videos",
         "type": "String",
         "required": true,
-        "default": "playallvideos"
+        "default": "playallvideos",
+        "suggestions": [
+          {
+            "text": "dontplayvideos"
+          },
+          {
+            "text": "playallvideos"
+          },
+          {
+            "text": "skipintrocinematic"
+          }
+        ]
       }
     ]
   },
@@ -33572,13 +33906,22 @@
             "text": "chunk:13,21"
           },
           {
-            "text": "waypoint:15,15"
+            "text": "waypoint:8,18"
           },
           {
-            "text": "waypoint:6,16"
+            "text": "waypoint:4,18"
+          },
+          {
+            "text": "waypoint:10,18"
+          },
+          {
+            "text": "waypoint:15,13"
           },
           {
             "text": "waypoint:9,16"
+          },
+          {
+            "text": "waypoint:16,19"
           },
           {
             "text": "waypoint:15,17"
@@ -33587,55 +33930,46 @@
             "text": "waypoint:17,16"
           },
           {
-            "text": "waypoint:16,19"
+            "text": "waypoint:6,16"
           },
           {
-            "text": "waypoint:12,15"
-          },
-          {
-            "text": "waypoint:13,19"
-          },
-          {
-            "text": "waypoint:6,20"
-          },
-          {
-            "text": "waypoint:8,18"
-          },
-          {
-            "text": "waypoint:10,18"
-          },
-          {
-            "text": "waypoint:8,8"
-          },
-          {
-            "text": "waypoint:10,20"
-          },
-          {
-            "text": "waypoint:4,18"
-          },
-          {
-            "text": "waypoint:9,10"
-          },
-          {
-            "text": "waypoint:11,11"
-          },
-          {
-            "text": "waypoint:14,11"
-          },
-          {
-            "text": "waypoint:6,12"
-          },
-          {
-            "text": "waypoint:9,13"
-          },
-          {
-            "text": "waypoint:15,13"
+            "text": "waypoint:14,8"
           },
           {
             "text": "waypoint:13,13"
           },
           {
-            "text": "waypoint:14,8"
+            "text": "waypoint:9,13"
+          },
+          {
+            "text": "waypoint:6,12"
+          },
+          {
+            "text": "waypoint:14,11"
+          },
+          {
+            "text": "waypoint:10,20"
+          },
+          {
+            "text": "waypoint:12,15"
+          },
+          {
+            "text": "waypoint:11,11"
+          },
+          {
+            "text": "waypoint:15,15"
+          },
+          {
+            "text": "waypoint:13,19"
+          },
+          {
+            "text": "waypoint:8,8"
+          },
+          {
+            "text": "waypoint:9,10"
+          },
+          {
+            "text": "waypoint:6,20"
           }
         ],
         "suggestionHandling": "dynamic"
@@ -33645,21 +33979,21 @@
         "description": "WorldPosX/TilePosX.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "WorldPosY/TilePosY",
         "description": "WorldPosY/TilePosY.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       },
       {
         "name": "WorldPosZ",
         "description": "WorldPosZ.",
         "type": "Single",
         "required": false,
-        "default": "1.402824E-19"
+        "default": "-4.773562E\u002B19"
       }
     ]
   },
@@ -36254,7 +36588,42 @@
       {
         "name": "Unnamed Argument",
         "type": "String",
-        "required": true
+        "required": true,
+        "suggestions": [
+          {
+            "text": "Ai"
+          },
+          {
+            "text": "All"
+          },
+          {
+            "text": "Archetypes"
+          },
+          {
+            "text": "AssetStreaming"
+          },
+          {
+            "text": "Chunks"
+          },
+          {
+            "text": "Entities"
+          },
+          {
+            "text": "Fps"
+          },
+          {
+            "text": "Network"
+          },
+          {
+            "text": "None"
+          },
+          {
+            "text": "Positions"
+          },
+          {
+            "text": "Replay"
+          }
+        ]
       }
     ]
   },
@@ -36393,7 +36762,18 @@
         "description": "Server/client.",
         "type": "String",
         "required": true,
-        "default": "server"
+        "default": "server",
+        "suggestions": [
+          {
+            "text": "both"
+          },
+          {
+            "text": "client"
+          },
+          {
+            "text": "server"
+          }
+        ]
       },
       {
         "name": "State",
