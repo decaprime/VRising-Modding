@@ -38,25 +38,22 @@ search_exclude: false
   th.col-args, td.col-args { width: 240px; }
   th.col-desc, td.col-desc { width: auto; min-width: 220px; }
 
-  td.col-desc {
+  td.col-desc:has(.desc-text) { cursor: pointer; }
+  td.col-desc:has(.desc-text):hover { background: rgba(255,255,255,0.04); }
+
+  td.col-desc .desc-text {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     line-height: 1.25rem;
     overflow-wrap: anywhere;
-    cursor: pointer;
   }
 
-  td.col-desc:hover {
-    background: rgba(255,255,255,0.04);
-  }
-
-  td.col-desc.expanded {
+  td.col-desc.expanded .desc-text {
     display: block;
     overflow: visible;
     -webkit-line-clamp: unset;
-    cursor: default;
   }
 
   th.col-search, td.col-search { display: none; }
@@ -117,7 +114,7 @@ search_exclude: false
     });
 
     const desc = e.target.closest('td.col-desc');
-    if (desc && !e.target.closest('a')) {
+    if (desc && desc.querySelector('.desc-text') && !e.target.closest('a')) {
       desc.classList.toggle('expanded');
     }
   });
@@ -265,7 +262,7 @@ search_exclude: false
             {% endif %}
           </td>
 
-          <td class="col-desc" title="{{ cmd.description }}">{{ cmd.description }}</td>
+          <td class="col-desc">{% if cmd.description != "" %}<span class="desc-text" title="{{ cmd.description }}">{{ cmd.description }}</span>{% endif %}</td>
 
           <td class="col-search">{{ search_parts | join: " " }}</td>
         </tr>
