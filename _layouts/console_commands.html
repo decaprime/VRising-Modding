@@ -5,15 +5,6 @@ nav_exclude: false
 search_exclude: false
 ---
 
-{% comment %}
-  Uses a JSON data file named exactly like page.data_file (no extension),
-  e.g. _data/consoleCommands.json and page front matter: data_file: consoleCommands
-
-  Supports either:
-    - a raw array: [ {command}, {command}, ... ]
-    - a wrapped object: { meta: {...}, commands: [ ... ] }
-{% endcomment %}
-
 {% assign raw = site.data[page.data_file] %}
 {% if raw.commands %}
   {% assign commands = raw.commands %}
@@ -25,102 +16,165 @@ search_exclude: false
 {{ content }}
 
 <style>
-  /* Hide the helper column (still searchable by DataTables) */
-  th.col-search, td.col-search { display: none; }
+  /* Let the table be wider than the content area */
+  .table-scroll {
+    width: 100%;
+    overflow-x: auto;
+  }
 
-  /* Make the table behave predictably */
-  table { width: 100%; table-layout: fixed; }
+  /* DataTables sometimes injects its own widths; don't fight it too hard */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
 
   table td, table th {
     padding: 0.5rem 0.75rem;
     vertical-align: top;
   }
 
-  /* Keep command compact */
-  td.col-cmd code { white-space: nowrap; }
-
-  /* Clamp long descriptions so rows don't become skyscrapers */
-  td.col-desc {
+  /* Keep command readable and prevent ugly mid-word breaks */
+  td.col-cmd, th.col-cmd {
+    width: 18%;
+    white-space: nowrap;
+  }
+  td.col-cmd code {
+    white-space: nowrap;
     overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;       /* show 3 lines */
-    -webkit-box-orient: vertical;
-    line-height: 1.25rem;
+    text-overflow: ellipsis;
+    display: inline-block;
+    max-width: 100%;
   }
 
-  /* Argument "chips" */
+  td.col-cat, th.col-cat { width: 12%; white-space: nowrap; }
+  td.col-vis, th.col-vis { width: 10%; white-space: nowrap; }
+
+  /* Arguments: keep compact, don't let it balloon rows */
+  td.col-args, th.col-args {
+    width: 18%;
+    white-space: nowrap;
+  }
+  .arg-compact {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+    max-width: 100%;
+    white-space: nowrap;
+  }
   .arg-chip {
     display: inline-block;
-    padding: 0.15rem 0.45rem;
+    padding: 0.12rem 0.4rem;
     border-radius: 0.5rem;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
     border: 1px solid rgba(255,255,255,0.15);
-    margin: 0 0.25rem 0.25rem 0;
+    white-space: nowrap;
+  }
+  .arg-more {
+    display: inline-block;
+    padding: 0.12rem 0.4rem;
+    border-radius: 0.5rem;
+    font-size: 0.82rem;
+    border: 1px dashed rgba(255,255,255,0.22);
+    opacity: 0.9;
     white-space: nowrap;
   }
 
+  /* Description: clamp, and also avoid narrow-column word vomiting */
+  td.col-desc, th.col-desc { width: 42%; }
+  td.col-desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.25rem;
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+
+  /* Hide helper column but keep searchable */
+  th.col-search, td.col-search { display: none; }
+
   .muted { opacity: 0.7; }
+
+  /* Optional: tighten DataTables controls spacing if it looks cramped */
+  .dataTables_wrapper .dataTables_filter input {
+    margin-left: 0.5rem;
+  }
 </style>
 
-<table>
-  <thead>
-    <tr>
-      <th>Command</th>
-      <th>Category</th>
-      <th>Visibility</th>
-      <th>Arguments</th>
-      <th>Description</th>
-      <th class="col-search">Search</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for cmd in commands %}
-      {% comment %} Collect argument names {% endcomment %}
-      {% assign arg_names = "" | split: "|" %}
-      {% if cmd.args %}
-        {% for a in cmd.args %}
-          {% if a.name %}
-            {% assign arg_names = arg_names | push: a.name %}
-          {% endif %}
-        {% endfor %}
-      {% endif %}
-
-      {% comment %}
-        Build extra searchable text, without showing it in the UI.
-        Searched via the hidden "Search" column.
-      {% endcomment %}
-      {% assign search_parts = "" | split: "|" %}
-      {% if cmd.name %}{% assign search_parts = search_parts | push: cmd.name %}{% endif %}
-      {% if cmd.category %}{% assign search_parts = search_parts | push: cmd.category %}{% endif %}
-      {% if cmd.visibility %}{% assign search_parts = search_parts | push: cmd.visibility %}{% endif %}
-      {% if cmd.description %}{% assign search_parts = search_parts | push: cmd.description %}{% endif %}
-      {% assign search_parts = search_parts | concat: arg_names %}
-      {% if cmd.aliases %}{% assign search_parts = search_parts | concat: cmd.aliases %}{% endif %}
-      {% if cmd.tags %}{% assign search_parts = search_parts | concat: cmd.tags %}{% endif %}
-
+<div class="table-scroll">
+  <table>
+    <thead>
       <tr>
-        <td class="col-cmd">
-          <code id="{{ cmd.id | default: cmd.name | slugify }}">{{ cmd.name }}</code>
-        </td>
-
-        <td class="col-cat">{{ cmd.category }}</td>
-
-        <td class="col-vis">{{ cmd.visibility }}</td>
-
-        <td class="col-args">
-          {% if arg_names.size > 0 %}
-            {% for n in arg_names %}
-              <span class="arg-chip">{{ n }}</span>
-            {% endfor %}
-          {% else %}
-            <span class="muted">—</span>
-          {% endif %}
-        </td>
-
-        <td class="col-desc">{{ cmd.description }}</td>
-
-        <td class="col-search">{{ search_parts | join: " " }}</td>
+        <th class="col-cmd">Command</th>
+        <th class="col-cat">Category</th>
+        <th class="col-vis">Visibility</th>
+        <th class="col-args">Arguments</th>
+        <th class="col-desc">Description</th>
+        <th class="col-search">Search</th>
       </tr>
-    {% endfor %}
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      {% for cmd in commands %}
+        {% assign arg_names = "" | split: "|" %}
+        {% if cmd.args %}
+          {% for a in cmd.args %}
+            {% if a.name %}
+              {% assign arg_names = arg_names | push: a.name %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% assign search_parts = "" | split: "|" %}
+        {% if cmd.name %}{% assign search_parts = search_parts | push: cmd.name %}{% endif %}
+        {% if cmd.category %}{% assign search_parts = search_parts | push: cmd.category %}{% endif %}
+        {% if cmd.visibility %}{% assign search_parts = search_parts | push: cmd.visibility %}{% endif %}
+        {% if cmd.description %}{% assign search_parts = search_parts | push: cmd.description %}{% endif %}
+        {% assign search_parts = search_parts | concat: arg_names %}
+        {% if cmd.aliases %}{% assign search_parts = search_parts | concat: cmd.aliases %}{% endif %}
+        {% if cmd.tags %}{% assign search_parts = search_parts | concat: cmd.tags %}{% endif %}
+
+        {% comment %}
+          Arguments compact rendering:
+          - Show first 2 arg chips max
+          - If more, show +N
+          - Put full arg list in title tooltip
+        {% endcomment %}
+        {% assign arg_count = arg_names | size %}
+        {% assign tooltip_args = arg_names | join: ", " %}
+
+        <tr>
+          <td class="col-cmd">
+            <code id="{{ cmd.id | default: cmd.name | slugify }}" title="{{ cmd.name }}">{{ cmd.name }}</code>
+          </td>
+
+          <td class="col-cat">{{ cmd.category }}</td>
+
+          <td class="col-vis">{{ cmd.visibility }}</td>
+
+          <td class="col-args" title="{{ tooltip_args }}">
+            {% if arg_count > 0 %}
+              <span class="arg-compact">
+                <span class="arg-chip">{{ arg_names[0] }}</span>
+                {% if arg_count > 1 %}
+                  <span class="arg-chip">{{ arg_names[1] }}</span>
+                {% endif %}
+                {% if arg_count > 2 %}
+                  <span class="arg-more">+{{ arg_count | minus: 2 }}</span>
+                {% endif %}
+              </span>
+            {% else %}
+              <span class="muted">—</span>
+            {% endif %}
+          </td>
+
+          <td class="col-desc" title="{{ cmd.description }}">
+            {{ cmd.description }}
+          </td>
+
+          <td class="col-search">{{ search_parts | join: " " }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
