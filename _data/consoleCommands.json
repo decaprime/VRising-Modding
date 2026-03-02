@@ -360,15 +360,6 @@
     ]
   },
   {
-    "name": "CaptureAllSuggestions",
-    "category": "General",
-    "visibility": "Always",
-    "scope": "both",
-    "admin": false,
-    "description": "Programmatically triggers autocomplete for every dynamic-arg command to populate the suggestion cache",
-    "args": []
-  },
-  {
     "name": "CastleHeartEvent",
     "category": "General",
     "visibility": "Always",
@@ -2580,15 +2571,6 @@
         "default": "Server"
       }
     ]
-  },
-  {
-    "name": "DumpConsoleCommands",
-    "category": "General",
-    "visibility": "Always",
-    "scope": "both",
-    "admin": false,
-    "description": "Dumps all registered console commands to a JSON file",
-    "args": []
   },
   {
     "name": "DumpDynamicBufferMemoryInfo",
@@ -36634,5 +36616,4 @@
       }
     ]
   }
-
 ]
