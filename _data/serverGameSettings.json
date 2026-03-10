@@ -1,0 +1,268 @@
+[
+  {
+    "section": "Game Mode",
+    "settings": [
+      { "key": "GameDifficulty", "type": "enum", "default": "Normal", "uiName": "", "inUI": false, "description": "Defines the behaviour of VBlood bosses. Relaxed: bosses use simpler mechanics. Normal: bosses use default mechanics. Hard (Brutal): bosses use advanced mechanics and behaviours.", "enumValues": ["Relaxed (0)", "Normal (1)", "Hard (2)"] },
+      { "key": "GameModeType", "type": "enum", "default": "PvP", "uiName": "Game Mode", "inUI": true, "description": "Defines the base ruleset for player vs player interaction. <b>PvE:</b> Players cannot damage other players or their castles. <b>PvP:</b> Player and castle damage is enabled, governed by PlayerDamageMode and CastleDamageMode.", "enumValues": ["PvE (0)", "PvP (1)"] },
+      { "key": "PlayerDamageMode", "type": "enum", "default": "Always", "uiName": "", "inUI": false, "description": "Defines if vampires can deal damage to other players. Only active when GameModeType is PvP. <b>Always:</b> PvP damage is always active. <b>TimeRestricted:</b> PvP damage only occurs during the VSPlayer scheduled windows.", "enumValues": ["Always (0)", "TimeRestricted (1)"] },
+      { "key": "CastleDamageMode", "type": "enum", "default": "Never", "uiName": "", "inUI": false, "description": "Defines if vampires can deal damage to other players' castles. Only active when GameModeType is PvP. <b>Never:</b> Castles cannot be damaged by players. <b>Always:</b> Castles can always be damaged. <b>TimeRestricted:</b> Castles can only be damaged during the VSCastle scheduled windows.", "enumValues": ["Never (0)", "Always (1)", "TimeRestricted (2)"] },
+      { "key": "CastleHeartDamageMode", "type": "enum", "default": "CanBeDestroyedByPlayers", "uiName": "", "inUI": false, "description": "Defines if players can destroy or take over other players' castle hearts. <b>CanBeDestroyedOnlyWhenDecaying:</b> Castle hearts can only be destroyed when the castle has no Blood Essence. <b>CanBeDestroyedByPlayers:</b> Castle hearts can be destroyed by players (subject to CastleDamageMode). <b>CanBeSeizedOrDestroyedByPlayers:</b> Castle hearts can additionally be seized, transferring ownership to the attacker.", "enumValues": ["CanBeDestroyedOnlyWhenDecaying (0)", "CanBeDestroyedByPlayers (1)", "CanBeSeizedOrDestroyedByPlayers (2)"] },
+      { "key": "SiegeWeaponHealth", "type": "enum", "default": "Normal", "uiName": "Siege Golem Health", "inUI": true, "description": "Determines the health of the Siege Golem Stone Form used to breach enemy castles. Higher values give attackers more durability before the golem is destroyed by defenders.", "enumValues": ["VeryLow (0) - 750", "Low (1) - 1000", "Normal (2) - 1250", "High (3) - 1750", "VeryHigh (4) - 2500", "MegaHigh (5) - 3250", "UltraHigh (6) - 4000", "CrazyHigh (7) - 5000", "Max (8) - 7500"] },
+      { "key": "PvPProtectionMode", "type": "enum", "default": "Medium", "uiName": "New Player PvP Protection", "inUI": true, "description": "How long newly created vampires are protected against PvP damage. The immunity is applied on character creation and expires after the specified duration of in-game time has passed.", "enumValues": ["Disabled (0)", "VeryShort (1) - 900s", "Short (2) - 1800s", "Medium (3) - 3600s", "Long (4) - 7200s"] },
+      { "key": "DeathContainerPermission", "type": "enum", "default": "Anyone", "uiName": "", "inUI": false, "description": "Defines which players are allowed to access a death container (the loot bag dropped when a player dies). <b>Anyone:</b> Any player can loot it. <b>ClanMembers:</b> Only the deceased's clan members can loot it. <b>OnlySelf:</b> Only the player who died can loot their own container.", "enumValues": ["Anyone (0)", "ClanMembers (1)", "OnlySelf (2)"] },
+      { "key": "RelicSpawnType", "type": "enum", "default": "Unique", "uiName": "", "inUI": false, "description": "Determines how Soul Shards are placed in the world. <b>Unique:</b> Only one instance of each Soul Shard type can exist at a time - when a vampire holds a shard, no duplicate of that type will spawn. <b>Plentiful:</b> Multiple instances of each Soul Shard type can exist simultaneously. Note: Lowering limits will not affect already-placed shards. Recommended to set before starting the server.", "enumValues": ["Unique (0)", "Plentiful (1)"] }
+    ]
+  },
+  {
+    "section": "Player Interaction",
+    "settings": [
+      { "key": "AllowGlobalChat", "type": "bool", "default": "true", "uiName": "Allow Global Chat", "inUI": true, "description": "Enable the global chat channel visible to all players on the server." },
+      { "key": "AllWaypointsUnlocked", "type": "bool", "default": "false", "uiName": "", "inUI": false, "description": "All waygate fast-travel points are revealed on the world map for all players from the start.", "notes": "Reported broken/unreliable" },
+      { "key": "CanLootEnemyContainers", "type": "bool", "default": "true", "uiName": "Allow players to loot enemy storage", "inUI": true, "description": "Allow players to access and loot enemy stashes and workstations. Does not include death containers." },
+      { "key": "BloodBoundEquipment", "type": "bool", "default": "true", "uiName": "", "inUI": false, "description": "Most equipment will not drop on death and cannot be traded between players. Excludes hats." },
+      { "key": "TeleportBoundItems", "type": "bool", "default": "true", "uiName": "Teleport Bound Items", "inUI": true, "description": "Certain items prevent the player from using waygates while carrying them." },
+      { "key": "BatBoundItems", "type": "bool", "default": "true", "uiName": "Bat Bound Items", "inUI": true, "description": "When true, having Soul Shards will prevent you from transforming into a bat." },
+      { "key": "BatBoundShards", "type": "bool", "default": "true", "uiName": "", "inUI": false, "description": "Soul Shards prevent the player from using bat form while carrying them." },
+      { "key": "ClanSize", "type": "int", "default": "4", "min": "1", "max": "50", "uiName": "Clan Size", "inUI": true, "description": "Maximum number of players that can be in a single clan." },
+      { "key": "WeaponSlots", "type": "int", "default": "8", "min": "0", "max": "8", "uiName": "", "inUI": false, "description": "Number of weapon/action bar slots available to each player. Reduces the number of weapons a player can equip. Values above 8 are clamped to 8. 0 will prevent any weapon from equipping if not already equipped." },
+      { "key": "FreeCastleRaid", "type": "bool", "default": "false", "uiName": "Free Castle Raid", "inUI": true, "description": "Defines if raiding another player's castle is free or has a cost. When true, raiding requires no materials to initiate." },
+      { "key": "FreeCastleClaim", "type": "bool", "default": "false", "uiName": "Free Castle Heart Claim", "inUI": true, "description": "Defines if claiming another player's castle is free or has a cost. When true, seizing a castle heart requires no key materials." },
+      { "key": "FreeCastleDestroy", "type": "bool", "default": "false", "uiName": "Free Castle Heart Destruction", "inUI": true, "description": "Defines if destroying another player's castle is free or has a cost. When true, destroying a castle heart requires no key materials." }
+    ]
+  },
+  {
+    "section": "Inactivity / Disconnect",
+    "settings": [
+      { "key": "InactivityKillEnabled", "type": "bool", "default": "true", "uiName": "", "inUI": false, "description": "Automatically destroy a player's vampire after they have been offline for too long, based on gear level." },
+      { "key": "InactivityKillTimeMin", "type": "int", "default": "3600", "uiName": "", "inUI": false, "description": "Minimum seconds offline before inactivity kill can trigger. Default is 1 hour (3600s).", "notes": "Recommended: do not change" },
+      { "key": "InactivityKillTimeMax", "type": "int", "default": "604800", "uiName": "", "inUI": false, "description": "Maximum seconds offline before inactivity kill triggers. Default is 7 days (604800s).", "notes": "Recommended: do not change" },
+      { "key": "InactivityKillSafeTimeAddition", "type": "int", "default": "172800", "uiName": "", "inUI": false, "description": "Extra inactivity protection time granted when the player is inside their castle territory. Default is 48 hours (172800s)." },
+      { "key": "InactivityKillTimerMaxItemLevel", "type": "int", "default": "84", "min": "0", "max": "255", "uiName": "", "inUI": false, "description": "The item level at which a character receives the maximum inactivity time. The actual inactivity timer is interpolated between InactivityKillTimeMin and InactivityKillTimeMax based on the character's item level from 0 to this value." },
+      { "key": "DisableDisconnectedDeadEnabled", "type": "bool", "default": "true", "uiName": "", "inUI": false, "description": "Remove an offline player's physical body from the world after the disconnect timer expires." },
+      { "key": "DisableDisconnectedDeadTimer", "type": "int", "default": "60", "uiName": "", "inUI": false, "description": "Seconds after disconnecting before the player's body is removed from the world.", "notes": "Recommended: do not change" },
+      { "key": "DisconnectedSunImmunityTime", "type": "float", "default": "300.0", "min": "0", "max": "3600", "uiName": "", "inUI": false, "description": "Seconds of sun immunity granted to a vampire after disconnecting. Default is 5 minutes." }
+    ]
+  },
+  {
+    "section": "Drops / Resources",
+    "settings": [
+      { "key": "InventoryStacksModifier", "type": "float", "default": "1.0", "min": "0.25", "max": "3", "uiName": "Inventory Stacks Multiplier", "inUI": true, "description": "Multiplies the maximum stack size for all items in inventory." },
+      { "key": "DropTableModifier_General", "type": "float", "default": "1.0", "min": "0.25", "max": "3", "uiName": "", "inUI": false, "description": "Multiplier on loot dropped from general enemies and containers. Overridden by GameDifficulty presets." },
+      { "key": "DropTableModifier_Missions", "type": "float", "default": "1.0", "min": "0.25", "max": "3", "uiName": "", "inUI": false, "description": "Multiplies the quantity of loot received from successful servant hunts." },
+      { "key": "DropTableModifier_StygianShards", "type": "float", "default": "1.0", "min": "0.25", "max": "3", "uiName": "", "inUI": false, "description": "Multiplies the ratio of Stygian Shards dropped from enemies, breakables, chests, and incursion crystals." },
+      { "key": "SoulShard_DurabilityLossRate", "type": "float", "default": "1.0", "min": "0", "max": "3", "uiName": "", "inUI": false, "description": "Multiplier on the durability loss rate for Soul Shards." },
+      { "key": "MaterialYieldModifier_Global", "type": "float", "default": "1.0", "min": "0.25", "max": "3", "uiName": "Material Yield Multiplier", "inUI": true, "description": "Multiplies the resources received from harvesting trees, minerals, and plants." },
+      { "key": "BloodEssenceYieldModifier", "type": "float", "default": "1.0", "min": "0.25", "max": "3", "uiName": "", "inUI": false, "description": "Multiplies the amount of Blood Essence received from defeating enemies." },
+      { "key": "PvPVampireRespawnModifier", "type": "float", "default": "1.0", "min": "0", "max": "3", "uiName": "PvP Respawn Time Modifier", "inUI": true, "description": "Multiplies the respawn timer duration after being killed in PvP." }
+    ]
+  },
+  {
+    "section": "Player Stats",
+    "settings": [
+      { "key": "BloodDrainModifier", "type": "float", "default": "1.0", "min": "0", "max": "3", "uiName": "Blood Drain Rate", "inUI": true, "description": "Multiplier on how quickly a vampire's blood pool drains. Overridden by GameDifficulty presets." },
+      { "key": "GarlicAreaStrengthModifier", "type": "float", "default": "1.0", "min": "0", "max": "3", "uiName": "Garlic Strength Multiplier", "inUI": true, "description": "Multiplier on the rate at which Garlic stacks when a vampire is exposed to it." },
+      { "key": "HolyAreaStrengthModifier", "type": "float", "default": "1.0", "min": "0", "max": "3", "uiName": "", "inUI": false, "description": "Multiplier on the strength of the Holy Radiation status effect dealt to vampires." },
+      { "key": "SilverStrengthModifier", "type": "float", "default": "1.0", "min": "0", "max": "3", "uiName": "Silver Strength Multiplier", "inUI": true, "description": "Multiplier on the damage received from carrying silver items (including silver coins)." },
+      { "key": "SunDamageModifier", "type": "float", "default": "1.0", "min": "0", "max": "3", "uiName": "", "inUI": false, "description": "Multiplier on the rate of sun damage dealt to vampires. Overridden by GameDifficulty presets." }
+    ]
+  },
+  {
+    "section": "Death / Durability",
+    "settings": [
+      { "key": "DurabilityDrainModifier", "type": "float", "default": "1.0", "min": "0", "max": "3", "uiName": "Durability Loss Multiplier", "inUI": true, "description": "Multiplier on equipment durability loss from combat and use." },
+      { "key": "Death_DurabilityFactorLoss", "type": "float", "default": "0.125", "min": "0", "max": "1.0", "uiName": "Durability Loss upon Death in PvP", "inUI": true, "description": "The fraction of durability lost by equipment upon death in PvP combat." },
+      { "key": "Death_DurabilityLossFactorAsResources", "type": "float", "default": "1.0", "min": "0", "max": "1.0", "uiName": "Durability Loss as Resource Drop (PvP Only)", "inUI": true, "description": "Fraction of durability loss that is converted to dropped resources instead of being destroyed. 0 = all lost, 1 = all dropped as resources." }
+    ]
+  },
+  {
+    "section": "Starting Character",
+    "settings": [
+      { "key": "StartingProgressionLevel", "type": "int", "default": "0", "min": "0", "max": "255", "uiName": "", "inUI": false, "description": "All quests and research below this gear level are automatically completed for newly created characters." },
+      { "key": "StarterEquipmentId", "type": "int", "default": "0", "uiName": "", "inUI": false, "description": "Prefab ID of the starter equipment kit given to newly created characters. 0 means no starter equipment. Only applies on character creation.", "notes": "Known equipment kit IDs:<br><code>0</code> None (default)<br><code>-387090868</code> Copper Equipment (Level 30)<br><code>-376135143</code> Merciless Copper Equipment (Level 40)<br><code>-1613823352</code> Iron Equipment (Level 50)<br><code>-1714743400</code> Merciless Iron Equipment (Level 60)<br><code>-258598606</code> Darksilver Equipment (Level 70)<br><code>1177675846</code> Sanguine Equipment (Level 80)<br><code>-1466803079</code> Dracula Equipment (Level 90)" },
+      { "key": "StarterResourcesId", "type": "int", "default": "0", "uiName": "", "inUI": false, "description": "Prefab ID of the starter resource pack given to newly created characters. 0 means no starter resources. Only applies on character creation.", "notes": "Known resource pack IDs:<br><code>0</code> None (default)<br><code>-696202180</code> Copper Materials (Level 30)<br><code>329280709</code> Copper Materials (Level 40)<br><code>481718792</code> Iron Materials (Level 50)<br><code>470364250</code> Alloy Materials (Level 60)<br><code>-766909665</code> Darksilver Materials (Level 70)<br><code>-2131982548</code> Gold Materials (Level 80)" },
+      { "key": "UnlockedAchievements", "type": "array", "default": "[]", "uiName": "", "inUI": false, "description": "List of achievement IDs to pre-complete for newly created characters. Completing an achievement typically unlocks crafting recipes and building blueprints. Only applies on character creation.", "notes": "Achievement IDs:<br><code>-1770927128</code> Collecting the Remains<br><code>436375429</code> Wielding the Sword<br><code>-1400391027</code> Mastering Magic<br><code>-2102083739</code> Defensive Measures<br><code>1566228114</code> Hides of the Wild<br><code>1695239324</code> Into the Woods<br><code>-54280488</code> Gathering<br><code>1694767961</code> Lord of Shadows<br><code>-1899098914</code> Fortify<br><code>-122882616</code> Shelter<br><code>560247139</code> Getting Ready for the Hunt<br><code>-1995132640</code> Blood Hunt<br><code>-302458684</code> Thirst for Power<br><code>-1434604634</code> The First Book in the Library<br><code>1668809517</code> Expanding my Domain<br><code>334973636</code> Building a Castle<br><code>134993992</code> Waygate<br><code>606418711</code> Lord of the Manor<br><code>-892747762</code> Servants<br><code>-437605270</code> Army of Darkness<br><code>-1472413073</code> Broaden Horizons<br><code>1248242594</code> Blood on Tap<br><code>-327597689</code> Throne of Command<br><code>149111189</code> Reign Supreme<br><code>-452204266</code> An Eye into Mortium<br><code>1805684941</code> A Castle Reaching the Sky<br><code>-699165894</code> Nightfall Steed<br><code>1861267375</code> Vampire Empire<br><code>-2104585843</code> Soul Stones<br><code>1762480233</code> Lord of the Night" },
+      { "key": "UnlockedResearchs", "type": "array", "default": "[]", "uiName": "", "inUI": false, "description": "List of research bundle IDs to pre-unlock for newly created characters. Use the tier bundle IDs to unlock all research within that tier. Only applies on character creation.", "notes": "Research bundle IDs:<br><code>-495424062</code> All Tier 1 Research<br><code>-1292809886</code> All Tier 2 Research<br><code>-1262194203</code> All Tier 3 Research" }
+    ]
+  },
+  {
+    "section": "Building / Crafting",
+    "settings": [
+      { "key": "BuildCostModifier", "type": "float", "default": "1.0", "min": "0", "max": "3", "uiName": "Build Cost Multiplier", "inUI": true, "description": "Multiplier on material costs to construct castle structures." },
+      { "key": "RecipeCostModifier", "type": "float", "default": "1.0", "min": "0", "max": "3", "uiName": "", "inUI": false, "description": "Multiplier on material costs for crafting recipes." },
+      { "key": "CraftRateModifier", "type": "float", "default": "1.0", "min": "0.25", "max": "6", "uiName": "Crafting Rate", "inUI": true, "description": "Multiplier on crafting speed in crafting stations. Higher values result in faster crafting." },
+      { "key": "ResearchCostModifier", "type": "float", "default": "1.0", "min": "0", "max": "3", "uiName": "", "inUI": false, "description": "Multiplier on resource costs to research technologies.", "notes": "Unused per official documentation" },
+      { "key": "RefinementCostModifier", "type": "float", "default": "1.0", "min": "0", "max": "6", "uiName": "Refinement Cost Multiplier", "inUI": true, "description": "Multiplier on material costs for refinement recipes." },
+      { "key": "RefinementRateModifier", "type": "float", "default": "1.0", "min": "0.25", "max": "6", "uiName": "Refinement Rate", "inUI": true, "description": "Multiplier on refinement speed. Higher values result in faster refinement." },
+      { "key": "DismantleResourceModifier", "type": "float", "default": "1.0", "min": "0", "max": "1", "uiName": "Dismantle Resource Multiplier", "inUI": true, "description": "Multiplier on resources returned when dismantling structures." },
+      { "key": "ServantConvertRateModifier", "type": "float", "default": "1.0", "min": "0.25", "max": "6", "uiName": "Servant Convert Rate", "inUI": true, "description": "Multiplier on the speed at which humans are converted into servants." },
+      { "key": "RepairCostModifier", "type": "float", "default": "1.0", "min": "0", "max": "3", "uiName": "", "inUI": false, "description": "Multiplier on material costs to repair equipment." }
+    ]
+  },
+  {
+    "section": "Castle / Siege / Raid",
+    "settings": [
+      { "key": "CastleDecayRateModifier", "type": "float", "default": "1.0", "min": "0", "max": "3", "uiName": "Decay Rate Multiplier", "inUI": true, "description": "Multiplier on the rate at which castle structures decay when the Castle Heart has no Blood Essence." },
+      { "key": "CastleBloodEssenceDrainModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "3", "uiName": "Blood Essence Drain Rate", "inUI": true, "description": "Multiplier on the rate at which the Castle Heart drains its Blood Essence for upkeep." },
+      { "key": "CastleSiegeTimer", "type": "float", "default": "420", "min": "60", "max": "1800", "uiName": "", "inUI": false, "description": "Duration in seconds a siege golem's breach is active. During a breach, new structures cannot be built and existing structures can be damaged. Default is 7 minutes." },
+      { "key": "CastleUnderAttackTimer", "type": "float", "default": "60", "min": "0", "max": "60", "uiName": "Castle Under Attack Time", "inUI": true, "description": "Duration in seconds the 'under attack' state persists after the last siege golem hit, explosion, or direct heart damage." },
+      { "key": "CastleRaidTimer", "type": "float", "default": "600", "min": "60", "max": "3600", "uiName": "Castle Raid Timer", "inUI": true, "description": "Duration of a castle raid in seconds. While raiding, castle defenses are down. Default is 10 minutes." },
+      { "key": "CastleRaidProtectionTime", "type": "float", "default": "1800", "min": "0", "max": "604800", "uiName": "Castle Raid Cooldown", "inUI": true, "description": "Cooldown between raids on the same castle in seconds. Default is 30 minutes." },
+      { "key": "CastleExposedFreeClaimTimer", "type": "float", "default": "300", "min": "0", "max": "3600", "uiName": "", "inUI": false, "description": "Seconds a decayed or abandoned Castle Heart can be freely claimed without materials. Default is 5 minutes." },
+      { "key": "CastleRelocationEnabled", "type": "bool", "default": "true", "uiName": "Castle Relocation Enabled", "inUI": true, "description": "Allow players to relocate their castle to an unoccupied territory." },
+      { "key": "CastleRelocationCooldown", "type": "float", "default": "10800", "min": "0", "max": "2592000", "uiName": "Castle Relocation Cooldown", "inUI": true, "description": "Cooldown in seconds before a castle can be relocated again. Default is 3 hours." },
+      { "key": "AnnounceSiegeWeaponSpawn", "type": "bool", "default": "true", "uiName": "Announce Siege Golem", "inUI": true, "description": "Broadcast a server-wide chat message when a Siege Golem is summoned." },
+      { "key": "ShowSiegeWeaponMapIcon", "type": "bool", "default": "false", "uiName": "Show Siege Golem on Map", "inUI": true, "description": "Show the locations of active Siege Golems on the world map for all players." }
+    ]
+  },
+  {
+    "section": "Game Time / Day Cycle",
+    "settings": [
+      { "key": "GameTimeModifiers.DayDurationInSeconds", "type": "float", "default": "1080", "min": "60", "max": "86400", "uiName": "", "inUI": false, "description": "Total length of one in-game day cycle in real seconds. Default is 18 minutes (1080s)." },
+      { "key": "GameTimeModifiers.DayStartHour", "type": "int", "default": "9", "min": "0", "max": "23", "uiName": "", "inUI": false, "description": "Hour when daytime begins for sun damage purposes. 24-hour format." },
+      { "key": "GameTimeModifiers.DayStartMinute", "type": "int", "default": "0", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Minute offset for day start hour." },
+      { "key": "GameTimeModifiers.DayEndHour", "type": "int", "default": "17", "min": "0", "max": "23", "uiName": "", "inUI": false, "description": "Hour when daytime ends. 24-hour format." },
+      { "key": "GameTimeModifiers.DayEndMinute", "type": "int", "default": "0", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Minute offset for day end hour." },
+      { "key": "GameTimeModifiers.BloodMoonFrequency_Min", "type": "int", "default": "10", "min": "1", "max": "255", "uiName": "", "inUI": false, "description": "Minimum number of in-game days between Blood Moons." },
+      { "key": "GameTimeModifiers.BloodMoonFrequency_Max", "type": "int", "default": "18", "min": "1", "max": "255", "uiName": "", "inUI": false, "description": "Maximum number of in-game days between Blood Moons." },
+      { "key": "GameTimeModifiers.BloodMoonBuff", "type": "float", "default": "0.2", "min": "0", "max": "1", "uiName": "", "inUI": false, "description": "Movement speed buff fraction applied to players during a Blood Moon. 0.2 = +20%." }
+    ]
+  },
+  {
+    "section": "Vampire Stat Modifiers",
+    "settings": [
+      { "key": "VampireStatModifiers.MaxHealthModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies the maximum health of all player vampires." },
+      { "key": "VampireStatModifiers.PhysicalPowerModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies physical (melee and ranged) damage of all player vampires." },
+      { "key": "VampireStatModifiers.SpellPowerModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies spell and ability damage (and healing) of all player vampires." },
+      { "key": "VampireStatModifiers.ResourcePowerModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "10", "uiName": "Resource Power Multiplier", "inUI": true, "description": "Multiplies resource gathering power (damage dealt to resource objects) of all player vampires." },
+      { "key": "VampireStatModifiers.DamageReceivedModifier", "type": "float", "default": "1.0", "uiName": "Damage Received Multiplier", "inUI": true, "description": "Multiplies any damage received by player vampires.", "notes": "Recommended: do not change" },
+      { "key": "VampireStatModifiers.ReviveCancelDelay", "type": "float", "default": "5.0", "uiName": "", "inUI": false, "description": "Seconds a player must wait before cancelling a revive in progress.", "notes": "Recommended: do not change" }
+    ]
+  },
+  {
+    "section": "Unit Stat Modifiers",
+    "settings": [
+      { "key": "UnitStatModifiers_Global.MaxHealthModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies the maximum health of all standard (non-VBlood) enemy units. Overridden by GameDifficulty presets. Requires unit respawn to take effect." },
+      { "key": "UnitStatModifiers_Global.PowerModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies the damage output of all standard enemy units. Overridden by GameDifficulty presets." },
+      { "key": "UnitStatModifiers_Global.LevelIncrease", "type": "int", "default": "0", "min": "0", "max": "100", "uiName": "", "inUI": false, "description": "Flat level bonus added to all standard (non-VBlood) enemy units. Overridden by GameDifficulty presets." },
+      { "key": "UnitStatModifiers_VBlood.MaxHealthModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies the maximum health of V Blood boss units. Overridden by GameDifficulty presets." },
+      { "key": "UnitStatModifiers_VBlood.PowerModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies the damage output of V Blood boss units. Overridden by GameDifficulty presets." },
+      { "key": "UnitStatModifiers_VBlood.LevelIncrease", "type": "int", "default": "0", "min": "0", "max": "100", "uiName": "", "inUI": false, "description": "Flat level bonus added to all V Blood bosses. Overridden by GameDifficulty presets." }
+    ]
+  },
+  {
+    "section": "Equipment Stat Modifiers",
+    "settings": [
+      { "key": "EquipmentStatModifiers_Global.MaxHealthModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies the max health bonus granted by all player equipment." },
+      { "key": "EquipmentStatModifiers_Global.ResourceYieldModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies the resource yield bonus granted by equipment." },
+      { "key": "EquipmentStatModifiers_Global.PhysicalPowerModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies the physical power bonus granted by equipment." },
+      { "key": "EquipmentStatModifiers_Global.SpellPowerModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies the spell power bonus granted by equipment." },
+      { "key": "EquipmentStatModifiers_Global.MovementSpeedModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies the movement speed bonus granted by equipment.", "notes": "Unused per official documentation. Server validates and clamps this value but it has no in-game effect." }
+    ]
+  },
+  {
+    "section": "Castle Stat Modifiers",
+    "settings": [
+      { "key": "CastleStatModifiers_Global.TickPeriod", "type": "float", "default": "5", "min": "0.1", "max": "600", "uiName": "", "inUI": false, "description": "How often (in seconds) castle decay damage is recalculated and applied.", "notes": "Recommended: do not change" },
+      { "key": "CastleStatModifiers_Global.SafetyBoxLimit", "type": "int", "default": "1", "min": "0", "max": "255", "uiName": "", "inUI": false, "description": "Maximum number of Vampire Lockbox (safety box) structures per castle." },
+      { "key": "CastleStatModifiers_Global.EyeStructuresLimit", "type": "int", "default": "1", "min": "0", "max": "255", "uiName": "", "inUI": false, "description": "Maximum number of Eye of Darkness structures per castle." },
+      { "key": "CastleStatModifiers_Global.TombLimit", "type": "int", "default": "12", "min": "1", "max": "255", "uiName": "Tomb Limitation", "inUI": true, "description": "Maximum number of Tomb structures per castle." },
+      { "key": "CastleStatModifiers_Global.VerminNestLimit", "type": "int", "default": "4", "min": "1", "max": "255", "uiName": "Vermin Nest Limitation", "inUI": true, "description": "Maximum number of Vermin Nest structures per castle." },
+      { "key": "CastleStatModifiers_Global.PrisonCellLimit", "type": "int", "default": "16", "min": "1", "max": "255", "uiName": "Prison Cell Limitation", "inUI": true, "description": "Maximum number of Prison Cell structures per castle." },
+      { "key": "CastleStatModifiers_Global.CastleLimit", "type": "int", "default": "2", "min": "1", "max": "255", "uiName": "", "inUI": false, "description": "Maximum number of separate castles a player or clan can claim, depending on CastleHeartLimitType." },
+      { "key": "CastleStatModifiers_Global.CastleHeartLimitType", "type": "enum", "default": "User", "uiName": "", "inUI": false, "description": "Determines if the CastleLimit applies per player or per clan. <b>User:</b> Each player can own up to CastleLimit castles individually. <b>Clan:</b> The CastleLimit is shared across the entire clan.", "enumValues": ["User (0)", "Clan (1)"] },
+      { "key": "CastleStatModifiers_Global.NetherGateLimit", "type": "int", "default": "1", "min": "0", "max": "255", "uiName": "", "inUI": false, "description": "Maximum number of Stygian Summoning Circle (Nether Gate) structures per castle." },
+      { "key": "CastleStatModifiers_Global.ThroneOfDarknessLimit", "type": "int", "default": "1", "min": "0", "max": "255", "uiName": "Throne of Darkness Limitation", "inUI": true, "description": "Maximum number of Throne of Darkness structures per castle." },
+      { "key": "CastleStatModifiers_Global.ArenaStationLimit", "type": "int", "default": "5", "min": "0", "max": "255", "uiName": "", "inUI": false, "description": "Maximum number of Arena Station structures per castle.", "notes": "⚠️ Values above 255 will cause an overflow exception and crash the server. No clamp warning is generated, the server just crashes." },
+      { "key": "CastleStatModifiers_Global.RoutingStationLimit", "type": "int", "default": "10", "min": "0", "max": "255", "uiName": "", "inUI": false, "description": "Maximum number of Routing Station structures per castle.", "notes": "⚠️ Values above 255 will cause an overflow exception and crash the server. No clamp warning is generated, the server just crashes." }
+    ]
+  },
+  {
+    "section": "Castle Heart Limits",
+    "heartLimits": true,
+    "settings": [
+      { "key": "HeartLimits.Level1.FloorLimit", "type": "int", "default": "50", "min": "9", "max": "800", "description": "Maximum floor tiles for a Level 1 Castle Heart." },
+      { "key": "HeartLimits.Level1.ServantLimit", "type": "int", "default": "4", "min": "1", "max": "35", "description": "Maximum servant coffins for a Level 1 Castle Heart." },
+      { "key": "HeartLimits.Level1.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 1 Castle Heart. May vary depending on the placement of the castle." },
+      { "key": "HeartLimits.Level2.FloorLimit", "type": "int", "default": "140", "min": "9", "max": "800", "description": "Maximum floor tiles for a Level 2 Castle Heart." },
+      { "key": "HeartLimits.Level2.ServantLimit", "type": "int", "default": "5", "min": "1", "max": "35", "description": "Maximum servant coffins for a Level 2 Castle Heart." },
+      { "key": "HeartLimits.Level2.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 2 Castle Heart. May vary depending on the placement of the castle." },
+      { "key": "HeartLimits.Level3.FloorLimit", "type": "int", "default": "240", "min": "9", "max": "800", "description": "Maximum floor tiles for a Level 3 Castle Heart." },
+      { "key": "HeartLimits.Level3.ServantLimit", "type": "int", "default": "6", "min": "1", "max": "35", "description": "Maximum servant coffins for a Level 3 Castle Heart." },
+      { "key": "HeartLimits.Level3.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 3 Castle Heart. May vary depending on the placement of the castle." },
+      { "key": "HeartLimits.Level4.FloorLimit", "type": "int", "default": "360", "min": "9", "max": "800", "description": "Maximum floor tiles for a Level 4 Castle Heart." },
+      { "key": "HeartLimits.Level4.ServantLimit", "type": "int", "default": "7", "min": "1", "max": "35", "description": "Maximum servant coffins for a Level 4 Castle Heart." },
+      { "key": "HeartLimits.Level4.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 4 Castle Heart. May vary depending on the placement of the castle." },
+      { "key": "HeartLimits.Level5.FloorLimit", "type": "int", "default": "550", "min": "9", "max": "800", "description": "Maximum floor tiles for a Level 5 Castle Heart." },
+      { "key": "HeartLimits.Level5.ServantLimit", "type": "int", "default": "8", "min": "1", "max": "35", "description": "Maximum servant coffins for a Level 5 Castle Heart." },
+      { "key": "HeartLimits.Level5.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 5 Castle Heart. May vary depending on the placement of the castle." }
+    ]
+  },
+  {
+    "section": "PvP Scheduling",
+    "settings": [
+      { "key": "PlayerInteractionSettings.TimeZone", "type": "string", "default": "Local", "uiName": "Server Time Zone", "inUI": true, "description": "Time zone used for all PvP and siege schedule windows. Accepts 'Local' (server system time), 'UTC', or named zones like 'EST', 'PST', 'CET', 'CST'." },
+      { "key": "PlayerInteractionSettings.VSPlayerWeekdayTime.StartHour", "type": "int", "default": "17", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekday PvP window start hour (24-hour format)." },
+      { "key": "PlayerInteractionSettings.VSPlayerWeekdayTime.StartMinute", "type": "int", "default": "0", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekday PvP window start minute." },
+      { "key": "PlayerInteractionSettings.VSPlayerWeekdayTime.EndHour", "type": "int", "default": "23", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekday PvP window end hour (24-hour format)." },
+      { "key": "PlayerInteractionSettings.VSPlayerWeekdayTime.EndMinute", "type": "int", "default": "0", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekday PvP window end minute." },
+      { "key": "PlayerInteractionSettings.VSPlayerWeekendTime.StartHour", "type": "int", "default": "17", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekend PvP window start hour (24-hour format)." },
+      { "key": "PlayerInteractionSettings.VSPlayerWeekendTime.StartMinute", "type": "int", "default": "0", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekend PvP window start minute." },
+      { "key": "PlayerInteractionSettings.VSPlayerWeekendTime.EndHour", "type": "int", "default": "23", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekend PvP window end hour (24-hour format)." },
+      { "key": "PlayerInteractionSettings.VSPlayerWeekendTime.EndMinute", "type": "int", "default": "0", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekend PvP window end minute." },
+      { "key": "PlayerInteractionSettings.VSCastleWeekdayTime.StartHour", "type": "int", "default": "17", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekday castle siege window start hour (24-hour format)." },
+      { "key": "PlayerInteractionSettings.VSCastleWeekdayTime.StartMinute", "type": "int", "default": "0", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekday castle siege window start minute." },
+      { "key": "PlayerInteractionSettings.VSCastleWeekdayTime.EndHour", "type": "int", "default": "23", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekday castle siege window end hour (24-hour format)." },
+      { "key": "PlayerInteractionSettings.VSCastleWeekdayTime.EndMinute", "type": "int", "default": "0", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekday castle siege window end minute." },
+      { "key": "PlayerInteractionSettings.VSCastleWeekendTime.StartHour", "type": "int", "default": "17", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekend castle siege window start hour (24-hour format)." },
+      { "key": "PlayerInteractionSettings.VSCastleWeekendTime.StartMinute", "type": "int", "default": "0", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekend castle siege window start minute." },
+      { "key": "PlayerInteractionSettings.VSCastleWeekendTime.EndHour", "type": "int", "default": "23", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekend castle siege window end hour (24-hour format)." },
+      { "key": "PlayerInteractionSettings.VSCastleWeekendTime.EndMinute", "type": "int", "default": "0", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekend castle siege window end minute." }
+    ]
+  },
+  {
+    "section": "Trader Modifiers",
+    "settings": [
+      { "key": "TraderModifiers.StockModifier", "type": "float", "default": "1.0", "min": "0.25", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies the stock quantity available from traders." },
+      { "key": "TraderModifiers.PriceModifier", "type": "float", "default": "1.0", "min": "0.25", "max": "10", "uiName": "", "inUI": false, "description": "Multiplies the cost of items sold by traders." },
+      { "key": "TraderModifiers.RestockTimerModifier", "type": "float", "default": "1.0", "min": "0.25", "max": "10", "uiName": "Restock Time Multiplier", "inUI": true, "description": "Multiplies the duration of the trader restock timer. Higher values mean longer waits between restocks." }
+    ]
+  },
+  {
+    "section": "War Event (Incursion) Settings",
+    "settings": [
+      { "key": "WarEventGameSettings.Interval", "type": "int", "default": "1", "min": "0", "max": "7", "uiName": "", "inUI": false, "description": "Time between Incursion events. Accepts enum-style int values: <code>0</code> Minimum (30 min), <code>1</code> VeryShort (1 hr), <code>2</code> Short (1.5 hrs), <code>3</code> Medium (2 hrs), <code>4</code> Long (4 hrs), <code>5</code> VeryLong (8 hrs), <code>6</code> Extensive (12 hrs), <code>7</code> Maximum (24 hrs). 0 disables incursions." },
+      { "key": "WarEventGameSettings.MajorDuration", "type": "int", "default": "1", "min": "0", "max": "7", "uiName": "", "inUI": false, "description": "Duration of major Incursion events. Same enum-style int scale: <code>0</code> Minimum (15 min), <code>1</code> VeryShort (20 min), <code>2</code> Short (25 min), <code>3</code> Medium (30 min), <code>4</code> Long (35 min), <code>5</code> VeryLong (45 min), <code>6</code> Extensive (1 hr), <code>7</code> Maximum (2 hrs)." },
+      { "key": "WarEventGameSettings.MinorDuration", "type": "int", "default": "1", "min": "0", "max": "7", "uiName": "", "inUI": false, "description": "Duration of minor Incursion events. Same enum-style int scale as MajorDuration: <code>0</code> Minimum (15 min), <code>1</code> VeryShort (20 min), <code>2</code> Short (25 min), <code>3</code> Medium (30 min), <code>4</code> Long (35 min), <code>5</code> VeryLong (45 min), <code>6</code> Extensive (1 hr), <code>7</code> Maximum (2 hrs)." },
+      { "key": "WarEventGameSettings.WeekdayTime.StartHour", "type": "int", "default": "0", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekday Incursion window start hour (24-hour format)." },
+      { "key": "WarEventGameSettings.WeekdayTime.StartMinute", "type": "int", "default": "0", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekday Incursion window start minute." },
+      { "key": "WarEventGameSettings.WeekdayTime.EndHour", "type": "int", "default": "23", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekday Incursion window end hour (24-hour format)." },
+      { "key": "WarEventGameSettings.WeekdayTime.EndMinute", "type": "int", "default": "59", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekday Incursion window end minute." },
+      { "key": "WarEventGameSettings.WeekendTime.StartHour", "type": "int", "default": "0", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekend Incursion window start hour (24-hour format)." },
+      { "key": "WarEventGameSettings.WeekendTime.StartMinute", "type": "int", "default": "0", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekend Incursion window start minute." },
+      { "key": "WarEventGameSettings.WeekendTime.EndHour", "type": "int", "default": "23", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekend Incursion window end hour (24-hour format)." },
+      { "key": "WarEventGameSettings.WeekendTime.EndMinute", "type": "int", "default": "59", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekend Incursion window end minute." },
+      { "key": "WarEventGameSettings.ScalingPlayers1.PointsModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Points (enemies) required to shatter the Stygian Shard on a 1-player server." },
+      { "key": "WarEventGameSettings.ScalingPlayers1.DropModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Loot quantity dropped from a shattered Stygian Shard on a 1-player server." },
+      { "key": "WarEventGameSettings.ScalingPlayers2.PointsModifier", "type": "float", "default": "0.5", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard point multiplier for 2-player servers." },
+      { "key": "WarEventGameSettings.ScalingPlayers2.DropModifier", "type": "float", "default": "0.5", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard drop multiplier for 2-player servers." },
+      { "key": "WarEventGameSettings.ScalingPlayers3.PointsModifier", "type": "float", "default": "0.25", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard point multiplier for 3-player servers." },
+      { "key": "WarEventGameSettings.ScalingPlayers3.DropModifier", "type": "float", "default": "0.25", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard drop multiplier for 3-player servers." },
+      { "key": "WarEventGameSettings.ScalingPlayers4.PointsModifier", "type": "float", "default": "0.25", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard point multiplier for 4+ player servers." },
+      { "key": "WarEventGameSettings.ScalingPlayers4.DropModifier", "type": "float", "default": "0.25", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard drop multiplier for 4+ player servers." }
+    ]
+  },
+  {
+    "section": "VBlood Unit Settings",
+    "settings": [
+      {
+        "key": "VBloodUnitSettings",
+        "type": "array",
+        "default": "[]",
+        "uiName": "",
+        "inUI": false,
+        "description": "Per-boss configuration for VBlood units. Each entry in the array is an object with three fields:<br><b>UnitId</b> (int) - prefab ID of the VBlood boss<br><b>UnitLevel</b> (int) - level override for the boss<br><b>DefaultUnlocked</b> (bool) - when true, newly created characters begin with this boss's powers and recipes already unlocked<br><br>UnitLevel changes require the boss to respawn. DefaultUnlocked only applies on character creation.",
+        "notes": "Boss UnitIds (default level):<br><code>-1905691330</code> Alpha the White Wolf (16)<br><code>1124739990</code> Keely the Frost Archer (20)<br><code>-2025101517</code> Errol the Stonebreaker (20)<br><code>2122229952</code> Rufus the Foreman (20)<br><code>1106149033</code> Grayson the Armourer (27)<br><code>577478542</code> Goreswine the Ravager (27)<br><code>763273073</code> Lidia the Chaos Archer (30)<br><code>-2039908510</code> Nibbles the Putrid Rat (30)<br><code>1896428751</code> Clive the Firestarter (30)<br><code>-2122682556</code> Finn the Fisherman (32)<br><code>-484556888</code> Polora the Feywalker (35)<br><code>-1391546313</code> Kodia the Ferocious Bear (35)<br><code>153390636</code> Nicholaus the Fallen (35)<br><code>-1659822956</code> Quincey the Bandit King (37)<br><code>-1942352521</code> Beatrice the Tailor (40)<br><code>-29797003</code> Vincent the Frostbringer (44)<br><code>-1449631170</code> Tristan the Vampire Hunter (44)<br><code>-99012450</code> Christina the Sun Priestess (44)<br><code>619948378</code> Sir Erwin the Gallant Cavalier (46)<br><code>-1365931036</code> Kriig the Undead General (47)<br><code>1945956671</code> Maja the Dark Savant (47)<br><code>939467639</code> Leandra the Shadow Priestess (47)<br><code>910988233</code> Grethel the Glassblower (50)<br><code>613251918</code> Bane the Shadowblade (50)<br><code>850622034</code> Meredith the Bright Archer (50)<br><code>-1065970933</code> Terah the Geomancer (53)<br><code>24378719</code> Frostmaw the Mountain Terror (53)<br><code>795262842</code> General Elena the Hollow (53)<br><code>-753453016</code> Gaius the Cursed Champion (55)<br><code>-496360395</code> General Cassius the Betrayer (57)<br><code>-1968372384</code> Jade the Vampire Hunter (57)<br><code>-680831417</code> Raziel the Shepherd (57)<br><code>1688478381</code> Octavian the Militia Captain (58)<br><code>-1101874342</code> Domina the Blade Dancer (60)<br><code>172235178</code> Ziva the Engineer (60)<br><code>106480588</code> Angram the Purifier (61)<br><code>-548489519</code> Ungora the Spider Queen (63)<br><code>109969450</code> Ben the Old Wanderer (63)<br><code>-1208888966</code> Foulrot the Soultaker (63)<br><code>-203043163</code> Albert the Duke of Balaton (64)<br><code>-1505705712</code> Willfred the Werewolf Chief (64)<br><code>326378955</code> Cyril the Cursed Smith (65)<br><code>-26105228</code> Sir Magnus the Overseer (66)<br><code>-2013903325</code> Mairwyn the Elementalist (70)<br><code>192051202</code> Baron du Bouchon the Sommelier (70)<br><code>685266977</code> Morian the Stormwing Matriarch (70)<br><code>814083983</code> Henry Blackbrew the Doctor (74)<br><code>-1383529374</code> Jakira the Shadow Huntress (75)<br><code>-1669199769</code> Stavros the Carver (75)<br><code>1295855316</code> Lucile the Venom Alchemist (76)<br><code>-910296704</code> Matka the Curse Weaver (76)<br><code>-1347412392</code> Terrorclaw the Ogre (76)<br><code>114912615</code> Azariel the Sunbringer (79)<br><code>2054432370</code> Voltatia the Power Master (79)<br><code>336560131</code> Simon Belmont the Vampire Hunter (80)<br><code>173259239</code> Dantos the Forgebinder (82)<br><code>1112948824</code> Lord Styx the Night Champion (84)<br><code>-1936575244</code> Gorecrusher the Behemoth (84)<br><code>495971434</code> General Valencia the Depraved (84)<br><code>-740796338</code> Solarus the Immaculate (86)<br><code>-393555055</code> Talzur the Winged Horror (86)<br><code>591725925</code> Megara the Serpent Queen (88)<br><code>1233988687</code> Adam the Firstborn (88)<br><code>-327335305</code> Dracula the Immortal King (91)"
+      }
+    ]
+  }
+]

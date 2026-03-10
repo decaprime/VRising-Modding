@@ -94,7 +94,7 @@
     ],
     "user": "Admin",
     "hidden": false,
-    "note": "Requires ServerHostSettings → AdminOnlyDebugEvents → true"
+    "note": "Requires ServerHostSettings.AdminOnlyDebugEvents = true"
   },
   {
     "name": "ApplyWeaponCoating",
@@ -110,7 +110,7 @@
         "required": true,
         "suggestions": [
           {
-            "text": "0.Entity(108022:2)"
+            "text": "Entity # of Weapon, in order of bar slot"
           }
         ],
         "suggestionHandling": "dynamic"
@@ -123,7 +123,8 @@
       }
     ],
     "user": "Admin",
-    "hidden": false
+    "hidden": false,
+	"note": "String requirement for second argument is currently unknown."
   },
   {
     "name": "archetypecreationtracking",
@@ -173,6 +174,7 @@
   },
   {
     "name": "AutoRotateCamera",
+	"description": "Rotates camera around player, at speed. Negative number usage rotates other direction.",
     "category": "General",
     "visibility": "IfNotLive",
     "scope": "client",
@@ -655,7 +657,7 @@
     ],
     "user": "Player",
     "hidden": true,
-    "note": "Unknown behavior — do not use"
+    "note": "Only displays errors on failed build attempts."
   },
   {
     "name": "CompleteCurrentJournalQuest",
@@ -2525,7 +2527,7 @@
     ],
     "user": "Admin",
     "hidden": false,
-    "note": "Does not work (use CastleHeartEvent)"
+    "note": "Do Not Use! Will spam console with network events until restart. (use CastleHeartEvent)"
   },
   {
     "name": "DepthOfField",
@@ -21419,7 +21421,7 @@
     ],
     "user": "Admin",
     "hidden": true,
-    "note": "Unstable — do not use (once executed will continue to loop)"
+    "note": "Do Not Use! Will force all stations to chew through resources and will not stop until restart."
   },
   {
     "name": "ForceJoinClan",
@@ -22137,7 +22139,7 @@
     ],
     "user": "Admin",
     "hidden": true,
-    "note": "Does not work"
+    "note": "Do not use! Will spam console with network events until restart"
   },
   {
     "name": "GenerateCastlesInRegion",
@@ -22195,7 +22197,7 @@
     ],
     "user": "Admin",
     "hidden": true,
-    "note": "Does not work"
+    "note": "Do not use! Will spam console with network events until restart"
   },
   {
     "name": "GenerateJewel",
@@ -22789,7 +22791,7 @@
     ],
     "user": "Admin",
     "hidden": false,
-    "note": "Unstable — do not use (on full inventory it will spam console → crashes server)"
+    "note": "Crash Risk! With full inventory it will spam console with errors until crash."
   },
   {
     "name": "GenerateLegendaryWeapon",
@@ -30447,7 +30449,7 @@
     ],
     "user": "Admin",
     "hidden": false,
-    "note": "Does not work if inventory is full"
+    "note": "Only fills empty slots, and will not drop items on ground if full inventory."
   },
   {
     "name": "givecombatpresetandallunlocks",
@@ -30775,7 +30777,7 @@
     ],
     "user": "Player",
     "hidden": false,
-    "note": "Does not work"
+    "note": "Non Functional"
   },
   {
     "name": "HideHud",
@@ -30794,7 +30796,7 @@
     "visibility": "Always",
     "scope": "client",
     "admin": false,
-    "description": "Set interpolation duration in ms",
+    "description": "Set interpolation duration in ms. Client-side movement smoothing time. Higher values reduce jitter but increase visual delay.",
     "args": [
       {
         "name": "Unnamed Argument",
@@ -30803,8 +30805,7 @@
       }
     ],
     "user": "Player",
-    "hidden": false,
-    "note": "Unknown behavior — do not use"
+    "hidden": false
   },
   {
     "name": "Interpolation_ExtrapolateOnFail",
@@ -31236,7 +31237,7 @@
     "args": [],
     "user": "Player",
     "hidden": false,
-    "note": "Does not work (use OpenLogsFolder)"
+    "note": "Non Functional, use OpenLogsFolder"
   },
   {
     "name": "OpenLogsFolder",
@@ -37278,8 +37279,7 @@
       }
     ],
     "user": "Admin",
-    "hidden": false,
-    "note": "Primal is unstable — do not use"
+    "hidden": false
   },
   {
     "name": "WarEvent_SetRemainingTime",
@@ -37327,8 +37327,7 @@
       }
     ],
     "user": "Admin",
-    "hidden": false,
-    "note": "Primal is unstable — do not use"
+    "hidden": false
   },
   {
     "name": "WarEvent_StartInChunk",

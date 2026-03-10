@@ -1,3 +1,11 @@
+# VitePress
+node_modules/
+.vitepress/cache/
+vitepress-dist/
+
+# Claude Code
+.claude/
+
 # Ignore local jekyll build
 Gemfile.lock
 _site/

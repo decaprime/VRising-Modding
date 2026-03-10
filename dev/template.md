@@ -11,12 +11,11 @@ We have a mod template to make getting started easy. Adding dependencies will re
 `dotnet new --install VRising.ModTemplate`
 
 ### Example usage
-`dotnet new vrisingmod -n NameOfYourMod --use-vcf --use-bloodstone --description "Description of your mod"`
+`dotnet new vrisingmod -n NameOfYourMod --use-vcf --description "Description of your mod"`
 
-This will get you started with a mod named _NameOfYourMod_, using [Bloodstone](./bloodstone.md) and [VampireCommandFramework](https://github.com/decaprime/VampireCommandFramework/) that has a sample server command to uncomment.
+This will get you started with a mod named _NameOfYourMod_, using [VampireCommandFramework](https://github.com/decaprime/VampireCommandFramework/) that has a sample server command to uncomment.
 ### Optional Dependencies (add using the --use tag)
 - [VampireCommandFramework](https://github.com/decaprime/VampireCommandFramework/)
-- [Bloodstone](./bloodstone.md)
 
 
 ---

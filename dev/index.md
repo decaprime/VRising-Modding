@@ -1,8 +1,9 @@
 ---
 has_children: true
 title: For Developers
+aside: false
 ---
-# For Developers
+# Build a Mod
 
 ## Getting started
 Set up your [development environment](./development_setup.md).

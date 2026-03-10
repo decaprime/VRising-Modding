@@ -1,432 +1,690 @@
 [
   [
-    "Matka",
+    "Matka the Curse Weaver",
     "CHAR_Cursed_Witch_VBlood",
-    "VBlood"
+    "VBlood",
+    600,
+    "ActIV",
+    "CursedForest"
   ],
   [
-    "Terah",
+    "Terah the Geomancer",
     "CHAR_Geomancer_Human_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
-    "Jade",
+    "Jade the Vampire Hunter",
     "CHAR_VHunter_Jade_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
-    "Beatrice",
+    "Beatrice the Tailor",
     "CHAR_Villager_Tailor_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
-    "Nicholaus",
+    "Nicholaus the Fallen",
     "CHAR_Undead_Priest_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActI",
+    "Farbane"
   ],
   [
-    "Quincey (Quincy)",
+    "Quincey the Bandit King (Quincy)",
     "CHAR_Bandit_Tourok_VBlood",
-    "VBlood"
+    "VBlood",
+    300,
+    "ActI",
+    "Farbane"
   ],
   [
-    "Ungora (Spider)",
+    "Ungora the Spider Queen (Spider)",
     "CHAR_Spider_Queen_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIII",
+    "CursedForest"
   ],
   [
-    "Terrorclaw",
+    "Terrorclaw the Ogre",
     "CHAR_Winter_Yeti_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIV",
+    "Hallowed"
   ],
   [
-    "Lidia",
+    "Lidia the Chaos Archer",
     "CHAR_Bandit_Chaosarrow_VBlood",
-    "VBlood"
+    "VBlood",
+    300,
+    "ActI",
+    "Farbane"
   ],
   [
-    "Goreswine",
+    "Goreswine the Ravager",
     "CHAR_Undead_BishopOfDeath_VBlood",
-    "VBlood"
+    "VBlood",
+    300,
+    "ActI",
+    "Farbane"
   ],
   [
-    "Octavian",
+    "Octavian the Militia Captain",
     "CHAR_Militia_Leader_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
-    "Leandra",
+    "Leandra the Shadow Priestess",
     "CHAR_Undead_BishopOfShadows_VBlood",
-    "VBlood"
+    "VBlood",
+    300,
+    "ActII",
+    "Dunley"
   ],
   [
-    "Rufus",
+    "Rufus the Foreman",
     "CHAR_Bandit_Foreman_VBlood",
-    "VBlood"
+    "VBlood",
+    240,
+    "ActI",
+    "Farbane"
   ],
   [
-    "Keely",
+    "Keely the Frost Archer",
     "CHAR_Bandit_Frostarrow_VBlood",
-    "VBlood"
+    "VBlood",
+    240,
+    "ActI",
+    "Farbane"
   ],
   [
     "Kodia the Ferocious Bear",
     "CHAR_Forest_Bear_Dire_Vblood",
-    "VBlood"
+    "VBlood",
+    300,
+    "ActI",
+    "Farbane"
   ],
   [
-    "Christina",
+    "Christina the Sun Priestess",
     "CHAR_Militia_Nun_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
-    "Clive",
+    "Clive the Firestarter",
     "CHAR_Bandit_Bomber_VBlood",
-    "VBlood"
+    "VBlood",
+    300,
+    "ActI",
+    "Farbane"
   ],
   [
     "Gorecrusher the Behemoth",
     "CHAR_Cursed_MountainBeast_VBlood",
-    "VBlood"
+    "VBlood",
+    900,
+    "ActIV",
+    "CursedForest"
   ],
   [
-    "Foulrot",
+    "Foulrot the Soultaker",
     "CHAR_Undead_ZealousCultist_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIII",
+    "CursedForest"
   ],
   [
-    "Polora",
+    "Polora the Feywalker",
     "CHAR_Poloma_VBlood",
-    "VBlood"
+    "VBlood",
+    300,
+    "ActI",
+    "Farbane"
   ],
   [
-    "Styx (Bat)",
+    "Lord Styx the Night Champion (Bat)",
     "CHAR_BatVampire_VBlood",
-    "VBlood"
+    "VBlood",
+    600,
+    "ActIV",
+    "GloomrotSouth"
   ],
   [
     "Mairwyn the Elementalist",
     "CHAR_ArchMage_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIV",
+    "Silverlight"
   ],
   [
     "Albert The Duke of Balaton (Frog)",
     "CHAR_Cursed_ToadKing_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIII",
+    "CursedForest"
   ],
   [
     "Talzur The Winged Horror",
     "CHAR_Manticore_VBlood",
-    "VBlood"
+    "VBlood",
+    900,
+    "Shards",
+    "Farbane"
   ],
   [
-    "Vincent",
+    "Vincent the Frostbringer",
     "CHAR_Militia_Guard_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
-    "Raziel",
+    "Raziel the Sheperd",
     "CHAR_Militia_BishopOfDunley_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
-    "Morian",
+    "Morian the Stormwing Matriarch",
     "CHAR_Harpy_Matriarch_VBlood",
-    "VBlood"
+    "VBlood",
+    600,
+    "ActIV",
+    "Silverlight"
   ],
   [
-    "Solarus",
+    "Solarus the Immaculate",
     "CHAR_ChurchOfLight_Paladin_VBlood",
-    "VBlood"
+    "VBlood",
+    600,
+    "Shards",
+    "Silverlight"
   ],
   [
-    "Tristan",
+    "Tristan the Vampire Hunter",
     "CHAR_VHunter_Leader_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Farbane"
   ],
   [
-    "Errol",
+    "Errol the Stonebreaker",
     "CHAR_Bandit_StoneBreaker_VBlood",
-    "VBlood"
+    "VBlood",
+    240,
+    "ActI",
+    "Farbane"
   ],
   [
-    "Azariel",
+    "Azariel the Sunbringer",
     "CHAR_ChurchOfLight_Cardinal_VBlood",
-    "VBlood"
+    "VBlood",
+    600,
+    "ActIV",
+    "Silverlight"
   ],
   [
-    "Willfred (Wilfred)",
+    "Willfred the Village Elder (Wilfred)",
     "CHAR_WerewolfChieftain_Human",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIII",
+    "Dunley"
   ],
   [
     "Alpha Wolf",
     "CHAR_Forest_Wolf_VBlood",
-    "VBlood"
+    "VBlood",
+    180,
+    "ActI",
+    "Farbane"
   ],
   [
-    "Meredith",
+    "Meredith the Bright Archer",
     "CHAR_Militia_Longbowman_LightArrow_Vblood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
     "Nibbles the Putrid Rat",
     "CHAR_Vermin_DireRat_VBlood",
-    "VBlood"
+    "VBlood",
+    null,
+    "ActI",
+    "Farbane"
   ],
   [
-    "Frostmaw",
+    "Frostmaw the Mountain Terror",
     "CHAR_Wendigo_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Hallowed"
   ],
   [
-    "Grayson",
+    "Grayson the Armourer",
     "CHAR_Bandit_Stalker_VBlood",
-    "VBlood"
+    "VBlood",
+    300,
+    "ActI",
+    "Farbane"
   ],
   [
-    "Adam",
+    "Adam the Firstborn",
     "CHAR_Gloomrot_Monster_VBlood",
-    "VBlood"
+    "VBlood",
+    900,
+    "Shards",
+    "GloomrotNorth"
   ],
   [
-    "Voltatia",
+    "Voltatia the Power Master",
     "CHAR_Gloomrot_RailgunSergeant_VBlood",
-    "VBlood"
+    "VBlood",
+    600,
+    "ActIV",
+    "GloomrotNorth"
   ],
   [
-    "Ziva",
+    "Ziva the Engineer",
     "CHAR_Gloomrot_Iva_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIII",
+    "GloomrotSouth"
   ],
   [
-    "Angram",
+    "Angram the Purifier",
     "CHAR_Gloomrot_Purifier_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIII",
+    "GloomrotSouth"
   ],
   [
-    "Henry Blackbrew",
+    "Henry Blackbrew the Doctor",
     "CHAR_Gloomrot_TheProfessor_VBlood",
-    "VBlood"
+    "VBlood",
+    600,
+    "ActIV",
+    "GloomrotNorth"
   ],
   [
-    "Domina",
+    "Domina the Blade Dancer",
     "CHAR_Gloomrot_Voltage_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIII",
+    "GloomrotSouth"
   ],
   [
-    "Cyril",
+    "Cyril the Cursed Smith",
     "CHAR_Undead_CursedSmith_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIII",
+    "CursedForest"
   ],
   [
     "Ben The Old Wanderer",
     "CHAR_Villager_CursedWanderer_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIII",
+    "CursedForest"
   ],
   [
-    "Baron du Bouchon",
+    "Baron du Bouchon the Sommelier",
     "CHAR_ChurchOfLight_Sommelier_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIV",
+    "Silverlight"
   ],
   [
     "Sir Magnus the Overseer",
     "CHAR_ChurchOfLight_Overseer_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIV",
+    "Silverlight"
   ],
   [
-    "Maja",
+    "Maja the Dark Savant",
     "CHAR_Militia_Scribe_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
-    "Bane",
+    "Bane the Shadowblade",
     "CHAR_Undead_Infiltrator_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
     "Grethel the Glassblower",
     "CHAR_Militia_Glassblower_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
-    "Kriig",
+    "Kriig the Undead General",
     "CHAR_Undead_Leader_Vblood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
-    "Finn",
+    "Finn the Fisherman",
     "CHAR_Bandit_Fisherman_VBlood",
-    "VBlood"
+    "VBlood",
+    300,
+    "ActI",
+    "Farbane"
   ],
   [
-    "Elena",
+    "General Elena the Hollow",
     "CHAR_Vampire_IceRanger_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Mortium"
   ],
   [
-    "Valencia",
+    "General Valencia the Depraved",
     "CHAR_Vampire_BloodKnight_VBlood",
-    "VBlood"
+    "VBlood",
+    600,
+    "ActIV",
+    "Mortium"
   ],
   [
-    "Cassius",
+    "General Cassius the Betrayer",
     "CHAR_Vampire_HighLord_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Mortium"
   ],
   [
-    "Dracula",
+    "Dracula the Immortal King",
     "CHAR_Vampire_Dracula_VBlood",
-    "VBlood"
+    "VBlood",
+    null,
+    "Shards",
+    "Mortium"
   ],
   [
-    "Simon Belmont",
+    "Simon Belmont the Vampire Hunter",
     "CHAR_VHunter_CastleMan",
-    "VBlood"
+    "VBlood",
+    600,
+    "ActIV",
+    "Farbane, Dunley, Silverlight"
   ],
   [
     "Sir Erwin the Gallant Cavalier",
     "CHAR_Militia_Fabian_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
     "Gaius The Cursed Champion",
     "CHAR_Undead_ArenaChampion_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActII",
+    "Dunley"
   ],
   [
     "Jakira the Shadow Huntress",
     "CHAR_Blackfang_Livith_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIV",
+    "Oakveil"
   ],
   [
     "Stavros the Carver",
     "CHAR_Blackfang_CarverBoss_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIV",
+    "Oakveil"
   ],
   [
     "Lucile the Venom Alchemist",
     "CHAR_Blackfang_Lucie_VBlood",
-    "VBlood"
+    "VBlood",
+    480,
+    "ActIV",
+    "Oakveil"
   ],
   [
     "Dantos the Forgebinder",
     "CHAR_Blackfang_Valyr_VBlood",
-    "VBlood"
+    "VBlood",
+    600,
+    "ActIV",
+    "Oakveil"
   ],
   [
     "Megara the Serpent Queen",
     "CHAR_Blackfang_Morgana_VBlood",
-    "VBlood"
+    "VBlood",
+    900,
+    "Shards",
+    "Oakveil"
   ],
   [
     "Primal Lidia",
     "CHAR_Bandit_Chaosarrow_GateBoss_Minor",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Rufus",
     "CHAR_Bandit_Foreman_VBlood_GateBoss_Minor",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Errol",
     "CHAR_Bandit_StoneBreaker_VBlood_GateBoss_Minor",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Quincey",
     "CHAR_Bandit_Tourok_GateBoss_Minor",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Keely",
     "CHAR_Frostarrow_GateBoss_Minor",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Angram",
     "CHAR_Gloomrot_Purifier_VBlood_GateBoss_Major",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Domina",
     "CHAR_Gloomrot_Voltage_VBlood_GateBoss_Major",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Vincent",
     "CHAR_Militia_Guard_VBlood_GateBoss_Minor",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Octavian",
     "CHAR_Militia_Leader_VBlood_GateBoss_Major",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Poloma",
     "CHAR_Poloma_VBlood_GateBoss_Minor",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Ungora",
     "CHAR_Spider_Queen_VBlood_GateBoss_Major",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Goreswine",
     "CHAR_Undead_BishopOfDeath_VBlood_GateBoss_Minor",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Leandra",
     "CHAR_Undead_BishopOfShadows_VBlood_GateBoss_Major",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Bane",
     "CHAR_Undead_Infiltrator_VBlood_GateBoss_Major",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Kriig",
     "CHAR_Undead_Leader_Vblood_GateBoss_Minor",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Foulrot",
     "CHAR_Undead_ZealousCultist_VBlood_GateBoss_Major",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Jade",
     "CHAR_VHunter_Jade_VBlood_GateBoss_Major",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Tristan",
     "CHAR_VHunter_Leader_GateBoss_Minor",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Ben",
     "CHAR_Villager_CursedWanderer_VBlood_GateBoss_Major",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Frostmaw",
     "CHAR_Wendigo_GateBoss_Major",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Willfred",
     "CHAR_WerewolfChieftain_VBlood_GateBoss_Major",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ],
   [
     "Primal Terrorclaw",
     "CHAR_Winter_Yeti_VBlood_GateBoss_Major",
-    "Primal"
+    "Primal",
+    null,
+    null,
+    "Mortium"
   ]
 ]

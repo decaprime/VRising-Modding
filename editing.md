@@ -1,19 +1,43 @@
 ---
-title: Wiki Editing 🤔
+title: Contributing to the Wiki
+aside: false
 ---
 
-## How to create and edit files
-This wiki is built with markdown and hosted on GitHub. All pages have an Edit this page on GitHub link at the bottom. You make your changes in markdown and then submit them to be merged into the website.
+# Contributing to the Wiki
 
-For new files click the Add new page link in the sidebar,
+This wiki is built with Markdown and hosted on GitHub. Contributions of all kinds are welcome: fixing typos, improving guides, or adding new content.
 
-1. Update the FILE_NAME and path above the editor, you can backspace to change directory if appropriate
-2. Set the title and parent at top of this doc, this metadata controls the side navigation
-3. You can find more info: https://just-the-docs.github.io/just-the-docs/docs/navigation-structure/ 
-4. After you're done, scroll down and please start a pull request 😊
+**Don't let worry about format or correctness stop you.** There's a review process and everything can be undone. If you've never used GitHub before, this is a great chance to get started.
 
-__If you see something that can be contributed, please don't let worry about format or correctness stop you,__ know there's a review process and everything can be undone. If you've never used GitHub before, this is a good chance to acclimate.
+## Editing an existing page
 
+Every page has an **Edit this page on GitHub** link at the bottom. Click it to open the file directly in GitHub's editor.
 
-## Including Screenshots
-You can just paste images while inside the GitHub markdown editor and it will upload them and create the markup. These images work on the deployed wiki. Please only use images cropped to the subject area (e.g. Windows: `alt+print screen` - capture window, `Win+Shift+s` - Snipping Tool). 
+1. Make your changes in Markdown
+2. Scroll down and choose **Create a new branch** and start a pull request
+3. Submit the pull request; a maintainer will review and merge it
+
+## Adding a new page
+
+1. Navigate to the correct folder in the [GitHub repository](https://github.com/decaprime/vrising-modding) (e.g. `user/` for user guides, `dev/` for developer docs)
+2. Click **Add file > Create new file**
+3. Name your file (e.g. `my-guide.md`)
+4. Add frontmatter at the top:
+
+```yaml
+---
+title: My Guide Title
+---
+```
+
+5. Write your content in Markdown below the frontmatter
+6. Scroll down and open a pull request
+
+To have the page appear in the sidebar, let a maintainer know in your PR or on [Discord](https://vrisingmods.com/discord). Sidebar entries are managed in `.vitepress/config.mjs`.
+
+## Including screenshots
+
+You can paste images directly into the GitHub Markdown editor and it will upload them automatically. Please crop images to the relevant area before pasting:
+
+- **Windows:** `Win+Shift+S` (Snipping Tool) or `Alt+Print Screen` (active window)
+- **Mac:** `Cmd+Shift+4` (selection) or `Cmd+Shift+4` then `Space` (window)
