@@ -58,5 +58,5 @@ For more advanced users or if you want full control over Git, you can install Gi
 ---
 
 ## Template
-A Command Prompt or PowerShell window should be opened in the folder where you want your mods to be created. Follow template install instructions from the [Template Page](https://wiki.vrisingmods.com/dev/template.html).
+A Command Prompt or PowerShell window should be opened in the folder where you want your mods to be created. Follow template install instructions from the [Template Page](/dev/template).
 

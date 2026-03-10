@@ -5,13 +5,6 @@ nav_order: 3
 ---
 
 # How to use Server Mods In-Game
-- [Adding to the AdminList](#adding-to-the-adminlist)
-- [Authorizing yourself as an Admin in-game](#authorizing-yourself-as-an-admin-in-game)
-- [Enabling Console](#enabling-console)
-- [Using the Console in Game](#using-the-console-in-game)
-- [Using Native V Rising Commands (Console)](#using-native-v-rising-commands-console)
-- [Using MOD Commands (Chatbox)](#using-mod-commands-chatbox)
-
 
 ## Adding to the AdminList
 ### For locally hosted games
@@ -63,7 +56,7 @@ Once the console has dropped down, you can type in `Adminauth` to authorize your
 ## Using Native V Rising Commands (Console)
 
 Much like authorizing yourself, you may enter commands in this console in order to use native V Rising commands. You can see a list of commands by typing in `list`. (Take care it doesn't autocomplete to `listusers`)
-Commands in the console do not have a prefix as part of the command. (No slashes and the like) For a list with the descriptions included, see [Console Commands](https://wiki.vrisingmods.com/user/Console_Commands.html).
+Commands in the console do not have a prefix as part of the command. (No slashes and the like) For a list with the descriptions included, see [Console Commands](/user/Console_Commands).
 
 ## Using MOD Commands (Chatbox)
 
