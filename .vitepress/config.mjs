@@ -25,7 +25,7 @@ export default defineConfig({
     'user/game_update.md',
   ],
 
-  base: '/VRising-Mod-Wiki/',
+  base: '/',
 
   title: 'V Rising Mod Wiki',
   description: 'Information about mods for the game V Rising: setup, modding, development, and prefab references.',
