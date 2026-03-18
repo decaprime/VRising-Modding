@@ -10,14 +10,14 @@
       { "key": "SiegeWeaponHealth", "type": "enum", "default": "Normal", "uiName": "Siege Golem Health", "inUI": true, "description": "Determines the health of the Siege Golem Stone Form used to breach enemy castles. Higher values give attackers more durability before the golem is destroyed by defenders.", "enumValues": ["VeryLow (0) - 750", "Low (1) - 1000", "Normal (2) - 1250", "High (3) - 1750", "VeryHigh (4) - 2500", "MegaHigh (5) - 3250", "UltraHigh (6) - 4000", "CrazyHigh (7) - 5000", "Max (8) - 7500"] },
       { "key": "PvPProtectionMode", "type": "enum", "default": "Medium", "uiName": "New Player PvP Protection", "inUI": true, "description": "How long newly created vampires are protected against PvP damage. The immunity is applied on character creation and expires after the specified duration of in-game time has passed.", "enumValues": ["Disabled (0)", "VeryShort (1) - 900s", "Short (2) - 1800s", "Medium (3) - 3600s", "Long (4) - 7200s"] },
       { "key": "DeathContainerPermission", "type": "enum", "default": "Anyone", "uiName": "", "inUI": false, "description": "Defines which players are allowed to access a death container (the loot bag dropped when a player dies). <b>Anyone:</b> Any player can loot it. <b>ClanMembers:</b> Only the deceased's clan members can loot it. <b>OnlySelf:</b> Only the player who died can loot their own container.", "enumValues": ["Anyone (0)", "ClanMembers (1)", "OnlySelf (2)"] },
-      { "key": "RelicSpawnType", "type": "enum", "default": "Unique", "uiName": "", "inUI": false, "description": "Determines how Soul Shards are placed in the world. <b>Unique:</b> Only one instance of each Soul Shard type can exist at a time - when a vampire holds a shard, no duplicate of that type will spawn. <b>Plentiful:</b> Multiple instances of each Soul Shard type can exist simultaneously. Note: Lowering limits will not affect already-placed shards. Recommended to set before starting the server.", "enumValues": ["Unique (0)", "Plentiful (1)"] }
+      { "key": "RelicSpawnType", "type": "enum", "default": "Unique", "uiName": "", "inUI": false, "description": "Determines how Soul Shards are placed in the world. <b>Unique:</b> Only one instance of each Soul Shard type can exist at a time, no duplicate of that type will spawn. <b>Plentiful:</b> Multiple instances of each Soul Shard type can exist simultaneously. Lowering limits will not affect already looted shards.", "enumValues": ["Unique (0)", "Plentiful (1)"] }
     ]
   },
   {
     "section": "Player Interaction",
     "settings": [
       { "key": "AllowGlobalChat", "type": "bool", "default": "true", "uiName": "Allow Global Chat", "inUI": true, "description": "Enable the global chat channel visible to all players on the server." },
-      { "key": "AllWaypointsUnlocked", "type": "bool", "default": "false", "uiName": "", "inUI": false, "description": "All waygate fast-travel points are revealed on the world map for all players from the start.", "notes": "Reported broken/unreliable" },
+      { "key": "AllWaypointsUnlocked", "type": "bool", "default": "false", "uiName": "", "inUI": false, "description": "All waygate fast-travel points are unlocked on the world map for all players from the start."},
       { "key": "CanLootEnemyContainers", "type": "bool", "default": "true", "uiName": "Allow players to loot enemy storage", "inUI": true, "description": "Allow players to access and loot enemy stashes and workstations. Does not include death containers." },
       { "key": "BloodBoundEquipment", "type": "bool", "default": "true", "uiName": "", "inUI": false, "description": "Most equipment will not drop on death and cannot be traded between players. Excludes hats." },
       { "key": "TeleportBoundItems", "type": "bool", "default": "true", "uiName": "Teleport Bound Items", "inUI": true, "description": "Certain items prevent the player from using waygates while carrying them." },
@@ -25,7 +25,7 @@
       { "key": "BatBoundShards", "type": "bool", "default": "true", "uiName": "", "inUI": false, "description": "Soul Shards prevent the player from using bat form while carrying them." },
       { "key": "ClanSize", "type": "int", "default": "4", "min": "1", "max": "50", "uiName": "Clan Size", "inUI": true, "description": "Maximum number of players that can be in a single clan." },
       { "key": "WeaponSlots", "type": "int", "default": "8", "min": "0", "max": "8", "uiName": "", "inUI": false, "description": "Number of weapon/action bar slots available to each player. Reduces the number of weapons a player can equip. Values above 8 are clamped to 8. 0 will prevent any weapon from equipping if not already equipped." },
-      { "key": "FreeCastleRaid", "type": "bool", "default": "false", "uiName": "Free Castle Raid", "inUI": true, "description": "Defines if raiding another player's castle is free or has a cost. When true, raiding requires no materials to initiate." },
+      { "key": "FreeCastleRaid", "type": "bool", "default": "false", "uiName": "Free Castle Raid", "inUI": true, "description": "Defines if raiding another player's castle is free or has a cost. When true, raiding requires no key materials to initiate." },
       { "key": "FreeCastleClaim", "type": "bool", "default": "false", "uiName": "Free Castle Heart Claim", "inUI": true, "description": "Defines if claiming another player's castle is free or has a cost. When true, seizing a castle heart requires no key materials." },
       { "key": "FreeCastleDestroy", "type": "bool", "default": "false", "uiName": "Free Castle Heart Destruction", "inUI": true, "description": "Defines if destroying another player's castle is free or has a cost. When true, destroying a castle heart requires no key materials." }
     ]
@@ -34,12 +34,12 @@
     "section": "Inactivity / Disconnect",
     "settings": [
       { "key": "InactivityKillEnabled", "type": "bool", "default": "true", "uiName": "", "inUI": false, "description": "Automatically destroy a player's vampire after they have been offline for too long, based on gear level." },
-      { "key": "InactivityKillTimeMin", "type": "int", "default": "3600", "uiName": "", "inUI": false, "description": "Minimum seconds offline before inactivity kill can trigger. Default is 1 hour (3600s).", "notes": "Recommended: do not change" },
-      { "key": "InactivityKillTimeMax", "type": "int", "default": "604800", "uiName": "", "inUI": false, "description": "Maximum seconds offline before inactivity kill triggers. Default is 7 days (604800s).", "notes": "Recommended: do not change" },
+      { "key": "InactivityKillTimeMin", "type": "int", "default": "3600", "uiName": "", "inUI": false, "description": "Minimum seconds offline before inactivity kill can trigger. Default is 1 hour (3600s)."},
+      { "key": "InactivityKillTimeMax", "type": "int", "default": "604800", "uiName": "", "inUI": false, "description": "Maximum seconds offline before inactivity kill triggers. Default is 7 days (604800s)."},
       { "key": "InactivityKillSafeTimeAddition", "type": "int", "default": "172800", "uiName": "", "inUI": false, "description": "Extra inactivity protection time granted when the player is inside their castle territory. Default is 48 hours (172800s)." },
       { "key": "InactivityKillTimerMaxItemLevel", "type": "int", "default": "84", "min": "0", "max": "255", "uiName": "", "inUI": false, "description": "The item level at which a character receives the maximum inactivity time. The actual inactivity timer is interpolated between InactivityKillTimeMin and InactivityKillTimeMax based on the character's item level from 0 to this value." },
       { "key": "DisableDisconnectedDeadEnabled", "type": "bool", "default": "true", "uiName": "", "inUI": false, "description": "Remove an offline player's physical body from the world after the disconnect timer expires." },
-      { "key": "DisableDisconnectedDeadTimer", "type": "int", "default": "60", "uiName": "", "inUI": false, "description": "Seconds after disconnecting before the player's body is removed from the world.", "notes": "Recommended: do not change" },
+      { "key": "DisableDisconnectedDeadTimer", "type": "int", "default": "60", "uiName": "", "inUI": false, "description": "Seconds after disconnecting before the player's body is removed from the world."},
       { "key": "DisconnectedSunImmunityTime", "type": "float", "default": "300.0", "min": "0", "max": "3600", "uiName": "", "inUI": false, "description": "Seconds of sun immunity granted to a vampire after disconnecting. Default is 5 minutes." }
     ]
   },
@@ -162,7 +162,7 @@
   {
     "section": "Castle Stat Modifiers",
     "settings": [
-      { "key": "CastleStatModifiers_Global.TickPeriod", "type": "float", "default": "5", "min": "0.1", "max": "600", "uiName": "", "inUI": false, "description": "How often (in seconds) castle decay damage is recalculated and applied.", "notes": "Recommended: do not change" },
+      { "key": "CastleStatModifiers_Global.TickPeriod", "type": "float", "default": "5", "min": "0.1", "max": "600", "uiName": "", "inUI": false, "description": "How often (in seconds) castle decay damage is recalculated and applied.", "notes": "Do not change" },
       { "key": "CastleStatModifiers_Global.SafetyBoxLimit", "type": "int", "default": "1", "min": "0", "max": "255", "uiName": "", "inUI": false, "description": "Maximum number of Vampire Lockbox (safety box) structures per castle." },
       { "key": "CastleStatModifiers_Global.EyeStructuresLimit", "type": "int", "default": "1", "min": "0", "max": "255", "uiName": "", "inUI": false, "description": "Maximum number of Eye of Darkness structures per castle." },
       { "key": "CastleStatModifiers_Global.TombLimit", "type": "int", "default": "12", "min": "1", "max": "255", "uiName": "Tomb Limitation", "inUI": true, "description": "Maximum number of Tomb structures per castle." },
@@ -182,19 +182,19 @@
     "settings": [
       { "key": "HeartLimits.Level1.FloorLimit", "type": "int", "default": "50", "min": "9", "max": "800", "description": "Maximum floor tiles for a Level 1 Castle Heart." },
       { "key": "HeartLimits.Level1.ServantLimit", "type": "int", "default": "4", "min": "1", "max": "35", "description": "Maximum servant coffins for a Level 1 Castle Heart." },
-      { "key": "HeartLimits.Level1.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 1 Castle Heart. May vary depending on the placement of the castle." },
+      { "key": "HeartLimits.Level1.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 1 Castle Heart. May vary depending on the plot." },
       { "key": "HeartLimits.Level2.FloorLimit", "type": "int", "default": "140", "min": "9", "max": "800", "description": "Maximum floor tiles for a Level 2 Castle Heart." },
       { "key": "HeartLimits.Level2.ServantLimit", "type": "int", "default": "5", "min": "1", "max": "35", "description": "Maximum servant coffins for a Level 2 Castle Heart." },
-      { "key": "HeartLimits.Level2.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 2 Castle Heart. May vary depending on the placement of the castle." },
+      { "key": "HeartLimits.Level2.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 2 Castle Heart. May vary depending on the plot." },
       { "key": "HeartLimits.Level3.FloorLimit", "type": "int", "default": "240", "min": "9", "max": "800", "description": "Maximum floor tiles for a Level 3 Castle Heart." },
       { "key": "HeartLimits.Level3.ServantLimit", "type": "int", "default": "6", "min": "1", "max": "35", "description": "Maximum servant coffins for a Level 3 Castle Heart." },
-      { "key": "HeartLimits.Level3.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 3 Castle Heart. May vary depending on the placement of the castle." },
+      { "key": "HeartLimits.Level3.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 3 Castle Heart. May vary depending on the plot." },
       { "key": "HeartLimits.Level4.FloorLimit", "type": "int", "default": "360", "min": "9", "max": "800", "description": "Maximum floor tiles for a Level 4 Castle Heart." },
       { "key": "HeartLimits.Level4.ServantLimit", "type": "int", "default": "7", "min": "1", "max": "35", "description": "Maximum servant coffins for a Level 4 Castle Heart." },
-      { "key": "HeartLimits.Level4.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 4 Castle Heart. May vary depending on the placement of the castle." },
+      { "key": "HeartLimits.Level4.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 4 Castle Heart. May vary depending on the plot." },
       { "key": "HeartLimits.Level5.FloorLimit", "type": "int", "default": "550", "min": "9", "max": "800", "description": "Maximum floor tiles for a Level 5 Castle Heart." },
       { "key": "HeartLimits.Level5.ServantLimit", "type": "int", "default": "8", "min": "1", "max": "35", "description": "Maximum servant coffins for a Level 5 Castle Heart." },
-      { "key": "HeartLimits.Level5.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 5 Castle Heart. May vary depending on the placement of the castle." }
+      { "key": "HeartLimits.Level5.HeightLimit", "type": "int", "default": "3", "min": "1", "max": "255", "description": "Maximum build height (floors) for a Level 5 Castle Heart. May vary depending on the plot." }
     ]
   },
   {
@@ -230,7 +230,7 @@
   {
     "section": "War Event (Incursion) Settings",
     "settings": [
-      { "key": "WarEventGameSettings.Interval", "type": "int", "default": "1", "min": "0", "max": "7", "uiName": "", "inUI": false, "description": "Time between Incursion events. Accepts enum-style int values: <code>0</code> Minimum (30 min), <code>1</code> VeryShort (1 hr), <code>2</code> Short (1.5 hrs), <code>3</code> Medium (2 hrs), <code>4</code> Long (4 hrs), <code>5</code> VeryLong (8 hrs), <code>6</code> Extensive (12 hrs), <code>7</code> Maximum (24 hrs). 0 disables incursions." },
+      { "key": "WarEventGameSettings.Interval", "type": "int", "default": "1", "min": "0", "max": "7", "uiName": "", "inUI": false, "description": "Time between Incursion events. Accepts enum-style int values: <code>0</code> Minimum (30 min), <code>1</code> VeryShort (1 hr), <code>2</code> Short (1.5 hrs), <code>3</code> Medium (2 hrs), <code>4</code> Long (4 hrs), <code>5</code> VeryLong (8 hrs), <code>6</code> Extensive (12 hrs), <code>7</code> Maximum (24 hrs)." },
       { "key": "WarEventGameSettings.MajorDuration", "type": "int", "default": "1", "min": "0", "max": "7", "uiName": "", "inUI": false, "description": "Duration of major Incursion events. Same enum-style int scale: <code>0</code> Minimum (15 min), <code>1</code> VeryShort (20 min), <code>2</code> Short (25 min), <code>3</code> Medium (30 min), <code>4</code> Long (35 min), <code>5</code> VeryLong (45 min), <code>6</code> Extensive (1 hr), <code>7</code> Maximum (2 hrs)." },
       { "key": "WarEventGameSettings.MinorDuration", "type": "int", "default": "1", "min": "0", "max": "7", "uiName": "", "inUI": false, "description": "Duration of minor Incursion events. Same enum-style int scale as MajorDuration: <code>0</code> Minimum (15 min), <code>1</code> VeryShort (20 min), <code>2</code> Short (25 min), <code>3</code> Medium (30 min), <code>4</code> Long (35 min), <code>5</code> VeryLong (45 min), <code>6</code> Extensive (1 hr), <code>7</code> Maximum (2 hrs)." },
       { "key": "WarEventGameSettings.WeekdayTime.StartHour", "type": "int", "default": "0", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekday Incursion window start hour (24-hour format)." },
@@ -241,14 +241,14 @@
       { "key": "WarEventGameSettings.WeekendTime.StartMinute", "type": "int", "default": "0", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekend Incursion window start minute." },
       { "key": "WarEventGameSettings.WeekendTime.EndHour", "type": "int", "default": "23", "min": "1", "max": "23", "uiName": "", "inUI": false, "description": "Weekend Incursion window end hour (24-hour format)." },
       { "key": "WarEventGameSettings.WeekendTime.EndMinute", "type": "int", "default": "59", "min": "0", "max": "59", "uiName": "", "inUI": false, "description": "Weekend Incursion window end minute." },
-      { "key": "WarEventGameSettings.ScalingPlayers1.PointsModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Points (enemies) required to shatter the Stygian Shard on a 1-player server." },
-      { "key": "WarEventGameSettings.ScalingPlayers1.DropModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Loot quantity dropped from a shattered Stygian Shard on a 1-player server." },
-      { "key": "WarEventGameSettings.ScalingPlayers2.PointsModifier", "type": "float", "default": "0.5", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard point multiplier for 2-player servers." },
-      { "key": "WarEventGameSettings.ScalingPlayers2.DropModifier", "type": "float", "default": "0.5", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard drop multiplier for 2-player servers." },
-      { "key": "WarEventGameSettings.ScalingPlayers3.PointsModifier", "type": "float", "default": "0.25", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard point multiplier for 3-player servers." },
-      { "key": "WarEventGameSettings.ScalingPlayers3.DropModifier", "type": "float", "default": "0.25", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard drop multiplier for 3-player servers." },
-      { "key": "WarEventGameSettings.ScalingPlayers4.PointsModifier", "type": "float", "default": "0.25", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard point multiplier for 4+ player servers." },
-      { "key": "WarEventGameSettings.ScalingPlayers4.DropModifier", "type": "float", "default": "0.25", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard drop multiplier for 4+ player servers." }
+      { "key": "WarEventGameSettings.ScalingPlayers1.PointsModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Points (enemies) required to shatter the Stygian Shard for 1 player on the local activity grid." },
+      { "key": "WarEventGameSettings.ScalingPlayers1.DropModifier", "type": "float", "default": "1.0", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Loot quantity dropped from a shattered Stygian Shard for 1 player on the local activity grid." },
+      { "key": "WarEventGameSettings.ScalingPlayers2.PointsModifier", "type": "float", "default": "0.5", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard point multiplier for 2 players on the local activity grid." },
+      { "key": "WarEventGameSettings.ScalingPlayers2.DropModifier", "type": "float", "default": "0.5", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard drop multiplier for 2 players on the local activity grid." },
+      { "key": "WarEventGameSettings.ScalingPlayers3.PointsModifier", "type": "float", "default": "0.25", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard point multiplier for 3 players on the local activity grid." },
+      { "key": "WarEventGameSettings.ScalingPlayers3.DropModifier", "type": "float", "default": "0.25", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard drop multiplier for 3 players on the local activity grid." },
+      { "key": "WarEventGameSettings.ScalingPlayers4.PointsModifier", "type": "float", "default": "0.25", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard point multiplier for 4+ players on the local activity grid." },
+      { "key": "WarEventGameSettings.ScalingPlayers4.DropModifier", "type": "float", "default": "0.25", "min": "0.01", "max": "100", "uiName": "", "inUI": false, "description": "Shard drop multiplier for 4+ players on the local activity grid." }
     ]
   },
   {
