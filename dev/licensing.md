@@ -65,7 +65,7 @@ For abandoned mods specifically, see the [Abandoned Mods](/community/abandoned-m
 
 Several community frameworks are widely used. If your mod depends on them, include them in your credits and dependencies:
 
-- **BepInEx** - the core modding framework. [MIT licence.](https://github.com/BepInEx/BepInEx/blob/master/LICENSE)
+- **BepInEx** - the core modding framework. [LGPL v2.1 licence.](https://github.com/BepInEx/BepInEx/blob/master/LICENSE)
 - **VCF (Vampire Command Framework)** - if your mod adds commands via VCF, note this in your documentation.
 
 Always link to the dependency's Thunderstore or GitHub page so users know what they are installing.
